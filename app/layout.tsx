@@ -6,6 +6,7 @@ import { ThemeToggle } from "../components/ThemeToggle";
 import { ENABLE_ADS } from "@/lib/ads.config";
 import { AdSenseInit } from "@/components/common/AdSenseInit";
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -95,6 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <Toaster position="top-right" />
           <ThemeToggle />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
