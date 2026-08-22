@@ -157,7 +157,7 @@ export default function Header() {
                         </div>
                     </div>
 
-                    <Link href="/login" className="text-sm font-semibold bg-[#005ee6] text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors shadow-sm ml-4">Login</Link>
+                    {/* <Link href="/login" className="text-sm font-semibold bg-[#005ee6] text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors shadow-sm ml-4">Login</Link> */}
                 </div>
             </div>
         </header>

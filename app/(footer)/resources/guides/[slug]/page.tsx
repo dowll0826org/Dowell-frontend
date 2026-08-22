@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { summaryGuides, detailedGuides } from "@/lib/data";
+import { sidebarItems } from "@/lib/tools.data";
 import Link from "next/link";
 import {
   CheckCircle2,
@@ -70,6 +71,25 @@ export default async function GuidePage({
     relatedTools: []
   };
 
+  let targetLink = "/";
+  if (detailedGuide && detailedGuide.relatedTools && detailedGuide.relatedTools.length > 0) {
+      targetLink = `/${detailedGuide.relatedTools[0]}`;
+  } else {
+      const allSlugs: string[] = [];
+      sidebarItems.forEach(item => {
+          if (item.slug) allSlugs.push(item.slug);
+          if (item.children) {
+              item.children.forEach(child => {
+                  if (child.slug) allSlugs.push(child.slug);
+              });
+          }
+      });
+      const matchedSlug = allSlugs.find(s => slug.includes(s));
+      if (matchedSlug) {
+          targetLink = `/${matchedSlug}`;
+      }
+  }
+
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors duration-200">
       {/* Hero Section */}
@@ -104,7 +124,7 @@ export default async function GuidePage({
               <h3 className="font-bold text-white mb-3 text-xl">Ready to start?</h3>
               <p className="text-gray-400 text-[15px] mb-8 leading-relaxed">Jump right into the tool and process your documents securely.</p>
               <Link
-                href="/tools"
+                href={targetLink}
                 className="w-full inline-flex items-center justify-center gap-2 bg-[#0052cc] hover:bg-blue-600 text-white font-medium py-3 px-4 rounded-xl transition-all"
               >
                 Explore Tools
@@ -215,7 +235,7 @@ export default async function GuidePage({
                       {guide.relatedTools.map((tool, idx) => (
                         <Link
                           key={idx}
-                          href={`/tools/${tool}`}
+                          href={`/${tool}`}
                           className="group flex items-center justify-between p-3 -mx-3 rounded-lg text-gray-600 dark:text-gray-400 font-medium hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-[14px]"
                         >
                           <span className="capitalize">{tool.replace(/-/g, ' ')}</span>
