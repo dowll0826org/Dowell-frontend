@@ -1,11 +1,4 @@
-import axios from 'axios';
-
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api/v1';
-
-const api = axios.create({
-    baseURL: API_URL,
-});
-
+import { api } from '@/lib/api';
 export const convertToPdfApi = async (file: File | File[], type: string) => {
     const formData = new FormData();
     formData.append('type', type);
@@ -17,7 +10,7 @@ export const convertToPdfApi = async (file: File | File[], type: string) => {
     }
 
     try {
-        const response = await api.post('/convert/to-pdf', formData, {
+        const response = await api.post('/api/v1/convert/to-pdf', formData, {
             responseType: 'blob',
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -52,7 +45,7 @@ export const convertFromPdfApi = async (file: File, targetFormat: string) => {
     formData.append('targetFormat', targetFormat);
 
     try {
-        const response = await api.post('/convert/from-pdf', formData, {
+        const response = await api.post('/api/v1/convert/from-pdf', formData, {
             responseType: 'blob',
             headers: {
                 'Content-Type': 'multipart/form-data'

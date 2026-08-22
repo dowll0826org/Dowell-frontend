@@ -1,8 +1,6 @@
 import axios, { AxiosProgressEvent } from 'axios';
 import { TextModification } from './type.editDoc';
-
-// Base URL configuration
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+import { api } from '@/lib/api';
 
 export const editDocumentApi = async (
     file: File,
@@ -14,7 +12,7 @@ export const editDocumentApi = async (
         formData.append('document', file);
         formData.append('modifications', JSON.stringify(modifications));
 
-        const response = await axios.post(`${API_BASE_URL}/api/v1/documents/edit-pdf`, formData, {
+        const response = await api.post('/api/v1/documents/edit-pdf', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             },
