@@ -22,7 +22,7 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed pr-4">
-                            dowll is your all-in-one document toolkit. Convert, compress, edit, and manage your files securely with fast and simple online tools.
+                            Dowll is your all-in-one document toolkit. Convert, compress, edit, and manage your files securely with fast and simple online tools.
                         </p>
                     </div>
 
