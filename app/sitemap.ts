@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Map slugs to sitemap URLs using the clean structure
   const sitemapUrls: MetadataRoute.Sitemap = slugs.map((slug) => ({
-    url: `https://docvia.com/${slug}`,
+    url: `https://dowll.com/${slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.8,
@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Add the root homepage with highest priority
   sitemapUrls.unshift({
-    url: `https://docvia.com/`,
+    url: `https://dowll.com/`,
     lastModified: new Date(),
     changeFrequency: "daily",
     priority: 1.0,

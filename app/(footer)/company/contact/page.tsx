@@ -3,15 +3,15 @@ import { Mail, Megaphone, HelpCircle, Send, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Contact Us | Docvia",
-  description: "Get in touch with the Docvia team."
+  title: "Contact Us | dowll",
+  description: "Get in touch with the dowll team."
 };
 
 export default function ContactUsPage() {
   return (
     <main className="flex-grow flex flex-col bg-[#fafbfe] dark:bg-gray-900 transition-colors min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 w-full">
-        
+
         {/* Header */}
         <section className="text-center space-y-6 max-w-3xl mx-auto mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white tracking-tight">
@@ -23,7 +23,7 @@ export default function ContactUsPage() {
         </section>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
+
           {/* Contact Form */}
           <div className="lg:col-span-2 bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-10 shadow-sm border border-gray-100 dark:border-gray-700">
             <form className="space-y-6">
@@ -51,7 +51,7 @@ export default function ContactUsPage() {
                   />
                 </div>
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="subject" className="block text-sm font-semibold text-gray-900 dark:text-gray-200">
                   Subject
@@ -100,11 +100,11 @@ export default function ContactUsPage() {
 
           {/* Right Side Info Cards */}
           <div className="space-y-6">
-            
+
             {/* Direct Contacts */}
             <div className="bg-[#f8fafc] dark:bg-gray-800/50 rounded-2xl p-8 border border-gray-100 dark:border-gray-700">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Direct Contacts</h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-[#eef3fb] dark:bg-blue-900/30 p-2.5 rounded-lg text-[#1c4794] dark:text-blue-400 shrink-0">
@@ -112,20 +112,20 @@ export default function ContactUsPage() {
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-gray-900 dark:text-white">Support</h4>
-                    <a href="mailto:support@docvia.com" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                      support@docvia.com
+                    <a href="mailto:support@dowll.com" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      support@dowll.com
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="bg-[#eef3fb] dark:bg-blue-900/30 p-2.5 rounded-lg text-[#1c4794] dark:text-blue-400 shrink-0">
                     <Megaphone size={20} />
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-gray-900 dark:text-white">Press & Media</h4>
-                    <a href="mailto:press@docvia.com" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                      press@docvia.com
+                    <a href="mailto:press@dowll.com" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      press@dowll.com
                     </a>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export default function ContactUsPage() {
                 <ArrowRight size={16} />
               </Link>
             </div>
-            
+
           </div>
         </div>
       </div>

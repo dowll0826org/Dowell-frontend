@@ -20,12 +20,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!guide) {
     return {
-      title: "Guide Not Found | Docvia",
+      title: "Guide Not Found | dowll",
     };
   }
 
   return {
-    title: `${guide.title} | Docvia`,
+    title: `${guide.title} | dowll`,
     description: guide.description,
   };
 }
@@ -64,7 +64,7 @@ export default async function GuidePage({
         "No installation required",
         "Works on any device"
       ],
-      security: "Docvia processes files securely and protects your documents.",
+      security: "dowll processes files securely and protects your documents.",
       faq: []
     },
     relatedTools: []
@@ -185,7 +185,7 @@ export default async function GuidePage({
 
                 {/* Benefits Widget */}
                 <div className="bg-[#f4f5fa] dark:bg-gray-900 rounded-2xl p-7">
-                  <h3 className="font-bold text-gray-900 dark:text-white mb-6 text-[15px]">Why use Docvia?</h3>
+                  <h3 className="font-bold text-gray-900 dark:text-white mb-6 text-[15px]">Why use dowll?</h3>
                   <ul className="space-y-4">
                     {guide.content.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-gray-600 dark:text-gray-400 text-[14px]">

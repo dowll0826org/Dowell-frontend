@@ -1,7 +1,7 @@
 import { privacyPolicyData } from '@/lib/data';
 
 export const metadata = {
-  title: "Privacy Policy | Docvia",
+  title: "Privacy Policy | dowll",
   description: "Read our privacy policy to understand how we handle your data."
 };
 
@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
       <div className="max-w-4xl mx-auto px-4 py-16 md:py-24 w-full">
         <div className="mb-10 text-center">
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl mx-auto text-lg">
-            At Docvia, your privacy is not just a feature—it is the foundational architecture of our platform. This Privacy Policy outlines our commitment to minimizing data collection and maximizing your control over your documents through our localized processing approach.
+            At dowll, your privacy is not just a feature—it is the foundational architecture of our platform. This Privacy Policy outlines our commitment to minimizing data collection and maximizing your control over your documents through our localized processing approach.
           </p>
         </div>
 

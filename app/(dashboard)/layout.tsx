@@ -178,8 +178,8 @@ function DashboardNavbar() {
       <div className="w-64 flex-shrink-0 flex items-center px-6 border-r border-gray-200 dark:border-gray-800 h-full bg-[#fbfcfd] dark:bg-gray-900">
         <Link href="/" className="flex items-center">
           <Image
-            src="/assets/Docvia_logo.png"
-            alt="Docvia"
+            src="/assets/dowll_logo.png"
+            alt="dowll"
             width={200}
             height={50}
             className="w-20 md:w-30 h-auto object-contain"

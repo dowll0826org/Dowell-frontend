@@ -46,7 +46,7 @@ export default function Hero() {
                     <div className="relative">
                         <Image
                             src="/assets/Hero.png"
-                            alt="Docvia Hero Platform"
+                            alt="dowll Hero Platform"
                             width={800}
                             height={600}
                             className="w-full h-auto object-contain dark:opacity-90"

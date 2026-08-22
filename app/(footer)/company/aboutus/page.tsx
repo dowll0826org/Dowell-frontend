@@ -4,8 +4,8 @@ import { Lock, Shield, Zap, Eye, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: "About Us | Docvia",
-  description: "Learn more about Docvia, our mission, and our values."
+  title: "About Us | dowll",
+  description: "Learn more about dowll, our mission, and our values."
 };
 
 export default function AboutUsPage() {
@@ -18,7 +18,7 @@ export default function AboutUsPage() {
             Redefining Document <br className="hidden md:block" /> Intelligence
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-            We believe your documents belong to you. Docvia combines powerful processing tools with absolute privacy, ensuring your data never leaves your device unless you choose it to.
+            We believe your documents belong to you. dowll combines powerful processing tools with absolute privacy, ensuring your data never leaves your device unless you choose it to.
           </p>
         </section>
 
@@ -37,7 +37,7 @@ export default function AboutUsPage() {
             <div className="rounded-2xl overflow-hidden shadow-sm h-full flex">
               <Image
                 src="/assets/aboutimage2.png"
-                alt="docvia avout"
+                alt="dowll avout"
                 width={800}
                 height={600}
                 className="w-full h-full object-cover"
@@ -50,7 +50,7 @@ export default function AboutUsPage() {
             <div className="rounded-2xl overflow-hidden shadow-sm h-full flex order-2 md:order-1">
               <Image
                 src="/assets/aboutImage1.png"
-                alt="docvia avout"
+                alt="dowll avout"
                 width={800}
                 height={600}
                 className="w-full h-full object-cover"
@@ -58,10 +58,10 @@ export default function AboutUsPage() {
             </div>
             <div className="bg-white dark:bg-gray-800 rounded-2xl p-10 md:p-14 shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col justify-center h-full order-1 md:order-2">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                The Docvia Story
+                The dowll Story
               </h2>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Born from the frustration of relying on cloud-vulnerable tools for sensitive paperwork, Docvia was created to shift the paradigm to local-first technology. We saw professionals risking confidentiality for convenience and decided to build a platform that offers both.
+                Born from the frustration of relying on cloud-vulnerable tools for sensitive paperwork, dowll was created to shift the paradigm to local-first technology. We saw professionals risking confidentiality for convenience and decided to build a platform that offers both.
               </p>
             </div>
           </div>

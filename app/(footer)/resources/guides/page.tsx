@@ -3,7 +3,7 @@ import { ArrowRight, Check, ArrowRightLeft } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Document Guides & Tutorials | Docvia",
+  title: "Document Guides & Tutorials | dowll",
   description: "Step-by-step guides and tutorials for all your document processing needs.",
 };
 
@@ -20,7 +20,7 @@ export default function Guides() {
             All-in-One Document Toolkit
           </h1>
           <p className="text-[17px] text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Discover the power of Docvia&apos;s high-utility processing tools. Convert, compress, merge, and edit with enterprise-grade security and precision.
+            Discover the power of dowll&apos;s high-utility processing tools. Convert, compress, merge, and edit with enterprise-grade security and precision.
           </p>
         </div>
 

@@ -7,7 +7,7 @@ import Workflow from "@/components/landing/Workflow";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Docvia - Your Ultimate Document Processing Hub",
+  title: "dowll - Your Ultimate Document Processing Hub",
   description: "Streamline your workflow with our comprehensive suite of online tools: convert, merge, split, compress, and protect PDFs and Office documents effortlessly.",
 };
 

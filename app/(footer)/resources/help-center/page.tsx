@@ -11,8 +11,8 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Help Center | Docvia",
-  description: "Get support and learn how to make the most of Docvia's document tools.",
+  title: "Help Center | dowll",
+  description: "Get support and learn how to make the most of dowll's document tools.",
 };
 
 export default function Resources() {
@@ -25,7 +25,7 @@ export default function Resources() {
             How can we help?
           </h1>
           <p className="text-[15px] text-gray-500 dark:text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed">
-            Find answers, tutorials, and technical documentation to get the most out of Docvia.
+            Find answers, tutorials, and technical documentation to get the most out of dowll.
           </p>
 
           <div className="relative max-w-2xl mx-auto">
@@ -95,7 +95,7 @@ export default function Resources() {
               <div>
                 <h3 className="font-semibold text-gray-900 dark:text-white text-[15px] mb-1.5 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">Supported file formats</h3>
                 <p className="text-[13px] text-gray-500 dark:text-gray-400 leading-relaxed pr-2">
-                  View the comprehensive list of document types you can process with Docvia.
+                  View the comprehensive list of document types you can process with dowll.
                 </p>
               </div>
             </Link>

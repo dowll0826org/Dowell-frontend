@@ -6,10 +6,10 @@ export default function PrivacySection() {
     <section className="bg-[#16171b] dark:bg-black py-12 lg:py-16 transition-colors duration-200">
       <div className="container mx-auto px-8 lg:px-16 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center">
-          
+
           {/* Left Content */}
           <div className="max-w-xl">
-            
+
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white/10 text-gray-200 px-4 py-1.5 rounded-full text-sm font-semibold mb-8">
               <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -25,7 +25,7 @@ export default function PrivacySection() {
 
             {/* Description */}
             <p className="text-lg text-gray-400 leading-relaxed mb-10">
-              Unlike traditional cloud processors, Docvia utilizes WebAssembly to process your documents locally in your browser. No uploads, no servers, no traces.
+              Unlike traditional cloud processors, dowll utilizes WebAssembly to process your documents locally in your browser. No uploads, no servers, no traces.
             </p>
 
             {/* List */}

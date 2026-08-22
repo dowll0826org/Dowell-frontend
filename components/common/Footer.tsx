@@ -13,8 +13,8 @@ export default function Footer() {
                     <div className="lg:w-1/4">
                         <Link href="/" className="flex items-center mb-6">
                             <Image
-                                src="/assets/Docvia_logo.png"
-                                alt="Docvia"
+                                src="/assets/dowll_logo.png"
+                                alt="dowll"
                                 width={400}
                                 height={120}
                                 className="w-48 h-auto object-contain"
@@ -22,7 +22,7 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed pr-4">
-                            Docvia is your all-in-one document toolkit. Convert, compress, edit, and manage your files securely with fast and simple online tools.
+                            dowll is your all-in-one document toolkit. Convert, compress, edit, and manage your files securely with fast and simple online tools.
                         </p>
                     </div>
 
@@ -85,7 +85,7 @@ export default function Footer() {
                 {/* Bottom Section */}
                 <div className="pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col lg:flex-row justify-between items-center gap-6">
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                        © 2026 Docvia. All rights reserved.
+                        © 2026 dowll. All rights reserved.
                     </p>
                     <p className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1">
                         Built with precision for professional document processing.

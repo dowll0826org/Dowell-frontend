@@ -2,8 +2,8 @@ import { HelpCircle, Cookie } from 'lucide-react';
 import { cookiePolicyData } from '@/lib/data';
 
 export const metadata = {
-  title: "Cookie Policy | Docvia",
-  description: "Learn about how we use cookies to improve your experience on Docvia."
+  title: "Cookie Policy | dowll",
+  description: "Learn about how we use cookies to improve your experience on dowll."
 };
 
 export default function CookiePolicyPage() {
@@ -25,14 +25,14 @@ export default function CookiePolicyPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-6">
-            
+
             {sections.map((section) => (
               <div key={section.id} className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-[0_2px_10px_rgb(0,0,0,0.04)] dark:shadow-none border border-gray-100 dark:border-gray-700">
                 <div className="flex items-center space-x-3 mb-6">
                   <section.icon size={20} className="text-[#1c4794] dark:text-blue-400" />
                   <h2 className="text-xl font-bold text-gray-900 dark:text-white">{section.title}</h2>
                 </div>
-                
+
                 {section.content && (
                   <div className="text-gray-600 dark:text-gray-300 space-y-4 text-sm leading-relaxed">
                     {section.content.map((p, idx) => <p key={idx}>{p}</p>)}
@@ -57,7 +57,7 @@ export default function CookiePolicyPage() {
               <div className="p-8 pb-4">
                 <div className="flex items-center space-x-3">
                   {/* Using a static icon for the table header, but it could be dynamic if needed */}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#1c4794] dark:text-blue-400"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="3" x2="21" y1="15" y2="15"/><line x1="9" x2="9" y1="9" y2="21"/><line x1="15" x2="15" y1="9" y2="21"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#1c4794] dark:text-blue-400"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /><line x1="3" x2="21" y1="9" y2="9" /><line x1="3" x2="21" y1="15" y2="15" /><line x1="9" x2="9" y1="9" y2="21" /><line x1="15" x2="15" y1="9" y2="21" /></svg>
                   <h2 className="text-xl font-bold text-gray-900 dark:text-white">Cookie Details</h2>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function CookiePolicyPage() {
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
                 You can change your cookie preferences at any time. Adjusting these settings may affect your experience on our platform.
               </p>
-              
+
               <div className="space-y-4 mb-8">
                 <div className="flex items-center justify-between">
                   <div>
@@ -106,7 +106,7 @@ export default function CookiePolicyPage() {
                     <span className="translate-x-4 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="text-sm font-semibold text-gray-900 dark:text-white">Analytical Cookies</div>
@@ -117,7 +117,7 @@ export default function CookiePolicyPage() {
                   </div>
                 </div>
               </div>
-              
+
               <button className="w-full bg-[#0f3482] hover:bg-[#0c2a68] dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors text-sm shadow-sm">
                 Save Preferences
               </button>
@@ -130,7 +130,7 @@ export default function CookiePolicyPage() {
                 <div>
                   <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-1">Need Help?</h4>
                   <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
-                    If you have questions about our use of cookies, contact us at privacy@docvia.com
+                    If you have questions about our use of cookies, contact us at privacy@dowll.com
                   </p>
                 </div>
               </div>

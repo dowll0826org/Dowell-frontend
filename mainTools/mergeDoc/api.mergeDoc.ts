@@ -18,7 +18,7 @@ export const mergeDocumentsApi = async (files: FileItem[]) => {
   const a = document.createElement('a');
   a.href = url;
   const randomId = crypto.randomUUID();
-  a.download = `docviahub-merge-${randomId}.pdf`;
+  a.download = `dowll-merge-${randomId}.pdf`;
   document.body.appendChild(a);
   a.click();
   window.URL.revokeObjectURL(url);

@@ -53,7 +53,7 @@ export const sidebarItems: SidebarItem[] = [
         metadata: {
             title: "Merge PDF Files Online  ",
             description:
-                "Combine multiple PDF files into one document quickly and securely with Docvia PDF merger tool.",
+                "Combine multiple PDF files into one document quickly and securely with dowll PDF merger tool.",
 
             keywords: [
                 "merge PDF",
@@ -77,7 +77,7 @@ export const sidebarItems: SidebarItem[] = [
             title: "Split PDF Files Online  ",
 
             description:
-                "Split PDF documents into separate pages or extract specific pages easily using Docvia.",
+                "Split PDF documents into separate pages or extract specific pages easily using dowll.",
 
             keywords: [
                 "split PDF",
@@ -460,7 +460,7 @@ export const sidebarItems: SidebarItem[] = [
             title: "Organize PDF Pages Online  ",
 
             description:
-                "Reorder, manage and organize PDF pages easily with Docvia.",
+                "Reorder, manage and organize PDF pages easily with dowll.",
 
             keywords: [
                 "organize PDF",

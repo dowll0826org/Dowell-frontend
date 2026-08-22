@@ -19,12 +19,12 @@ export const splitDocumentApi = async (fileItem: FileItem, options: SplitOptions
   const url = window.URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  
+
   const isZip = response.headers['content-type'] === 'application/zip';
   const extension = isZip ? 'zip' : 'pdf';
   const randomId = crypto.randomUUID();
-  a.download = `docviahub-split-${randomId}.${extension}`;
-  
+  a.download = `dowll-split-${randomId}.${extension}`;
+
   document.body.appendChild(a);
   a.click();
   window.URL.revokeObjectURL(url);

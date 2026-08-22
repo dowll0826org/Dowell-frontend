@@ -462,7 +462,7 @@ export default function EditPdf() {
 
       const a = document.createElement('a');
       a.href = url;
-      a.download = `docviahub-edited-${file.file.name}`;
+      a.download = `dowll-edited-${file.file.name}`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);

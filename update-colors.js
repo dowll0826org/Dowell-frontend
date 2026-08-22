@@ -23,7 +23,7 @@ const colorMap = {
     'PDF to EXCEL': 'text-green-500',
 };
 
-const filePath = 'd:\\Docvia\\frontend\\lib\\tools.data.ts';
+const filePath = 'd:\\dowll\\frontend\\lib\\tools.data.ts';
 let content = fs.readFileSync(filePath, 'utf8');
 
 for (const [name, color] of Object.entries(colorMap)) {

@@ -9,8 +9,8 @@ import { featuresCardsData } from '@/lib/data';
 
 
 export const metadata = {
-  title: "Features | Docvia",
-  description: "Explore all the features Docvia has to offer for your document processing needs."
+  title: "Features | dowll",
+  description: "Explore all the features dowll has to offer for your document processing needs."
 };
 
 export default function FeaturesPage() {

@@ -1,8 +1,8 @@
 import { termsOfServiceData } from '@/lib/data';
 
 export const metadata = {
-  title: "Terms of Service | Docvia",
-  description: "Read the terms of service and user agreement for using Docvia."
+  title: "Terms of Service | dowll",
+  description: "Read the terms of service and user agreement for using dowll."
 };
 
 export default function TermsOfServicePage() {
@@ -20,7 +20,7 @@ export default function TermsOfServicePage() {
         </div>
 
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-[0_2px_15px_rgb(0,0,0,0.03)] dark:shadow-none border border-gray-100 dark:border-gray-700 p-8 md:p-12 space-y-12">
-          
+
           {termsOfServiceData.map((section, index) => (
             <div key={section.id}>
               <section>
@@ -32,7 +32,7 @@ export default function TermsOfServicePage() {
                   {section.content?.map((p, idx) => (
                     <p key={`p-${idx}`}>{p}</p>
                   ))}
-                  
+
                   {section.list && (
                     <ul className="list-disc pl-5 space-y-2">
                       {section.list.map((item, idx) => (
@@ -40,7 +40,7 @@ export default function TermsOfServicePage() {
                       ))}
                     </ul>
                   )}
-                  
+
                   {section.obligations && (
                     <ul className="space-y-3">
                       {section.obligations.map((obs, idx) => (
@@ -64,7 +64,7 @@ export default function TermsOfServicePage() {
           ))}
 
         </div>
-        
+
         <div className="text-center mt-12">
           <p className="text-sm text-gray-500 dark:text-gray-400">
             Questions about these terms? <a href="#" className="text-[#1c4794] dark:text-blue-400 font-semibold hover:underline">Contact Support</a>

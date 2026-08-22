@@ -3,8 +3,8 @@ import { Lock } from 'lucide-react';
 import { securityCardsData as securityCards } from '@/lib/data';
 
 export const metadata = {
-  title: "Security | Docvia",
-  description: "Learn about how Docvia keeps your documents secure and private."
+  title: "Security | dowll",
+  description: "Learn about how dowll keeps your documents secure and private."
 };
 
 export default function SecurityPage() {
@@ -27,7 +27,7 @@ export default function SecurityPage() {
 
         {/* Subtitle */}
         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mb-10">
-          Experience zero-knowledge document processing. We built Docvia on the principle that your data belongs to you, processing it locally so it never leaves your device.
+          Experience zero-knowledge document processing. We built dowll on the principle that your data belongs to you, processing it locally so it never leaves your device.
         </p>
 
         {/* Buttons */}

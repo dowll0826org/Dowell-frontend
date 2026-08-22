@@ -117,19 +117,19 @@ export const summaryGuides = [
     description: "Resize images for websites, documents, and social media platforms.",
   },
   {
-    title: "Supported File Formats in Docvia",
+    title: "Supported File Formats in dowll",
     slug: "supported-file-formats",
-    description: "Learn about all supported document, image, and file formats available in Docvia.",
+    description: "Learn about all supported document, image, and file formats available in dowll.",
   },
   {
-    title: "How Docvia Keeps Your Files Secure",
-    slug: "docvia-file-security",
-    description: "Understand how Docvia processes documents securely while protecting user privacy.",
+    title: "How dowll Keeps Your Files Secure",
+    slug: "dowll-file-security",
+    description: "Understand how dowll processes documents securely while protecting user privacy.",
   },
   {
-    title: "How to Use Docvia Document Tools",
-    slug: "getting-started-with-docvia",
-    description: "A complete beginner guide to using Docvia online document processing tools.",
+    title: "How to Use dowll Document Tools",
+    slug: "getting-started-with-dowll",
+    description: "A complete beginner guide to using dowll online document processing tools.",
   }
 ];
 
@@ -233,7 +233,7 @@ export const detailedGuides = {
     title: "How to Convert PDF to JPG",
 
     description:
-      "Learn how to convert PDF documents into high-quality JPG images quickly and securely using Docvia.",
+      "Learn how to convert PDF documents into high-quality JPG images quickly and securely using dowll.",
 
     content: {
       introduction:
@@ -255,13 +255,13 @@ export const detailedGuides = {
       ],
 
       security:
-        "Docvia processes files securely and protects your documents during conversion.",
+        "dowll processes files securely and protects your documents during conversion.",
 
       faq: [
         {
           question: "Can I convert PDF to JPG for free?",
           answer:
-            "Yes, Docvia allows users to convert PDF files into JPG images easily."
+            "Yes, dowll allows users to convert PDF files into JPG images easily."
         },
         {
           question: "Are my PDF files stored?",
@@ -309,7 +309,7 @@ export const detailedGuides = {
         {
           question: "Does PDF compression reduce quality?",
           answer:
-            "Docvia optimizes PDFs while maintaining readable document quality."
+            "dowll optimizes PDFs while maintaining readable document quality."
         }
       ]
     },
@@ -323,7 +323,7 @@ export const detailedGuides = {
 
 export const faqData = [
   {
-    question: "Is Docvia free?",
+    question: "Is dowll free?",
     answer: "Yes, many core document tools are available for free without requiring registration."
   },
   {
@@ -400,7 +400,7 @@ export const cookiePolicyData = {
       icon: Info,
       content: [
         "Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work, or work more efficiently, as well as to provide information to the owners of the site.",
-        "At Docvia, we believe in minimal data footprint. We only use cookies that are necessary to provide you with our document processing services and to understand how our platform is used so we can improve it."
+        "At dowll, we believe in minimal data footprint. We only use cookies that are necessary to provide you with our document processing services and to understand how our platform is used so we can improve it."
       ]
     },
     {
@@ -423,14 +423,14 @@ export const cookiePolicyData = {
   ],
   cookieDetails: [
     {
-      name: "docvia_session",
+      name: "dowll_session",
       type: "Essential",
       duration: "Session",
       purpose: "Maintains active user session and authentication state.",
       typeClass: "bg-[#eef3fb] text-[#1c4794] dark:bg-blue-900/30 dark:text-blue-400"
     },
     {
-      name: "docvia_csrf",
+      name: "dowll_csrf",
       type: "Essential",
       duration: "2 Hours",
       purpose: "Prevents Cross-Site Request Forgery attacks.",
@@ -459,7 +459,7 @@ export const termsOfServiceData = [
     title: "1. Acceptance of Terms",
     icon: CheckCircle2,
     content: [
-      "By accessing or using the Docvia platform, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions, you must not access the service.",
+      "By accessing or using the dowll platform, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions, you must not access the service.",
       "These terms apply to all users, visitors, and others who access the service."
     ]
   },
@@ -468,7 +468,7 @@ export const termsOfServiceData = [
     title: "2. Description of Service",
     icon: Info,
     content: [
-      "Docvia provides a suite of online document processing tools including, but not limited to:"
+      "dowll provides a suite of online document processing tools including, but not limited to:"
     ],
     list: [
       "Merging and splitting PDF documents.",
@@ -484,7 +484,7 @@ export const termsOfServiceData = [
     title: "3. User Obligations",
     icon: ListOrdered,
     content: [
-      "As a user of Docvia, you agree to:"
+      "As a user of dowll, you agree to:"
     ],
     obligations: [
       { text: "Provide accurate and current information during registration.", icon: CheckCircle2, iconColor: "text-green-500" },
@@ -498,8 +498,8 @@ export const termsOfServiceData = [
     title: "4. Intellectual Property",
     icon: Shield,
     content: [
-      "The service and its original content, features, and functionality are and will remain the exclusive property of Docvia and its licensors.",
-      "You retain all rights to the documents you upload. Docvia claims no ownership over your processed files. Files are temporarily stored for processing and automatically deleted according to our Privacy Policy."
+      "The service and its original content, features, and functionality are and will remain the exclusive property of dowll and its licensors.",
+      "You retain all rights to the documents you upload. dowll claims no ownership over your processed files. Files are temporarily stored for processing and automatically deleted according to our Privacy Policy."
     ]
   },
   {
@@ -518,7 +518,7 @@ export const privacyPolicyData = [
     title: "1. Information Collection",
     icon: Book,
     content: [
-      "We believe the best way to protect your data is not to collect it in the first place. When you use Docvia, we collect only the absolute minimum information required to operate our service:"
+      "We believe the best way to protect your data is not to collect it in the first place. When you use dowll, we collect only the absolute minimum information required to operate our service:"
     ],
     list: [
       { label: "Account Information", text: "If you choose to create an account, we collect your email address and basic profile information." },
@@ -575,7 +575,7 @@ export const privacyPolicyData = [
       "If you have any questions or concerns about this Privacy Policy or our data practices, please contact our Data Protection Officer:"
     ],
     contactBox: {
-      email: "privacy@docvia.com",
+      email: "privacy@dowll.com",
       address: "123 Privacy Way, Suite 400, Tech District, CA 94107"
     }
   }

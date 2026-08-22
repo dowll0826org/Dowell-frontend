@@ -15,15 +15,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://docvia.com"),
+  metadataBase: new URL("https://dowll.com"),
   title: {
-    default: "Docvia - Secure Document Tools",
-    template: "%s | Docvia"
+    default: "dowll - Secure Document Tools",
+    template: "%s | dowll"
   },
   description:
-    "Convert, compress and manage documents online with Docvia. Fast, secure and easy-to-use PDF tools.",
+    "Convert, compress and manage documents online with dowll. Fast, secure and easy-to-use PDF tools.",
   keywords: [
-    "Docvia",
+    "dowll",
     "PDF converter",
     "PDF tools",
     "PDF to JPG",
@@ -34,20 +34,20 @@ export const metadata: Metadata = {
     "OCR",
     "Document processing"
   ],
-  authors: [{ name: "Docvia Team" }],
-  creator: "Docvia",
-  publisher: "Docvia",
+  authors: [{ name: "dowll Team" }],
+  creator: "dowll",
+  publisher: "dowll",
   openGraph: {
-    title: "Docvia - Secure Document Tools",
+    title: "dowll - Secure Document Tools",
     description: "Convert PDF, JPG, Word and documents easily online.",
-    url: "https://docvia.com",
-    siteName: "Docvia",
+    url: "https://dowll.com",
+    siteName: "dowll",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Docvia Document Tools"
+        alt: "dowll Document Tools"
       }
     ],
     locale: "en_US",
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Docvia - Secure Document Tools",
-    description: "Convert documents online securely with Docvia.",
-    creator: "@docvia",
+    title: "dowll - Secure Document Tools",
+    description: "Convert documents online securely with dowll.",
+    creator: "@dowll",
     images: ["/og-image.png"]
   },
   robots: {
@@ -83,8 +83,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              "name": "Docvia PDF Tools",
-              "url": "https://docvia.com",
+              "name": "dowll PDF Tools",
+              "url": "https://dowll.com",
               "applicationCategory": "DocumentApplication",
               "operatingSystem": "Web"
             })

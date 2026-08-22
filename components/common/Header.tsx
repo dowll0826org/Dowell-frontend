@@ -16,8 +16,8 @@ export default function Header() {
                 {/* Logo (Top Left) */}
                 <Link href="/" className="flex items-center shrink-0">
                     <Image
-                        src="/assets/Docvia_logo.png"
-                        alt="Docvia"
+                        src="/assets/dowll_logo.png"
+                        alt="dowll"
                         width={200}
                         height={60}
                         className="w-32 md:w-40 h-auto object-contain"
