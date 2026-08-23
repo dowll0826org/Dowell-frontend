@@ -34,5 +34,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 1.0,
   });
 
+  // Add static marketing, legal, and support pages
+  const staticRoutes = [
+    "/company/aboutus",
+    "/company/contact",
+    "/legal/privacy",
+    "/legal/terms",
+    "/product/features",
+    "/product/security",
+    "/resources/faq",
+    "/resources/guides",
+    "/resources/help-center"
+  ];
+
+  for (const route of staticRoutes) {
+    sitemapUrls.push({
+      url: `https://dowll.com${route}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    });
+  }
+
   return sitemapUrls;
 }

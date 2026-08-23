@@ -25,9 +25,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
+  const ogUrl = `/api/og?title=${encodeURIComponent(guide.title)}&desc=${encodeURIComponent(guide.description.slice(0, 100))}`;
+
   return {
     title: `${guide.title} | dowll`,
     description: guide.description,
+    openGraph: {
+      images: [
+        {
+          url: ogUrl,
+          width: 1200,
+          height: 630,
+        }
+      ]
+    },
+    twitter: {
+      images: [ogUrl]
+    }
   };
 }
 
@@ -90,8 +104,24 @@ export default async function GuidePage({
       }
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": guide.title,
+    "description": guide.description,
+    "step": guide.content.steps.map((step: string, idx: number) => ({
+      "@type": "HowToStep",
+      "position": idx + 1,
+      "text": step
+    }))
+  };
+
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors duration-200">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero Section */}
       <div className="bg-[#131538] text-white pt-12 pb-48 px-6 relative">
         <div className="container mx-auto max-w-6xl relative z-10 flex flex-col lg:flex-row gap-8 justify-between items-start">
