@@ -74,7 +74,7 @@ export default function SupportedFormats() {
 
   return (
     <section className="py-20 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 overflow-hidden transition-colors duration-200">
-      <div className="container mx-auto px-8 lg:px-16 max-w-7xl mb-12">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16 max-w-7xl mb-12">
         <h2 className="text-center text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
           Supported File Formats
         </h2>
@@ -87,7 +87,7 @@ export default function SupportedFormats() {
       <div className="relative flex overflow-hidden group">
 
         {/* We use two sets of elements for a seamless loop */}
-        <div className="animate-marquee flex items-center gap-16 md:gap-24 whitespace-nowrap py-4 pr-16 md:pr-24 min-w-full justify-around">
+        <div className="animate-marquee flex items-center gap-16 md:gap-24 whitespace-nowrap py-4 pr-16 md:pr-24 min-w-full shrink-0 justify-around">
           {formats.map((format, idx) => (
             <div key={idx} className="flex items-center gap-3 font-bold text-gray-800 dark:text-gray-200 text-xl cursor-default transition-transform hover:scale-110">
               {format.icon}
@@ -96,7 +96,7 @@ export default function SupportedFormats() {
           ))}
         </div>
 
-        <div className="animate-marquee flex items-center gap-16 md:gap-24 whitespace-nowrap py-4 pr-16 md:pr-24 min-w-full justify-around" aria-hidden="true">
+        <div className="animate-marquee flex items-center gap-16 md:gap-24 whitespace-nowrap py-4 pr-16 md:pr-24 min-w-full shrink-0 justify-around" aria-hidden="true">
           {formats.map((format, idx) => (
             <div key={`dup-${idx}`} className="flex items-center gap-3 font-bold text-gray-800 dark:text-gray-200 text-xl cursor-default transition-transform hover:scale-110">
               {format.icon}

@@ -93,7 +93,7 @@ export default function AboutUsPage() {
         </section>
 
         {/* CTA Banner */}
-        <section className="bg-[#0f54c9] rounded-3xl p-10 md:p-16 text-center text-white">
+        {/* <section className="bg-[#0f54c9] rounded-3xl p-10 md:p-16 text-center text-white">
           <div className="max-w-2xl mx-auto space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
               Ready to build the future of documents?
@@ -108,7 +108,7 @@ export default function AboutUsPage() {
               </Link>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );

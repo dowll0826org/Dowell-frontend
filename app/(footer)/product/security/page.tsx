@@ -32,10 +32,10 @@ export default function SecurityPage() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-20">
-          <Link href="#" className="bg-[#0f3482] hover:bg-[#0c2a68] text-white font-medium py-3 px-6 rounded-lg transition-colors text-sm shadow-sm">
+          <Link href="/" className="bg-[#0f3482] hover:bg-[#0c2a68] text-white font-medium py-3 px-6 rounded-lg transition-colors text-sm shadow-sm">
             Start Processing Securely
           </Link>
-          <Link href="/resources/guides" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-[#0f3482] dark:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-700 font-medium py-3 px-6 rounded-lg transition-colors text-sm shadow-sm">
+          <Link href="/legal/privacy" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-[#0f3482] dark:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-700 font-medium py-3 px-6 rounded-lg transition-colors text-sm shadow-sm">
             Learn more about our Privacy Policy
           </Link>
         </div>

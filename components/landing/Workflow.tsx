@@ -1,7 +1,7 @@
 export default function Workflow() {
   return (
     <section className="py-20 lg:py-28 bg-[#f4f6fb] dark:bg-gray-900/50 relative overflow-hidden transition-colors duration-200">
-      <div className="container mx-auto px-8 lg:px-16 max-w-7xl relative">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16 max-w-7xl relative">
         
         {/* Header */}
         <div className="text-center mb-16 lg:mb-24">

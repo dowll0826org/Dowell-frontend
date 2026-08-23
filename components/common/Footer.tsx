@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <footer className="bg-[#f5f6fb] dark:bg-gray-900 pt-16 pb-8 border-t border-gray-200 dark:border-gray-800 transition-colors duration-200">
-            <div className="container mx-auto px-8 lg:px-16 max-w-7xl">
+            <div className="container mx-auto px-4 sm:px-8 lg:px-16 max-w-7xl">
 
                 {/* Top Section */}
                 <div className="flex flex-col lg:flex-row gap-12 mb-16">
@@ -33,7 +33,7 @@ export default function Footer() {
                         <div>
                             <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Tools</h3>
                             <ul className="space-y-3">
-                                <li><Link href="/pdf-to-img" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">PDF to JPG</Link></li>
+                                <li><Link href="/pdf-to-jpg" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">PDF to JPG</Link></li>
                                 <li><Link href="/jpg-to-pdf" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">JPG to PDF</Link></li>
                                 <li><Link href="/merge-pdf" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Merge PDF</Link></li>
                                 <li><Link href="/compress-pdf" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Compress PDF</Link></li>
@@ -66,7 +66,7 @@ export default function Footer() {
                             <ul className="space-y-3">
                                 <li><Link href="/legal/privacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
                                 <li><Link href="/legal/terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Terms of Service</Link></li>
-                                <li><Link href="/legal/cookie" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Cookie Policy</Link></li>
+                                {/* <li><Link href="/legal/cookie" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Cookie Policy</Link></li> */}
                             </ul>
                         </div>
 

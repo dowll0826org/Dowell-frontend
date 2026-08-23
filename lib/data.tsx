@@ -1,137 +1,31 @@
 import { FileText, FileSpreadsheet, Lock, Cpu, EyeOff, Trash, Presentation, Image as ImageIcon, Archive, BookOpen, Database, Code, Layers, Scissors, Minimize2, Repeat, FileEdit, ArrowRight, CheckCircle2, Info, ListOrdered, Shield, Scale, XCircle, Book, User, Mail, Cookie, Triangle, Table } from "lucide-react";
 
-export const summaryGuides = [
-  {
-    title: "How to Convert PDF to JPG",
-    slug: "convert-pdf-to-jpg",
-    description: "Learn how to convert PDF documents into high-quality JPG images quickly and easily.",
-  },
-  {
-    title: "How to Convert JPG to PDF",
-    slug: "convert-jpg-to-pdf",
-    description: "Convert multiple JPG images into a single PDF document while maintaining image quality.",
-  },
-  {
-    title: "How to Convert PNG to PDF",
-    slug: "convert-png-to-pdf",
-    description: "Create professional PDF documents from PNG images with a simple conversion process.",
-  },
-  {
-    title: "How to Convert PDF to PNG",
-    slug: "convert-pdf-to-png",
-    description: "Convert PDF pages into clear PNG images for easy sharing and editing.",
-  },
-  {
-    title: "How to Merge PDF Files",
-    slug: "merge-pdf-files",
-    description: "Combine multiple PDF documents into one organized file without losing formatting.",
-  },
-  {
-    title: "How to Split PDF Files",
-    slug: "split-pdf-files",
-    description: "Split large PDF documents into smaller files or extract specific pages easily.",
-  },
-  {
-    title: "How to Compress PDF Files",
-    slug: "compress-pdf-files",
-    description: "Reduce PDF file size while maintaining document quality for faster sharing.",
-  },
-  {
-    title: "How to Edit PDF Documents",
-    slug: "edit-pdf-documents",
-    description: "Learn how to modify PDF files by adding text, annotations, and changes.",
-  },
-  {
-    title: "How to Add Page Numbers to PDF",
-    slug: "add-page-numbers-to-pdf",
-    description: "Add professional page numbering to your PDF documents automatically.",
-  },
-  {
-    title: "How to Rotate PDF Pages",
-    slug: "rotate-pdf-pages",
-    description: "Rotate PDF pages and fix document orientation quickly.",
-  },
-  {
-    title: "How to Remove PDF Pages",
-    slug: "remove-pdf-pages",
-    description: "Remove unwanted pages from PDF documents and keep only required content.",
-  },
-  {
-    title: "How to Protect PDF with Password",
-    slug: "protect-pdf-with-password",
-    description: "Secure your PDF documents by adding password protection and access control.",
-  },
-  {
-    title: "How to Unlock PDF Files",
-    slug: "unlock-pdf-files",
-    description: "Remove PDF restrictions and regain access to your documents.",
-  },
-  {
-    title: "How to Convert Word to PDF",
-    slug: "convert-word-to-pdf",
-    description: "Convert DOC and DOCX files into professional PDF documents.",
-  },
-  {
-    title: "How to Convert PDF to Word",
-    slug: "convert-pdf-to-word",
-    description: "Convert PDF documents into editable Word files while preserving formatting.",
-  },
-  {
-    title: "How to Convert Excel to PDF",
-    slug: "convert-excel-to-pdf",
-    description: "Convert Excel spreadsheets into shareable PDF documents.",
-  },
-  {
-    title: "How to Convert PowerPoint to PDF",
-    slug: "convert-powerpoint-to-pdf",
-    description: "Convert presentations into PDF format for easy sharing.",
-  },
-  {
-    title: "How to Extract Images from PDF",
-    slug: "extract-images-from-pdf",
-    description: "Extract images from PDF documents and save them separately.",
-  },
-  {
-    title: "How to Extract Text from PDF",
-    slug: "extract-text-from-pdf",
-    description: "Extract readable text from PDF documents quickly using document processing tools.",
-  },
-  {
-    title: "How OCR Works on Documents",
-    slug: "ocr-document-guide",
-    description: "Understand how OCR technology extracts text from scanned documents and images.",
-  },
-  {
-    title: "How to Convert Images Online",
-    slug: "image-conversion-guide",
-    description: "Convert images between different formats including JPG, PNG, and WebP.",
-  },
-  {
-    title: "How to Compress Images Without Losing Quality",
-    slug: "compress-images-without-quality-loss",
-    description: "Reduce image file size while keeping images clear and optimized.",
-  },
-  {
-    title: "How to Resize Images Online",
-    slug: "resize-images-online",
-    description: "Resize images for websites, documents, and social media platforms.",
-  },
-  {
-    title: "Supported File Formats in dowll",
-    slug: "supported-file-formats",
-    description: "Learn about all supported document, image, and file formats available in dowll.",
-  },
-  {
-    title: "How dowll Keeps Your Files Secure",
-    slug: "dowll-file-security",
-    description: "Understand how dowll processes documents securely while protecting user privacy.",
-  },
-  {
-    title: "How to Use dowll Document Tools",
-    slug: "getting-started-with-dowll",
-    description: "A complete beginner guide to using dowll online document processing tools.",
-  }
-];
+import { sidebarItems, SidebarItem } from "./tools.data";
+
+const extractTools = (items: SidebarItem[]) => {
+  let tools: { title: string; slug: string; description: string }[] = [];
+  items.forEach(item => {
+    if (item.children) {
+      tools = tools.concat(extractTools(item.children));
+    }
+    if (item.slug && item.metadata) {
+      // Clean up the title a bit (remove trailing "Online" or " ")
+      let title = item.metadata.title.trim();
+      if (title.endsWith("Online")) {
+        title = title.slice(0, -6).trim();
+      }
+
+      tools.push({
+        title: title,
+        slug: item.slug,
+        description: item.metadata.description,
+      });
+    }
+  });
+  return tools;
+};
+
+export const summaryGuides = extractTools(sidebarItems);
 
 export const supportedFormats = [
   {
@@ -168,36 +62,36 @@ export const supportedFormats = [
       "AVIF (.avif)", "ICO (.ico)"
     ]
   },
-  {
-    category: "Archive Formats",
-    icon: <Archive size={18} className="text-yellow-600 dark:text-yellow-400" />,
-    items: [
-      "ZIP (.zip)", "RAR (.rar)", "7-Zip (.7z)", "TAR (.tar)", "GZIP (.gz)"
-    ]
-  },
-  {
-    category: "Ebook Formats",
-    icon: <BookOpen size={18} className="text-indigo-600 dark:text-indigo-400" />,
-    items: [
-      "EPUB (.epub)", "MOBI (.mobi)", "AZW (.azw)", "AZW3 (.azw3)"
-    ]
-  },
-  {
-    category: "Data Formats",
-    icon: <Database size={18} className="text-teal-600 dark:text-teal-400" />,
-    items: [
-      "JSON (.json)", "YAML (.yaml, .yml)", "CSV (.csv)", "XML (.xml)"
-    ]
-  },
-  {
-    category: "Code / Developer Formats",
-    icon: <Code size={18} className="text-gray-600 dark:text-gray-400" />,
-    items: [
-      "JavaScript (.js)", "TypeScript (.ts)", "JSX (.jsx)", "TSX (.tsx)",
-      "Python (.py)", "Java (.java)", "C (.c)", "C++ (.cpp)", "C# (.cs)",
-      "PHP (.php)", "SQL (.sql)", "Shell Script (.sh)"
-    ]
-  }
+  // {
+  //   category: "Archive Formats",
+  //   icon: <Archive size={18} className="text-yellow-600 dark:text-yellow-400" />,
+  //   items: [
+  //     "ZIP (.zip)", "RAR (.rar)", "7-Zip (.7z)", "TAR (.tar)", "GZIP (.gz)"
+  //   ]
+  // },
+  // {
+  //   category: "Ebook Formats",
+  //   icon: <BookOpen size={18} className="text-indigo-600 dark:text-indigo-400" />,
+  //   items: [
+  //     "EPUB (.epub)", "MOBI (.mobi)", "AZW (.azw)", "AZW3 (.azw3)"
+  //   ]
+  // },
+  // {
+  //   category: "Data Formats",
+  //   icon: <Database size={18} className="text-teal-600 dark:text-teal-400" />,
+  //   items: [
+  //     "JSON (.json)", "YAML (.yaml, .yml)", "CSV (.csv)", "XML (.xml)"
+  //   ]
+  // },
+  // {
+  //   category: "Code / Developer Formats",
+  //   icon: <Code size={18} className="text-gray-600 dark:text-gray-400" />,
+  //   items: [
+  //     "JavaScript (.js)", "TypeScript (.ts)", "JSX (.jsx)", "TSX (.tsx)",
+  //     "Python (.py)", "Java (.java)", "C (.c)", "C++ (.cpp)", "C# (.cs)",
+  //     "PHP (.php)", "SQL (.sql)", "Shell Script (.sh)"
+  //   ]
+  // }
 ];
 
 export const conversionTools = [
@@ -216,20 +110,20 @@ export const conversionTools = [
     inputs: ["DOC", "DOCX", "TXT", "RTF", "ODT", "HTML"],
     outputs: ["DOCX -> PDF", "TXT -> PDF", "HTML -> PDF"]
   },
-  {
-    title: "Spreadsheet Support",
-    inputs: ["XLS", "XLSX", "CSV"],
-    outputs: ["Excel -> PDF", "CSV -> XLSX", "XLSX -> CSV"]
-  },
-  {
-    title: "Presentation Support",
-    inputs: ["PPT", "PPTX", "ODP"],
-    outputs: ["PPT -> PDF", "PPTX -> PDF"]
-  }
+  // {
+  //   title: "Spreadsheet Support",
+  //   inputs: ["XLS", "XLSX", "CSV"],
+  //   outputs: ["Excel -> PDF", "CSV -> XLSX", "XLSX -> CSV"]
+  // },
+  // {
+  //   title: "Presentation Support",
+  //   inputs: ["PPT", "PPTX", "ODP"],
+  //   outputs: ["PPT -> PDF", "PPTX -> PDF"]
+  // }
 ];
 
 export const detailedGuides = {
-  "convert-pdf-to-jpg": {
+  "pdf-to-jpg": {
     title: "How to Convert PDF to JPG",
 
     description:
@@ -278,7 +172,7 @@ export const detailedGuides = {
     ]
   },
 
-  "compress-pdf-files": {
+  "compress-pdf": {
     title: "How to Compress PDF Files",
 
     description:
@@ -357,6 +251,7 @@ export const featuresCardsData = [
     description: 'Combine multiple PDFs into a single, unified document instantly. Perfect for consolidating reports or presentations.',
     icon: Layers,
     isWide: false,
+    href: '/merge-pdf'
   },
   {
     id: 2,
@@ -364,6 +259,7 @@ export const featuresCardsData = [
     description: 'Extract specific pages or split large documents into smaller, manageable files with precision control.',
     icon: Scissors,
     isWide: false,
+    href: '/split-pdf'
   },
   {
     id: 3,
@@ -371,6 +267,7 @@ export const featuresCardsData = [
     description: 'Reduce file size without compromising quality. Essential for email attachments and cloud storage optimization.',
     icon: Minimize2,
     isWide: false,
+    href: '/compress-pdf'
   },
   {
     id: 4,
@@ -378,6 +275,7 @@ export const featuresCardsData = [
     description: 'Seamlessly translate documents between PDF, Word, Excel, PowerPoint, and high-quality image formats (JPG, PNG). Maintain formatting across all conversions.',
     icon: Repeat,
     isWide: true,
+    href: '/pdf-to-word'
   },
   {
     id: 5,
@@ -385,6 +283,7 @@ export const featuresCardsData = [
     description: 'Add text, shapes, highlights, and comments directly to your PDFs right in the browser.',
     icon: FileEdit,
     isWide: false,
+    href: '/edit-pdf'
   }
 ];
 
@@ -523,7 +422,7 @@ export const privacyPolicyData = [
     list: [
       { label: "Account Information", text: "If you choose to create an account, we collect your email address and basic profile information." },
       { label: "Technical Telemetry", text: "Anonymized usage statistics (e.g., features used, browser type) to help us improve platform stability. This data cannot be traced back to individual users." },
-      { label: "Billing Information", text: "Processed securely by our third-party payment providers (Stripe). We do not store your credit card details." }
+      // { label: "Billing Information", text: "Processed securely by our third-party payment providers (Stripe). We do not store your credit card details." }
     ]
   },
   {
@@ -576,7 +475,7 @@ export const privacyPolicyData = [
     ],
     contactBox: {
       email: "privacy@dowll.com",
-      address: "123 Privacy Way, Suite 400, Tech District, CA 94107"
+      // address: "123 Privacy Way, Suite 400, Tech District, CA 94107"
     }
   }
 ];

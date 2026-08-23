@@ -139,9 +139,9 @@ export default function ContactUsPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Looking for quick answers?</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                Check out our comprehensive Help Center for API documentation, setup guides, and troubleshooting.
+                Check out our comprehensive Help Center for  setup guides, and troubleshooting.
               </p>
-              <Link href="/help" className="inline-flex items-center space-x-2 text-[#0f54c9] dark:text-blue-400 font-semibold text-sm hover:underline">
+              <Link href="/resources/help-center" className="inline-flex items-center space-x-2 text-[#0f54c9] dark:text-blue-400 font-semibold text-sm hover:underline">
                 <span>Visit Help Center</span>
                 <ArrowRight size={16} />
               </Link>

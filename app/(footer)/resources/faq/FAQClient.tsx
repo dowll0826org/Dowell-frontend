@@ -63,7 +63,7 @@ export default function FAQClient() {
             </p>
           </div>
           <Link
-            href="/contact"
+            href="/company/contact"
             className="shrink-0 inline-flex items-center gap-2.5 bg-[#2563eb] hover:bg-blue-600 text-white font-medium px-5 py-3 rounded-xl transition-all text-sm shadow-md hover:shadow-lg"
           >
             <MessageSquare size={16} />

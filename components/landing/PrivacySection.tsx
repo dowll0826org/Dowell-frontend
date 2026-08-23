@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function PrivacySection() {
   return (
     <section className="bg-[#16171b] dark:bg-black py-12 lg:py-16 transition-colors duration-200">
-      <div className="container mx-auto px-8 lg:px-16 max-w-7xl">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center">
 
           {/* Left Content */}
