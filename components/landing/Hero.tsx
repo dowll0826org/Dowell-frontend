@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero() {
     return (
         <section className="bg-white dark:bg-gray-900 py-16 lg:py-24 overflow-hidden transition-colors duration-200">
-            <div className="container mx-auto px-8 lg:px-16 max-w-7xl">
+            <div className="container mx-auto px-4 sm:px-8 lg:px-16 max-w-7xl">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
 
                     {/* Left Content */}
@@ -19,7 +19,7 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-5xl lg:text-[4.5rem] font-extrabold text-gray-900 dark:text-white leading-[1.05] mb-8 tracking-tight">
+                        <h1 className="text-4xl sm:text-5xl lg:text-[4.5rem] font-extrabold text-gray-900 dark:text-white leading-[1.05] mb-8 tracking-tight">
                             One Platform.<br />
                             <span className="text-[#005ee6] dark:text-blue-500">Every Document Tool.</span>
                         </h1>

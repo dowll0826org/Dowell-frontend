@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  Search,
   Image as ImageIcon,
   Layers,
   Minimize2,
@@ -9,6 +8,7 @@ import {
   MessageSquare
 } from "lucide-react";
 import type { Metadata } from "next";
+import SearchTools from "@/components/common/SearchTools";
 
 export const metadata: Metadata = {
   title: "Help Center | dowll",
@@ -28,13 +28,8 @@ export default function Resources() {
             Find answers, tutorials, and technical documentation to get the most out of dowll.
           </p>
 
-          <div className="relative max-w-2xl mx-auto">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
-            <input
-              type="text"
-              placeholder="Search for articles, guides, or error codes..."
-              className="w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-4 py-3.5 text-sm text-gray-700 dark:text-gray-200 outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all"
-            />
+          <div className="max-w-2xl mx-auto mt-4">
+            <SearchTools />
           </div>
         </div>
       </div>
@@ -110,19 +105,13 @@ export default function Resources() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <Link
-              href="/contact"
+              href="/company/contact"
               className="inline-flex items-center gap-2.5 bg-[#0e3082] hover:bg-[#0a2366] text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm shadow-md"
             >
               <Headphones size={16} />
               Contact Support
             </Link>
-            <Link
-              href="/community"
-              className="inline-flex items-center gap-2.5 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 font-medium px-5 py-2.5 rounded-lg transition-colors text-sm shadow-sm border border-transparent dark:border-gray-600 hover:border-gray-200"
-            >
-              <MessageSquare size={16} className="text-gray-400" />
-              Community Forum
-            </Link>
+
           </div>
         </div>
 

@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
                     <div className="bg-[#f8fafc] dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700 rounded-xl p-6 mt-6">
                       <div className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                         <p><strong className="text-gray-900 dark:text-white">Email:</strong> {section.contactBox.email}</p>
-                        <p><strong className="text-gray-900 dark:text-white">Address:</strong> {section.contactBox.address}</p>
+                        {/* <p><strong className="text-gray-900 dark:text-white">Address:</strong> {section.contactBox.address}</p> */}
                       </div>
                     </div>
                   )}
