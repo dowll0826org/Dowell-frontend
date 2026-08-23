@@ -75,35 +75,45 @@ export default function ConvertDoc() {
             const link = document.createElement('a');
             link.href = url;
             
-            // Generate filename based on original file name
-            const baseName = file.name.substring(0, file.name.lastIndexOf('.')) || file.name;
-            let ext = '';
-            
-            if (currentConfig.direction === 'to-pdf') {
-                ext = '.pdf';
-            } else {
-                if (contentTypeStr.includes('zip')) {
-                    ext = '.zip';
-                } else if (contentTypeStr.includes('jpeg') || contentTypeStr.includes('jpg')) {
-                    ext = '.jpg';
-                } else if (currentConfig.type === 'word') {
-                    ext = '.docx';
-                } else if (currentConfig.type === 'excel') {
-                    ext = '.xlsx';
-                } else if (currentConfig.type === 'powerpoint') {
-                    ext = '.pptx';
-                } else {
-                    ext = `.${currentConfig.type}`;
+            // Try to extract filename from Content-Disposition header first
+            let filename = '';
+            if (result.contentDisposition) {
+                const filenameMatch = result.contentDisposition.match(/filename="?([^"]+)"?/);
+                if (filenameMatch && filenameMatch[1]) {
+                    filename = filenameMatch[1];
                 }
             }
-            
-            const filename = `${baseName}${ext}`;
+
+            // Fallback to generating filename based on original file name
+            if (!filename) {
+                const baseName = file.name.substring(0, file.name.lastIndexOf('.')) || file.name;
+                let ext = '';
+                
+                if (currentConfig.direction === 'to-pdf') {
+                    ext = '.pdf';
+                } else {
+                    if (contentTypeStr.includes('zip')) {
+                        ext = '.zip';
+                    } else if (contentTypeStr.includes('jpeg') || contentTypeStr.includes('jpg')) {
+                        ext = '.jpg';
+                    } else if (currentConfig.type === 'word') {
+                        ext = '.docx';
+                    } else if (currentConfig.type === 'excel') {
+                        ext = '.xlsx';
+                    } else if (currentConfig.type === 'powerpoint') {
+                        ext = '.pptx';
+                    } else {
+                        ext = `.${currentConfig.type}`;
+                    }
+                }
+                filename = `${baseName}${ext}`;
+            }
 
             link.setAttribute('download', filename);
             document.body.appendChild(link);
             link.click();
             link.remove();
-            window.URL.revokeObjectURL(url);
+            setTimeout(() => window.URL.revokeObjectURL(url), 100);
             
             toast.success('Conversion successful!');
             setFile(null);
