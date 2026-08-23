@@ -16,6 +16,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dowll.com"),
+  manifest: '/manifest.json',
+  alternates: {
+    canonical: "./",
+  },
   title: {
     default: "dowll - Secure Document Tools",
     template: "%s | dowll"
@@ -44,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "dowll",
     images: [
       {
-        url: "/og-image.png",
+        url: "/api/og",
         width: 1200,
         height: 630,
         alt: "dowll Document Tools"
@@ -58,7 +62,7 @@ export const metadata: Metadata = {
     title: "dowll - Secure Document Tools",
     description: "Convert documents online securely with dowll.",
     creator: "@dowll",
-    images: ["/og-image.png"]
+    images: ["/api/og"]
   },
   robots: {
     index: true,

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FAQClient from "./FAQClient";
+import { faqData } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions | dowll",
@@ -7,5 +8,26 @@ export const metadata: Metadata = {
 };
 
 export default function FAQ() {
-  return <FAQClient />;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqData.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer,
+      },
+    })),
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <FAQClient />
+    </>
+  );
 }
