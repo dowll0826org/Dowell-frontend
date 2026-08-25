@@ -1,13 +1,68 @@
-import React from 'react';
-import { Mail, Megaphone, HelpCircle, Send, ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+'use client';
 
-export const metadata = {
-  title: "Contact Us | dowll",
-  description: "Get in touch with the dowll team."
-};
+import React, { useState } from 'react';
+import { Mail, Megaphone, HelpCircle, Send, ArrowRight, Loader2 } from 'lucide-react';
+import Link from 'next/link';
+import toast from 'react-hot-toast';
+import { submitContactFormApi } from '@/app/(footer)/company/contact/api.contact';
 
 export default function ContactUsPage() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    otherSubject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.id]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error('Please fill in all required fields.');
+      return;
+    }
+
+    let finalSubject = formData.subject;
+    if (formData.subject === 'other') {
+      if (!formData.otherSubject.trim()) {
+        toast.error('Please specify the subject.');
+        return;
+      }
+      finalSubject = formData.otherSubject;
+    }
+
+    setIsSubmitting(true);
+    try {
+      await submitContactFormApi({
+        name: formData.name,
+        email: formData.email,
+        subject: finalSubject,
+        message: formData.message
+      });
+      toast.success('Your message has been sent successfully!');
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        otherSubject: '',
+        message: ''
+      });
+    } catch (error: any) {
+      toast.error(error.message || 'Failed to send message. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <main className="flex-grow flex flex-col bg-[#fafbfe] dark:bg-gray-900 transition-colors min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 w-full">
@@ -26,26 +81,32 @@ export default function ContactUsPage() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2 bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-10 shadow-sm border border-gray-100 dark:border-gray-700">
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="block text-sm font-semibold text-gray-900 dark:text-gray-200">
-                    Name
+                    Name <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
                     id="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                     placeholder="Jane Doe"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-colors"
                   />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="block text-sm font-semibold text-gray-900 dark:text-gray-200">
-                    Work Email
+                    Work Email <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="email"
                     id="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     placeholder="jane@company.com"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-colors"
                   />
@@ -59,8 +120,9 @@ export default function ContactUsPage() {
                 <div className="relative">
                   <select
                     id="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 appearance-none transition-colors"
-                    defaultValue=""
                   >
                     <option value="" disabled>Select a topic...</option>
                     <option value="support">General Support</option>
@@ -74,13 +136,33 @@ export default function ContactUsPage() {
                 </div>
               </div>
 
+              {formData.subject === 'other' && (
+                <div className="space-y-2 animate-in fade-in slide-in-from-top-2 duration-300">
+                  <label htmlFor="otherSubject" className="block text-sm font-semibold text-gray-900 dark:text-gray-200">
+                    Please specify <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="otherSubject"
+                    value={formData.otherSubject}
+                    onChange={handleChange}
+                    required
+                    placeholder="Briefly describe your topic"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-colors"
+                  />
+                </div>
+              )}
+
               <div className="space-y-2">
                 <label htmlFor="message" className="block text-sm font-semibold text-gray-900 dark:text-gray-200">
-                  Message
+                  Message <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="message"
                   rows={5}
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                   placeholder="How can we help you?"
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-colors resize-none"
                 ></textarea>
@@ -89,10 +171,20 @@ export default function ContactUsPage() {
               <div>
                 <button
                   type="submit"
-                  className="inline-flex items-center space-x-2 bg-[#0f54c9] text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors"
+                  disabled={isSubmitting}
+                  className="inline-flex items-center space-x-2 bg-[#0f54c9] text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  <span>Send Message</span>
-                  <Send size={18} />
+                  {isSubmitting ? (
+                    <>
+                      <span>Sending...</span>
+                      <Loader2 size={18} className="animate-spin" />
+                    </>
+                  ) : (
+                    <>
+                      <span>Send Message</span>
+                      <Send size={18} />
+                    </>
+                  )}
                 </button>
               </div>
             </form>
@@ -139,7 +231,7 @@ export default function ContactUsPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Looking for quick answers?</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                Check out our comprehensive Help Center for  setup guides, and troubleshooting.
+                Check out our comprehensive Help Center for setup guides, and troubleshooting.
               </p>
               <Link href="/resources/help-center" className="inline-flex items-center space-x-2 text-[#0f54c9] dark:text-blue-400 font-semibold text-sm hover:underline">
                 <span>Visit Help Center</span>

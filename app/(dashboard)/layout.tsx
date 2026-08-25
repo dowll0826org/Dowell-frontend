@@ -208,7 +208,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       <div className="flex flex-row flex-1 w-full">
         <Sidebar />
 
-        <main className="flex-1 flex flex-col min-h-[calc(100vh-4rem)] bg-[#f8fafc] dark:bg-gray-950">
+        <main className="flex-1 flex flex-col min-w-0 min-h-[calc(100vh-4rem)] bg-[#f8fafc] dark:bg-gray-950">
           <div className="flex-1 w-full max-w-[1600px] mx-auto p-4 md:p-8 flex flex-col xl:flex-row gap-8">
 
             {/* Main Content Area */}

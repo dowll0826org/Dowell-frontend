@@ -144,7 +144,7 @@ export default function ConvertDoc() {
                         onDragOver={handleDragOver}
                         onDragLeave={handleDragLeave}
                         onClick={() => fileInputRef.current?.click()}
-                        className={`w-full max-w-3xl rounded-3xl border-2 border-dashed flex flex-col items-center justify-center p-12 text-center cursor-pointer transition-all duration-300 ${
+                        className={`w-full max-w-3xl rounded-3xl border-2 border-dashed flex flex-col items-center justify-center p-6 md:p-12 text-center cursor-pointer transition-all duration-300 ${
                             isDragging 
                                 ? 'border-[#3b5b9c] bg-[#3b5b9c]/5' 
                                 : 'border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-900/50'
@@ -173,7 +173,7 @@ export default function ConvertDoc() {
                         />
                     </div>
                 ) : isProcessing ? (
-                    <div className="bg-[#f8f9fb] dark:bg-gray-900 w-full max-w-2xl rounded-2xl p-12 flex flex-col items-center text-center shadow-sm border border-gray-100 dark:border-gray-800">
+                    <div className="bg-[#f8f9fb] dark:bg-gray-900 w-full max-w-2xl rounded-2xl p-6 md:p-12 flex flex-col items-center text-center shadow-sm border border-gray-100 dark:border-gray-800">
                         <div className="relative w-24 h-24 mb-8">
                             <div className="absolute inset-0 border-4 border-gray-200 dark:border-gray-700 rounded-full"></div>
                             <div className="absolute inset-0 border-4 border-[#3b5b9c] border-t-transparent border-r-transparent rounded-full animate-spin"></div>
@@ -190,37 +190,37 @@ export default function ConvertDoc() {
                         </p>
                     </div>
                 ) : (
-                    <div className="w-full max-w-3xl rounded-3xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-8 shadow-sm">
-                        <div className="flex items-center justify-between mb-8 pb-6 border-b border-gray-100 dark:border-gray-800">
-                            <div className="flex items-center gap-4">
-                                <div className="w-16 h-16 bg-blue-50 dark:bg-blue-900/20 rounded-2xl flex items-center justify-center">
-                                    <FileText size={28} className="text-blue-600 dark:text-blue-400" />
+                    <div className="w-full max-w-3xl rounded-3xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6 md:p-8 shadow-sm">
+                        <div className="flex items-center justify-between gap-4 mb-8 pb-6 border-b border-gray-100 dark:border-gray-800">
+                            <div className="flex items-center gap-4 flex-1 min-w-0">
+                                <div className="w-12 h-12 md:w-16 md:h-16 shrink-0 bg-blue-50 dark:bg-blue-900/20 rounded-2xl flex items-center justify-center">
+                                    <FileText className="w-6 h-6 md:w-8 md:h-8 text-blue-600 dark:text-blue-400" />
                                 </div>
-                                <div className="text-left">
-                                    <h3 className="font-bold text-gray-900 dark:text-white text-lg line-clamp-1">{file.name}</h3>
-                                    <p className="text-sm text-gray-500">
+                                <div className="text-left flex-1 min-w-0">
+                                    <h3 className="font-bold text-gray-900 dark:text-white text-base md:text-lg truncate">{file.name}</h3>
+                                    <p className="text-xs md:text-sm text-gray-500 truncate">
                                         Ready to convert to {currentConfig.direction === 'to-pdf' ? 'PDF' : currentConfig.type.toUpperCase()}
                                     </p>
                                 </div>
                             </div>
                             <button 
                                 onClick={() => setFile(null)}
-                                className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
+                                className="p-2 shrink-0 text-gray-400 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
                             >
                                 <X size={20} />
                             </button>
                         </div>
                         
-                        <div className="flex justify-end gap-3 mt-8">
+                        <div className="flex flex-col-reverse sm:flex-row justify-end gap-3 mt-6 md:mt-8">
                             <button 
                                 onClick={() => setFile(null)}
-                                className="px-6 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                                className="w-full sm:w-auto px-6 py-3 sm:py-2.5 rounded-xl sm:rounded-lg border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                             >
                                 Cancel
                             </button>
                             <button 
                                 onClick={handleConvert}
-                                className="bg-[#1b4ba1] hover:bg-[#143a7e] text-white px-8 py-2.5 rounded-lg font-semibold shadow-md transition-colors flex items-center gap-2"
+                                className="w-full sm:w-auto bg-[#1b4ba1] hover:bg-[#143a7e] text-white px-8 py-3 sm:py-2.5 rounded-xl sm:rounded-lg font-semibold shadow-md transition-colors flex items-center justify-center gap-2"
                             >
                                 <RefreshCw size={18} /> Convert Now
                             </button>
