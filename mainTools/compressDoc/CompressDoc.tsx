@@ -187,7 +187,7 @@ export default function CompressDoc() {
     };
 
     return (
-        <div className="max-w-6xl mx-auto p-6 md:p-8 space-y-8 pb-12">
+        <div className="max-w-6xl mx-auto p-4 sm:p-6 md:p-8 space-y-6 md:space-y-8 pb-12">
             <input
                 type="file"
                 accept={currentConfig.accept}
@@ -235,16 +235,16 @@ export default function CompressDoc() {
                 <div className="flex flex-col lg:flex-row gap-6">
 
                     {/* Left Panel (Controls) */}
-                    <div className="w-full lg:w-[380px] flex-shrink-0 flex flex-col gap-4">
+                    <div className="w-full lg:w-[380px] flex-shrink-0 flex flex-col gap-4 min-w-0">
 
                         {/* File Card */}
                         <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-4 shadow-sm flex items-center justify-between relative overflow-hidden">
                             <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#0f3b90]"></div>
-                            <div className="flex items-center gap-4 ml-2">
-                                <div className="bg-blue-50 dark:bg-blue-900/30 p-2.5 rounded-lg text-[#0f3b90] dark:text-blue-400">
+                            <div className="flex items-center gap-3 sm:gap-4 ml-2 min-w-0 flex-1">
+                                <div className="bg-blue-50 dark:bg-blue-900/30 p-2.5 rounded-lg text-[#0f3b90] dark:text-blue-400 flex-shrink-0">
                                     {currentConfig.icon}
                                 </div>
-                                <div className="overflow-hidden max-w-[180px]">
+                                <div className="overflow-hidden min-w-0 flex-1">
                                     <p className="font-semibold text-sm text-gray-900 dark:text-white truncate" title={file.name}>
                                         {file.name}
                                     </p>
@@ -276,7 +276,7 @@ export default function CompressDoc() {
                                 <Target size={18} className="text-[#0f3b90] dark:text-blue-500" />
                                 Exact Target Size (Optional)
                             </div>
-                            <div className="flex gap-3 mb-2">
+                            <div className="flex gap-2 sm:gap-3 mb-2">
                                 <input
                                     type="number"
                                     min="0"
@@ -284,7 +284,7 @@ export default function CompressDoc() {
                                     value={targetSize}
                                     onChange={(e) => setTargetSize(e.target.value)}
                                     placeholder="e.g. 1.4"
-                                    className="flex-1 border border-gray-200 dark:border-gray-700 rounded-lg p-2.5 font-semibold text-gray-700 dark:text-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0f3b90]/30"
+                                    className="flex-1 min-w-0 border border-gray-200 dark:border-gray-700 rounded-lg p-2.5 font-semibold text-gray-700 dark:text-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0f3b90]/30"
                                 />
                                 <div className="relative">
                                     <select
@@ -319,7 +319,7 @@ export default function CompressDoc() {
                     </div>
 
                     {/* Right Panel (Preview & Results) */}
-                    <div className="flex-1 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl shadow-sm flex flex-col min-h-[500px] overflow-hidden">
+                    <div className="flex-1 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl shadow-sm flex flex-col min-h-[400px] sm:min-h-[500px] overflow-hidden min-w-0">
 
                         <div className="flex-1 flex flex-col relative">
                             <div className="flex justify-between items-center p-4 border-b border-gray-100 dark:border-gray-800">
@@ -355,7 +355,7 @@ export default function CompressDoc() {
                                     stats && stats.compressedUrl ? (
                                         // Slider View
                                         <div
-                                            className="relative w-full h-full max-h-[500px] max-w-[500px] mx-auto cursor-ew-resize select-none overflow-hidden rounded-xl border border-gray-200 shadow-sm"
+                                            className="relative w-full h-full max-h-[500px] max-w-[500px] mx-auto cursor-ew-resize select-none overflow-hidden rounded-xl border border-gray-200 shadow-sm min-w-0"
                                             onMouseMove={(e) => {
                                                 const rect = e.currentTarget.getBoundingClientRect();
                                                 const x = e.clientX - rect.left;

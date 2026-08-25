@@ -30,12 +30,12 @@ export default function SearchTools() {
 
     return (
         <div className="relative w-full" ref={wrapperRef}>
-            <div className="relative">
+            <div className="relative min-w-0 w-full">
                 <Search className="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4 md:w-5 md:h-5" />
                 <input
                     type="text"
-                    placeholder="Search tools, documents..."
-                    className="w-full pl-10 md:pl-12 pr-4 py-2.5 md:py-3 border border-blue-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#005ee6] focus:border-transparent dark:bg-gray-800 dark:text-white shadow-sm transition-all text-xs md:text-sm"
+                    placeholder="Search..."
+                    className="w-full min-w-0 pl-10 md:pl-12 pr-4 py-2.5 md:py-3 border border-blue-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#005ee6] focus:border-transparent dark:bg-gray-800 dark:text-white shadow-sm transition-all text-xs md:text-sm"
                     value={query}
                     onChange={(e) => {
                         setQuery(e.target.value);

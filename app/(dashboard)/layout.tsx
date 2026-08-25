@@ -175,21 +175,21 @@ function Sidebar() {
 function DashboardNavbar() {
   return (
     <header className="h-16 flex-shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 flex items-center sticky top-0 z-20">
-      <div className="flex-shrink-0 flex items-center px-4 md:px-6 md:w-64 md:border-r border-gray-200 dark:border-gray-800 h-full md:bg-[#fbfcfd] md:dark:bg-gray-900">
-        <Link href="/" className="flex items-center">
+      <div className="flex-shrink-0 flex items-center px-3 md:px-6 md:w-64 md:border-r border-gray-200 dark:border-gray-800 h-full md:bg-[#fbfcfd] md:dark:bg-gray-900">
+        <Link href="/" className="flex items-center min-w-0">
           <Image
             src="/assets/dowll_logo.png"
             alt="dowll"
             width={200}
             height={50}
-            className="w-24 md:w-32 h-auto object-contain"
+            className="w-20 md:w-32 h-auto object-contain flex-shrink-0"
             priority
           />
         </Link>
       </div>
 
-      <div className="flex-1 px-4 md:px-6 flex items-center justify-center bg-white dark:bg-gray-950 h-full min-w-0">
-        <div className="w-full max-w-2xl">
+      <div className="flex-1 px-3 md:px-6 flex items-center justify-center bg-white dark:bg-gray-950 h-full min-w-0">
+        <div className="w-full max-w-2xl min-w-0">
           <SearchTools />
         </div>
       </div>
