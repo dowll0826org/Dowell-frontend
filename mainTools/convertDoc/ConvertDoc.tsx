@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from 'react';
 import { useParams } from 'next/navigation';
-import { 
+import {
     History, Download, RefreshCw, X, CloudUpload, FileText, Image as ImageIcon
 } from 'lucide-react';
 import { convertToPdfApi, convertFromPdfApi } from './api.convertDoc';
@@ -21,11 +21,14 @@ export default function ConvertDoc() {
     // Config for each tool
     const toolConfig: Record<string, any> = {
         'jpg-to-pdf': { title: 'JPG to PDF', type: 'image', direction: 'to-pdf', accept: '.jpg,.jpeg,image/jpeg', icon: <ImageIcon size={32} className="text-yellow-500" /> },
-        'img-to-pdf': { title: 'Image to PDF', type: 'image', direction: 'to-pdf', accept: 'image/*,.jpg,.jpeg,.png,.webp', icon: <ImageIcon size={32} className="text-yellow-400" /> },
+        'jpeg-to-pdf': { title: 'JPEG to PDF', type: 'image', direction: 'to-pdf', accept: '.jpeg,.jpg,image/jpeg', icon: <ImageIcon size={32} className="text-yellow-500" /> },
+        'png-to-pdf': { title: 'PNG to PDF', type: 'image', direction: 'to-pdf', accept: 'image/*,.jpg,.jpeg,.png,.webp', icon: <ImageIcon size={32} className="text-yellow-400" /> },
         'word-to-pdf': { title: 'Word to PDF', type: 'word', direction: 'to-pdf', accept: '.doc,.docx,application/msword', icon: <FileText size={32} className="text-blue-500" /> },
         'powerpoint-to-pdf': { title: 'PowerPoint to PDF', type: 'powerpoint', direction: 'to-pdf', accept: '.ppt,.pptx', icon: <FileText size={32} className="text-orange-500" /> },
         'excel-to-pdf': { title: 'Excel to PDF', type: 'excel', direction: 'to-pdf', accept: '.xls,.xlsx', icon: <FileText size={32} className="text-green-500" /> },
         'pdf-to-jpg': { title: 'PDF to JPG', type: 'jpg', direction: 'from-pdf', accept: '.pdf,application/pdf', icon: <ImageIcon size={32} className="text-yellow-500" /> },
+        'pdf-to-jpeg': { title: 'PDF to JPEG', type: 'jpeg', direction: 'from-pdf', accept: '.pdf,application/pdf', icon: <ImageIcon size={32} className="text-yellow-500" /> },
+        'pdf-to-png': { title: 'PDF to PNG', type: 'png', direction: 'from-pdf', accept: '.pdf,application/pdf', icon: <ImageIcon size={32} className="text-yellow-400" /> },
         'pdf-to-word': { title: 'PDF to Word', type: 'word', direction: 'from-pdf', accept: '.pdf,application/pdf', icon: <FileText size={32} className="text-blue-500" /> },
         'pdf-to-powerpoint': { title: 'PDF to PowerPoint', type: 'powerpoint', direction: 'from-pdf', accept: '.pdf,application/pdf', icon: <FileText size={32} className="text-orange-500" /> },
         'pdf-to-excel': { title: 'PDF to Excel', type: 'excel', direction: 'from-pdf', accept: '.pdf,application/pdf', icon: <FileText size={32} className="text-green-500" /> },
@@ -74,7 +77,7 @@ export default function ConvertDoc() {
             const url = window.URL.createObjectURL(new Blob([result.blob], { type: contentTypeStr }));
             const link = document.createElement('a');
             link.href = url;
-            
+
             // Try to extract filename from Content-Disposition header first
             let filename = '';
             if (result.contentDisposition) {
@@ -88,7 +91,7 @@ export default function ConvertDoc() {
             if (!filename) {
                 const baseName = file.name.substring(0, file.name.lastIndexOf('.')) || file.name;
                 let ext = '';
-                
+
                 if (currentConfig.direction === 'to-pdf') {
                     ext = '.pdf';
                 } else {
@@ -114,7 +117,7 @@ export default function ConvertDoc() {
             link.click();
             link.remove();
             setTimeout(() => window.URL.revokeObjectURL(url), 100);
-            
+
             toast.success('Conversion successful!');
             setFile(null);
         } catch (error: any) {
@@ -139,16 +142,15 @@ export default function ConvertDoc() {
             {/* Main Content */}
             <div className="flex justify-center items-center py-10">
                 {!file ? (
-                    <div 
+                    <div
                         onDrop={handleDrop}
                         onDragOver={handleDragOver}
                         onDragLeave={handleDragLeave}
                         onClick={() => fileInputRef.current?.click()}
-                        className={`w-full max-w-3xl rounded-3xl border-2 border-dashed flex flex-col items-center justify-center p-6 md:p-12 text-center cursor-pointer transition-all duration-300 ${
-                            isDragging 
-                                ? 'border-[#3b5b9c] bg-[#3b5b9c]/5' 
-                                : 'border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-900/50'
-                        }`}
+                        className={`w-full max-w-3xl rounded-3xl border-2 border-dashed flex flex-col items-center justify-center p-6 md:p-12 text-center cursor-pointer transition-all duration-300 ${isDragging
+                            ? 'border-[#3b5b9c] bg-[#3b5b9c]/5'
+                            : 'border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-900/50'
+                            }`}
                         style={{ minHeight: '400px' }}
                     >
                         <div className="w-24 h-24 bg-blue-50 dark:bg-blue-900/20 rounded-full flex items-center justify-center mb-6">
@@ -164,11 +166,11 @@ export default function ConvertDoc() {
                             <CloudUpload size={20} />
                             Choose File
                         </button>
-                        <input 
-                            type="file" 
-                            ref={fileInputRef} 
-                            onChange={handleFileChange} 
-                            className="hidden" 
+                        <input
+                            type="file"
+                            ref={fileInputRef}
+                            onChange={handleFileChange}
+                            className="hidden"
                             accept={currentConfig.accept}
                         />
                     </div>
@@ -185,7 +187,7 @@ export default function ConvertDoc() {
                             Converting your document...
                         </h2>
                         <p className="text-sm font-medium text-gray-500 dark:text-gray-400 max-w-sm mb-12 leading-relaxed">
-                            Please wait while we process your file securely. 
+                            Please wait while we process your file securely.
                             This might take a few moments depending on file size.
                         </p>
                     </div>
@@ -203,22 +205,22 @@ export default function ConvertDoc() {
                                     </p>
                                 </div>
                             </div>
-                            <button 
+                            <button
                                 onClick={() => setFile(null)}
                                 className="p-2 shrink-0 text-gray-400 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
                             >
                                 <X size={20} />
                             </button>
                         </div>
-                        
+
                         <div className="flex flex-col-reverse sm:flex-row justify-end gap-3 mt-6 md:mt-8">
-                            <button 
+                            <button
                                 onClick={() => setFile(null)}
                                 className="w-full sm:w-auto px-6 py-3 sm:py-2.5 rounded-xl sm:rounded-lg border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                             >
                                 Cancel
                             </button>
-                            <button 
+                            <button
                                 onClick={handleConvert}
                                 className="w-full sm:w-auto bg-[#1b4ba1] hover:bg-[#143a7e] text-white px-8 py-3 sm:py-2.5 rounded-xl sm:rounded-lg font-semibold shadow-md transition-colors flex items-center justify-center gap-2"
                             >

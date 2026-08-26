@@ -37,6 +37,7 @@ export default function CompressDoc() {
     const toolConfig = {
         'compress-pdf': { title: 'Compress PDF', icon: <FileText size={24} className="fill-[#0f3b90]/10" />, accept: '.pdf,application/pdf', showPreview: false },
         'compress-jpg': { title: 'Compress JPG', icon: <ImageIcon size={24} className="text-yellow-500 fill-yellow-500/10" />, accept: '.jpg,.jpeg,image/jpeg', showPreview: true },
+        'compress-jpeg': { title: 'Compress JPEG', icon: <ImageIcon size={24} className="text-yellow-500 fill-yellow-500/10" />, accept: '.jpeg,.jpg,image/jpeg', showPreview: true },
         'compress-png': { title: 'Compress PNG', icon: <ImageIcon size={24} className="text-yellow-400 fill-yellow-400/10" />, accept: '.png,image/png', showPreview: true },
         'compress-webp': { title: 'Compress WEBP', icon: <ImageIcon size={24} className="text-green-400 fill-green-400/10" />, accept: '.webp,image/webp', showPreview: true },
         'compress-images': { title: 'Compress Images', icon: <ImageIcon size={24} className="text-blue-500 fill-blue-500/10" />, accept: 'image/*,.jpg,.jpeg,.png,.webp', showPreview: true },
@@ -415,9 +416,9 @@ export default function CompressDoc() {
 
                         {stats && (
                             <div className="p-6 border-t border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/50">
-                                <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4 shadow-sm flex items-center justify-between">
+                                <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                                     <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-green-100 dark:bg-green-900/30 text-green-500 rounded-full flex items-center justify-center">
+                                        <div className="w-12 h-12 shrink-0 bg-green-100 dark:bg-green-900/30 text-green-500 rounded-full flex items-center justify-center">
                                             <TrendingDown size={24} />
                                         </div>
                                         <div>
@@ -425,10 +426,10 @@ export default function CompressDoc() {
                                             <p className="text-sm text-gray-500 dark:text-gray-400">Previewing real-time quality.</p>
                                         </div>
                                     </div>
-                                    <div className="text-right">
-                                        <div className="flex items-center gap-3 text-sm justify-end mb-1">
+                                    <div className="text-left sm:text-right w-full sm:w-auto mt-2 sm:mt-0">
+                                        <div className="flex items-center gap-3 text-sm justify-start sm:justify-end mb-1">
                                             <span className="text-gray-500 line-through">{formatBytes(stats.originalSize)}</span>
-                                            <ArrowRight size={14} className="text-gray-400" />
+                                            <ArrowRight size={14} className="text-gray-400 shrink-0" />
                                             <span className="font-bold text-green-600 dark:text-green-400">{formatBytes(stats.compressedSize)}</span>
                                         </div>
                                         <p className="text-xs font-bold text-[#0f3b90] dark:text-blue-400">

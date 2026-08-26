@@ -126,6 +126,20 @@ export const sidebarItems: SidebarItem[] = [
                 }
             },
             {
+                name: "Compress JPEG",
+                slug: "compress-jpeg",
+                path: "/compress-jpeg",
+                icon: Image,
+                color: "text-yellow-500",
+                category: "pdf_image",
+                metadata: {
+                    title: "Compress JPEG Images Online  ",
+                    description: "Reduce JPEG image size while maintaining image quality.",
+                    keywords: ["compress JPEG", "reduce JPEG size", "JPEG compressor"],
+                    image: "/og-image.png"
+                }
+            },
+            {
                 name: "Compress PNG",
                 slug: "compress-png",
                 path: "/compress-png",
@@ -285,16 +299,30 @@ export const sidebarItems: SidebarItem[] = [
                 }
             },
             {
-                name: "IMG to PDF",
-                slug: "img-to-pdf",
-                path: "/img-to-pdf",
+                name: "JPEG to PDF",
+                slug: "jpeg-to-pdf",
+                path: "/jpeg-to-pdf",
+                icon: Image,
+                color: "text-yellow-500",
+                category: "to_pdf",
+                metadata: {
+                    title: "JPEG to PDF Converter Online  ",
+                    description: "Convert JPEG images into PDF documents quickly and securely.",
+                    keywords: ["jpeg to pdf", "image to pdf", "convert jpeg"],
+                    image: "/og-image.png"
+                }
+            },
+            {
+                name: "PNG to PDF",
+                slug: "png-to-pdf",
+                path: "/png-to-pdf",
                 icon: Image,
                 color: "text-yellow-400",
                 category: "to_pdf",
                 metadata: {
-                    title: "Convert Images to PDF Online  ",
-                    description: "Convert images into PDF files easily.",
-                    keywords: ["image to pdf", "img to pdf"],
+                    title: "PNG to PDF Converter Online  ",
+                    description: "Convert PNG images into PDF documents quickly and securely.",
+                    keywords: ["png to pdf", "jpg to pdf"],
                     image: "/og-image.png"
                 }
             },
@@ -371,6 +399,34 @@ export const sidebarItems: SidebarItem[] = [
                 }
             },
             {
+                name: "PDF to JPEG",
+                slug: "pdf-to-jpeg",
+                path: "/pdf-to-jpeg",
+                icon: Image,
+                color: "text-yellow-500",
+                category: "from_pdf",
+                metadata: {
+                    title: "PDF to JPEG Converter Online  ",
+                    description: "Convert PDF pages into JPEG images.",
+                    keywords: ["pdf to jpeg", "convert pdf image"],
+                    image: "/og-image.png"
+                }
+            },
+            {
+                name: "PDF to PNG",
+                slug: "pdf-to-png",
+                path: "/pdf-to-png",
+                icon: Image,
+                color: "text-yellow-400",
+                category: "from_pdf",
+                metadata: {
+                    title: "PDF to PNG Converter Online  ",
+                    description: "Convert PDF pages into PNG images.",
+                    keywords: ["pdf to png", "convert pdf image"],
+                    image: "/og-image.png"
+                }
+            },
+            {
                 name: "PDF to WORD",
                 slug: "pdf-to-word",
                 path: "/pdf-to-word",
@@ -398,20 +454,20 @@ export const sidebarItems: SidebarItem[] = [
                     image: "/og-image.png"
                 }
             },
-            {
-                name: "PDF to EXCEL",
-                slug: "pdf-to-excel",
-                path: "/pdf-to-excel",
-                icon: Table,
-                color: "text-green-500",
-                category: "from_pdf",
-                metadata: {
-                    title: "PDF to Excel Converter  ",
-                    description: "Convert PDF documents into editable Excel spreadsheets.",
-                    keywords: ["pdf to excel", "pdf to xlsx"],
-                    image: "/og-image.png"
-                }
-            },
+            // {
+            //     name: "PDF to EXCEL",
+            //     slug: "pdf-to-excel",
+            //     path: "/pdf-to-excel",
+            //     icon: Table,
+            //     color: "text-green-500",
+            //     category: "from_pdf",
+            //     metadata: {
+            //         title: "PDF to Excel Converter  ",
+            //         description: "Convert PDF documents into editable Excel spreadsheets.",
+            //         keywords: ["pdf to excel", "pdf to xlsx"],
+            //         image: "/og-image.png"
+            //     }
+            // },
             // {
             //     name: "PDF to PDF/A",
             //     slug: "pdf-to-pdfa",
