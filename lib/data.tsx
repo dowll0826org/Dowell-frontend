@@ -217,6 +217,18 @@ export const detailedGuides = {
 
 export const faqData = [
   {
+    question: "What is Dowll?",
+    answer: "Dowll is your all-in-one document toolkit designed to help you convert, compress, edit, merge, split, and manage your files securely. Our mission is to provide fast, reliable, and simple online tools for all your document processing needs without requiring complex software."
+  },
+  {
+    question: "What file formats does Dowll support?",
+    answer: "Dowll supports a wide variety of formats including PDFs, Microsoft Office documents (Word, Excel, PowerPoint), and numerous image formats (JPG, PNG, WebP, GIF, TIFF, and more)."
+  },
+  {
+    question: "Do I need to install any software to use Dowll?",
+    answer: "Not at all! Dowll is a completely web-based platform. You can access and use all our document processing tools directly from your browser on any device."
+  },
+  {
     question: "Is dowll free?",
     answer: "Yes, many core document tools are available for free without requiring registration."
   },
@@ -235,6 +247,10 @@ export const faqData = [
   {
     question: "How secure is my data?",
     answer: "We use 256-bit SSL encryption to ensure that your data is completely secure during transit and processing."
+  },
+  {
+    question: "Can I use Dowll on my mobile phone?",
+    answer: "Yes! The Dowll platform is fully responsive and optimized for mobile devices, allowing you to convert, compress, and edit documents seamlessly on the go from your smartphone or tablet."
   }
 ];
 

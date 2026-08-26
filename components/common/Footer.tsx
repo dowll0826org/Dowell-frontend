@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { sidebarItems } from "@/lib/tools.data";
 
 export default function Footer() {
+    const flatTools = sidebarItems.filter(item => !item.children);
+    const groupedTools = sidebarItems.filter(item => item.children);
+
     return (
         <footer className="bg-[#f5f6fb] dark:bg-gray-900 pt-16 pb-8 border-t border-gray-200 dark:border-gray-800 transition-colors duration-200">
             <div className="container mx-auto px-4 sm:px-8 lg:px-16 max-w-7xl">
@@ -26,57 +30,82 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    {/* 5 Link Columns (Right) */}
-                    <div className="lg:w-3/4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+                    {/* Links (Right) */}
+                    <div className="lg:w-3/4 flex flex-col gap-12">
 
-                        {/* Column 1: Tools */}
-                        <div>
-                            <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Tools</h3>
-                            <ul className="space-y-3">
-                                <li><Link href="/pdf-to-jpg" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">PDF to JPG</Link></li>
-                                <li><Link href="/jpg-to-pdf" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">JPG to PDF</Link></li>
-                                <li><Link href="/merge-pdf" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Merge PDF</Link></li>
-                                <li><Link href="/compress-pdf" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Compress PDF</Link></li>
-                                <li><Link href="/split-pdf" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Split PDF</Link></li>
-                            </ul>
+                        {/* All Tools Grid */}
+                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+                            
+                            {/* PDF Tools */}
+                            <div>
+                                <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">PDF Tools</h3>
+                                <ul className="space-y-3">
+                                    {flatTools.map(tool => (
+                                        <li key={tool.name}>
+                                            <Link href={tool.path || `/${tool.slug}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                                {tool.name}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            {/* Grouped Tools */}
+                            {groupedTools.map(group => (
+                                <div key={group.name}>
+                                    <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">{group.name}</h3>
+                                    <ul className="space-y-3">
+                                        {group.children?.map(tool => (
+                                            <li key={tool.name}>
+                                                <Link href={tool.path || `/${tool.slug}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                                    {tool.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+
                         </div>
 
-                        {/* Column 2: Resources */}
-                        <div>
-                            <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Resources</h3>
-                            <ul className="space-y-3">
-                                <li><Link href="/resources/help-center" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Help Center</Link></li>
-                                <li><Link href="/resources/faq" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">FAQ</Link></li>
-                                <li><Link href="/resources/guides" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Guides</Link></li>
-                            </ul>
-                        </div>
+                        {/* Company & Legal Links Grid */}
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 pt-12 border-t border-gray-200 dark:border-gray-800">
+                            {/* Column 1: Resources */}
+                            <div>
+                                <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Resources</h3>
+                                <ul className="space-y-3">
+                                    <li><Link href="/resources/help-center" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Help Center</Link></li>
+                                    <li><Link href="/resources/faq" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">FAQ</Link></li>
+                                    <li><Link href="/resources/guides" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Guides</Link></li>
+                                </ul>
+                            </div>
 
-                        {/* Column 3: Product */}
-                        <div>
-                            <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Product</h3>
-                            <ul className="space-y-3">
-                                <li><Link href="/product/features" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Features</Link></li>
-                                <li><Link href="/product/security" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Security</Link></li>
-                            </ul>
-                        </div>
+                            {/* Column 2: Product */}
+                            <div>
+                                <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Product</h3>
+                                <ul className="space-y-3">
+                                    <li><Link href="/product/features" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Features</Link></li>
+                                    <li><Link href="/product/security" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Security</Link></li>
+                                </ul>
+                            </div>
 
-                        {/* Column 4: Legal */}
-                        <div>
-                            <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Legal</h3>
-                            <ul className="space-y-3">
-                                <li><Link href="/legal/privacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
-                                <li><Link href="/legal/terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Terms of Service</Link></li>
-                                {/* <li><Link href="/legal/cookie" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Cookie Policy</Link></li> */}
-                            </ul>
-                        </div>
+                            {/* Column 3: Legal */}
+                            <div>
+                                <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Legal</h3>
+                                <ul className="space-y-3">
+                                    <li><Link href="/legal/privacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
+                                    <li><Link href="/legal/terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Terms of Service</Link></li>
+                                </ul>
+                            </div>
 
-                        {/* Column 5: Company */}
-                        <div>
-                            <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Company</h3>
-                            <ul className="space-y-3">
-                                <li><Link href="/company/aboutus" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Us</Link></li>
-                                <li><Link href="/company/contact" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</Link></li>
-                            </ul>
+                            {/* Column 4: Company */}
+                            <div>
+                                <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Company</h3>
+                                <ul className="space-y-3">
+                                    <li><Link href="/company/aboutus" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Us</Link></li>
+                                    <li><Link href="/company/contact" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</Link></li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
