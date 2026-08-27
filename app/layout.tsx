@@ -5,6 +5,7 @@ import { ThemeProvider } from "../context/ThemeProvider";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { ENABLE_ADS } from "@/lib/ads.config";
 import { AdSenseInit } from "@/components/common/AdSenseInit";
+import { DisableContextMenu } from "@/components/common/DisableContextMenu";
 import { Toaster } from 'react-hot-toast';
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -98,6 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.className} ${inter.variable} h-full antialiased min-h-full flex flex-col bg-slate-50 dark:bg-black dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:from-gray-900 dark:to-black transition-colors duration-200 overflow-x-hidden`}>
         {ENABLE_ADS && <AdSenseInit />}
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <DisableContextMenu />
           {children}
           <Toaster position="top-right" />
           <ThemeToggle />
