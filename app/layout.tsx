@@ -84,6 +84,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="google-adsense-account" content="ca-pub-6354997878508931" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6354997878508931" crossOrigin="anonymous"></script>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6PYQ7XRN6"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-N6PYQ7XRN6');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
