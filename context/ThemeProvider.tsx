@@ -7,7 +7,10 @@ export function ThemeProvider({ children, ...props }: React.ComponentProps<typeo
   if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
     const origError = console.error;
     console.error = (...args) => {
-      if (typeof args[0] === "string" && args[0].includes("Encountered a script tag")) {
+      if (typeof args[0] === "string" && (
+        args[0].includes("Encountered a script tag") || 
+        args[0].includes("googlesyndication.com")
+      )) {
         return;
       }
       origError.apply(console, args);

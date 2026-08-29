@@ -149,8 +149,8 @@ export default async function GuidePage({
           </div>
 
           {/* Right side CTA Card */}
-          <div className="hidden lg:block shrink-0 mt-4">
-            <div className="bg-[#1e204d] rounded-2xl p-8 w-[360px] shadow-2xl">
+          <div className="w-full lg:w-auto shrink-0 mt-8 lg:mt-4">
+            <div className="bg-[#1e204d] rounded-2xl p-8 w-full sm:w-[360px] shadow-2xl">
               <h3 className="font-bold text-white mb-3 text-xl">Ready to start?</h3>
               <p className="text-gray-400 text-[15px] mb-8 leading-relaxed">Jump right into the tool and process your documents securely.</p>
               <Link
