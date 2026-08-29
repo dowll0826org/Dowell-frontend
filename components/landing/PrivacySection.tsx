@@ -51,7 +51,7 @@ export default function PrivacySection() {
             </ul>
 
             {/* Button */}
-            <Link href="#" className="inline-flex items-center justify-center bg-white text-gray-900 px-7 py-3.5 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-sm">
+            <Link href="/legal/privacy" className="inline-flex items-center justify-center bg-white text-gray-900 px-7 py-3.5 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-sm">
               Read our Privacy Policy
             </Link>
 
