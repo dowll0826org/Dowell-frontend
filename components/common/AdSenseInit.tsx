@@ -8,7 +8,7 @@ export function AdSenseInit() {
     
     const script = document.createElement("script");
     script.id = "adsense-init-script";
-    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxx";
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6354997878508931";
     script.async = true;
     script.crossOrigin = "anonymous";
     document.head.appendChild(script);
