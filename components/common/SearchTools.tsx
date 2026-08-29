@@ -8,9 +8,55 @@ import { sidebarItems } from "@/lib/tools.data";
 export default function SearchTools() {
     const [query, setQuery] = useState("");
     const [isOpen, setIsOpen] = useState(false);
+    const [placeholderIndex, setPlaceholderIndex] = useState(0);
+    const [placeholderSentence, setPlaceholderSentence] = useState('')
     const wrapperRef = useRef<HTMLDivElement>(null);
 
     const allTools = sidebarItems.flatMap(item => item.children ? item.children : [item]);
+    const toolNames = allTools.map(t => t.name);
+
+    useEffect(() => {
+        if (toolNames.length === 0) return;
+
+        let currentIndex = 0;
+        let currentText = "";
+        let isDeleting = false;
+        let timeoutId: NodeJS.Timeout;
+
+        const type = () => {
+            const fullText = toolNames[currentIndex];
+
+            if (isDeleting) {
+                currentText = fullText.substring(0, currentText.length - 1);
+            } else {
+                currentText = fullText.substring(0, currentText.length + 1);
+            }
+
+            setPlaceholderSentence(currentText);
+
+            let typeSpeed = isDeleting ? 30 : 60; // Typing speed
+
+            if (!isDeleting && currentText === fullText) {
+                typeSpeed = 1500; // Pause at the end of the word
+                isDeleting = true;
+            } else if (isDeleting && currentText === "") {
+                isDeleting = false;
+                currentIndex = (currentIndex + 1) % toolNames.length;
+                typeSpeed = 300; // Pause before typing the next word
+            }
+
+            timeoutId = setTimeout(type, typeSpeed);
+        };
+
+        timeoutId = setTimeout(type, 300); // Start the typing effect
+
+        return () => clearTimeout(timeoutId);
+    }, [toolNames.length]); // Only re-run if the number of tools changes
+
+
+
+
+
     const filteredTools = query ? allTools.filter(tool => {
         const lowerQuery = query.toLowerCase();
         return tool.name.toLowerCase().includes(lowerQuery) ||
@@ -34,7 +80,7 @@ export default function SearchTools() {
                 <Search className="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4 md:w-5 md:h-5" />
                 <input
                     type="text"
-                    placeholder="Search..."
+                    placeholder={`Search ${placeholderSentence || 'PDF Tools'}`}
                     className="w-full min-w-0 pl-10 md:pl-12 pr-4 py-2.5 md:py-3 border border-blue-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#005ee6] focus:border-transparent dark:bg-gray-800 dark:text-white shadow-sm transition-all text-xs md:text-sm"
                     value={query}
                     onChange={(e) => {
