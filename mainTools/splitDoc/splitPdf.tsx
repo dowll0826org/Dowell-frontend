@@ -205,15 +205,7 @@ export default function SplitPdf() {
         className="hidden"
       />
 
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Split PDF</h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-            Extract pages or split your PDF into multiple files.
-          </p>
-        </div>
-      </div>
+      {/* Header Removed */}
 
       {!file ? (
         /* Dropzone (When no file is selected) */

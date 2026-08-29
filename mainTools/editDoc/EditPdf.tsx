@@ -482,12 +482,7 @@ export default function EditPdf() {
       <div className="relative flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
         <div className="w-full md:w-1/3"></div>
         <div className="text-center w-full md:w-1/3">
-          <h1 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4">
-            Edit PDF
-          </h1>
-          <p className="text-base text-slate-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Add text, annotations and fill out forms securely in your browser.
-          </p>
+          {/* Header removed as it is now at the page level */}
         </div>
         <div className="w-full md:w-1/3 flex justify-end">
           {file && (

@@ -129,16 +129,6 @@ export default function ConvertDoc() {
 
     return (
         <div className="max-w-6xl mx-auto p-6 md:p-8">
-            {/* Header Section */}
-            <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-12">
-                <div>
-                    <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{currentConfig.title}</h1>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base">
-                        Convert files to PDF and vice versa with ease.
-                    </p>
-                </div>
-            </div>
-
             {/* Main Content */}
             <div className="flex justify-center items-center py-10">
                 {!file ? (

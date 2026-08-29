@@ -181,15 +181,7 @@ export default function OrganizePdf() {
     <div className="min-h-[calc(100vh-64px)] bg-slate-50 dark:bg-gray-900 p-4 md:p-6 lg:p-8">
       <div className="max-w-6xl mx-auto space-y-6">
 
-        {/* Header Section */}
-        <div className="text-center space-y-2">
-          <h1 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
-            Organize PDF Pages
-          </h1>
-          <p className="text-slate-600 dark:text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-            Drag and drop page thumbnails to reorder them. Delete unneeded pages or rotate them.
-          </p>
-        </div>
+        {/* Header Section Removed */}
 
         {/* Upload Area */}
         {!file && (

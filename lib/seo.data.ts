@@ -327,7 +327,7 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "compress-jpg": {
-    "heroTitle": "Compress Jpg Online Free",
+    "heroTitle": "Compress JPG Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to compress jpg. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
@@ -342,14 +342,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Compress Jpg tool the best?",
+    "explanationTitle": "What makes our Compress JPG tool the best?",
     "explanationText": [
-      "Our Compress Jpg tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our Compress JPG tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Compress Jpg tool?",
+        "question": "Is it safe to use this Compress JPG tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -371,7 +371,7 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "compress-jpeg": {
-    "heroTitle": "Compress Jpeg Online Free",
+    "heroTitle": "Compress JPEG Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to compress jpeg. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
@@ -386,14 +386,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Compress Jpeg tool the best?",
+    "explanationTitle": "What makes our Compress JPEG tool the best?",
     "explanationText": [
-      "Our Compress Jpeg tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our Compress JPEG tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Compress Jpeg tool?",
+        "question": "Is it safe to use this Compress JPEG tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -415,7 +415,7 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "compress-png": {
-    "heroTitle": "Compress Png Online Free",
+    "heroTitle": "Compress PNG Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to compress png. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
@@ -430,14 +430,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Compress Png tool the best?",
+    "explanationTitle": "What makes our Compress PNG tool the best?",
     "explanationText": [
-      "Our Compress Png tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our Compress PNG tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Compress Png tool?",
+        "question": "Is it safe to use this Compress PNG tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -459,7 +459,7 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "compress-webp": {
-    "heroTitle": "Compress Webp Online Free",
+    "heroTitle": "Compress WEBP Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to compress webp. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
@@ -474,14 +474,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Compress Webp tool the best?",
+    "explanationTitle": "What makes our Compress WEBP tool the best?",
     "explanationText": [
-      "Our Compress Webp tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our Compress WEBP tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Compress Webp tool?",
+        "question": "Is it safe to use this Compress WEBP tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -679,11 +679,11 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "jpeg-to-pdf": {
-    "heroTitle": "Jpeg To Pdf Online Free",
+    "heroTitle": "JPEG To PDF Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to jpeg to pdf. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
-      "Click the Jpeg button and wait for the process to complete.",
+      "Click the JPEG button and wait for the process to complete.",
       "Download your processed file instantly."
     ],
     "features": [
@@ -694,14 +694,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Jpeg To Pdf tool the best?",
+    "explanationTitle": "What makes our JPEG To PDF tool the best?",
     "explanationText": [
-      "Our Jpeg To Pdf tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our JPEG To PDF tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Jpeg To Pdf tool?",
+        "question": "Is it safe to use this JPEG To PDF tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -723,11 +723,11 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "png-to-pdf": {
-    "heroTitle": "Png To Pdf Online Free",
+    "heroTitle": "PNG To PDF Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to png to pdf. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
-      "Click the Png button and wait for the process to complete.",
+      "Click the PNG button and wait for the process to complete.",
       "Download your processed file instantly."
     ],
     "features": [
@@ -738,14 +738,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Png To Pdf tool the best?",
+    "explanationTitle": "What makes our PNG To PDF tool the best?",
     "explanationText": [
-      "Our Png To Pdf tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our PNG To PDF tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Png To Pdf tool?",
+        "question": "Is it safe to use this PNG To PDF tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -767,7 +767,7 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "powerpoint-to-pdf": {
-    "heroTitle": "Powerpoint To Pdf Online Free",
+    "heroTitle": "Powerpoint To PDF Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to powerpoint to pdf. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
@@ -782,14 +782,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Powerpoint To Pdf tool the best?",
+    "explanationTitle": "What makes our Powerpoint To PDF tool the best?",
     "explanationText": [
-      "Our Powerpoint To Pdf tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our Powerpoint To PDF tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Powerpoint To Pdf tool?",
+        "question": "Is it safe to use this Powerpoint To PDF tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -811,7 +811,7 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "excel-to-pdf": {
-    "heroTitle": "Excel To Pdf Online Free",
+    "heroTitle": "Excel To PDF Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to excel to pdf. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
@@ -826,14 +826,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Excel To Pdf tool the best?",
+    "explanationTitle": "What makes our Excel To PDF tool the best?",
     "explanationText": [
-      "Our Excel To Pdf tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our Excel To PDF tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Excel To Pdf tool?",
+        "question": "Is it safe to use this Excel To PDF tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -855,11 +855,11 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "pdf-to-jpg": {
-    "heroTitle": "Pdf To Jpg Online Free",
+    "heroTitle": "PDF To JPG Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to pdf to jpg. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
-      "Click the Pdf button and wait for the process to complete.",
+      "Click the PDF button and wait for the process to complete.",
       "Download your processed file instantly."
     ],
     "features": [
@@ -870,14 +870,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Pdf To Jpg tool the best?",
+    "explanationTitle": "What makes our PDF To JPG tool the best?",
     "explanationText": [
-      "Our Pdf To Jpg tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our PDF To JPG tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Pdf To Jpg tool?",
+        "question": "Is it safe to use this PDF To JPG tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -899,11 +899,11 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "pdf-to-jpeg": {
-    "heroTitle": "Pdf To Jpeg Online Free",
+    "heroTitle": "PDF To JPEG Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to pdf to jpeg. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
-      "Click the Pdf button and wait for the process to complete.",
+      "Click the PDF button and wait for the process to complete.",
       "Download your processed file instantly."
     ],
     "features": [
@@ -914,14 +914,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Pdf To Jpeg tool the best?",
+    "explanationTitle": "What makes our PDF To JPEG tool the best?",
     "explanationText": [
-      "Our Pdf To Jpeg tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our PDF To JPEG tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Pdf To Jpeg tool?",
+        "question": "Is it safe to use this PDF To JPEG tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -943,11 +943,11 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "pdf-to-png": {
-    "heroTitle": "Pdf To Png Online Free",
+    "heroTitle": "PDF To PNG Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to pdf to png. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
-      "Click the Pdf button and wait for the process to complete.",
+      "Click the PDF button and wait for the process to complete.",
       "Download your processed file instantly."
     ],
     "features": [
@@ -958,14 +958,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Pdf To Png tool the best?",
+    "explanationTitle": "What makes our PDF To PNG tool the best?",
     "explanationText": [
-      "Our Pdf To Png tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our PDF To PNG tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Pdf To Png tool?",
+        "question": "Is it safe to use this PDF To PNG tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -987,11 +987,11 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "pdf-to-powerpoint": {
-    "heroTitle": "Pdf To Powerpoint Online Free",
+    "heroTitle": "PDF To Powerpoint Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to pdf to powerpoint. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
-      "Click the Pdf button and wait for the process to complete.",
+      "Click the PDF button and wait for the process to complete.",
       "Download your processed file instantly."
     ],
     "features": [
@@ -1002,14 +1002,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Pdf To Powerpoint tool the best?",
+    "explanationTitle": "What makes our PDF To Powerpoint tool the best?",
     "explanationText": [
-      "Our Pdf To Powerpoint tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our PDF To Powerpoint tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Pdf To Powerpoint tool?",
+        "question": "Is it safe to use this PDF To Powerpoint tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -1031,7 +1031,7 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "edit-pdf": {
-    "heroTitle": "Edit Pdf Online Free",
+    "heroTitle": "Edit PDF Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to edit pdf. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
@@ -1046,14 +1046,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Edit Pdf tool the best?",
+    "explanationTitle": "What makes our Edit PDF tool the best?",
     "explanationText": [
-      "Our Edit Pdf tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our Edit PDF tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Edit Pdf tool?",
+        "question": "Is it safe to use this Edit PDF tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {
@@ -1075,7 +1075,7 @@ export const seoData: Record<string, SEOContent> = {
     ]
   },
   "organize-pdf": {
-    "heroTitle": "Organize Pdf Online Free",
+    "heroTitle": "Organize PDF Online Free",
     "heroSubtitle": "The easiest, fastest, and most secure way to organize pdf. Try it online for free.",
     "howItWorks": [
       "Upload your file by dragging and dropping it onto the page.",
@@ -1090,14 +1090,14 @@ export const seoData: Record<string, SEOContent> = {
       "Highest security standards",
       "Files are automatically deleted for privacy"
     ],
-    "explanationTitle": "What makes our Organize Pdf tool the best?",
+    "explanationTitle": "What makes our Organize PDF tool the best?",
     "explanationText": [
-      "Our Organize Pdf tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
+      "Our Organize PDF tool provides industry-leading processing speed and accuracy without requiring you to download heavy software.",
       "Whether you are a student, professional, or just need to handle documents on the go, this tool simplifies your workflow securely."
     ],
     "faqs": [
       {
-        "question": "Is it safe to use this Organize Pdf tool?",
+        "question": "Is it safe to use this Organize PDF tool?",
         "answer": "Yes. All file uploads are encrypted and processed securely. We automatically delete all uploaded and processed files from our servers shortly after completion to guarantee your privacy."
       },
       {

@@ -197,15 +197,7 @@ export default function CompressDoc() {
                 className="hidden"
             />
 
-            {/* Header Section */}
-            <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-8">
-                <div>
-                    <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{currentConfig.title}</h1>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base">
-                        Reduce document size while preserving visual fidelity.
-                    </p>
-                </div>
-            </div>
+            {/* Main Component Begins Here */}
 
             {!file ? (
                 /* Dropzone (When no file is selected) */

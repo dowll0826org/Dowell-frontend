@@ -129,15 +129,7 @@ export default function MergePdf() {
       />
 
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Upload Files</h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-            Drop files here or click to browse. Supports PDF, JPG, and PNG.
-          </p>
-        </div>
-
-        <div className="flex items-center gap-3">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-end gap-4">        <div className="flex items-center gap-3">
           {files.length > 0 && (
             <button
               onClick={clearAll}

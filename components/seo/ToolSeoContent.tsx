@@ -32,16 +32,6 @@ export default function ToolSeoContent({ toolSlug }: { toolSlug: string }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Hero Content Area */}
-      <section className="text-center space-y-4">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-          {content.heroTitle}
-        </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          {content.heroSubtitle}
-        </p>
-      </section>
-
       {/* How it works */}
       <section className="bg-white dark:bg-gray-900 rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 dark:border-gray-800">
         <h2 className="text-2xl font-bold text-center mb-10 text-gray-900 dark:text-white">
