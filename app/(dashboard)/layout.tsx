@@ -224,6 +224,12 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               <div className="flex-1">
                 {children}
               </div>
+
+              {ENABLE_ADS && (
+                <div className="mt-8">
+                  <TopBannerAd />
+                </div>
+              )}
             </div>
 
             {/* Right Sidebar Ad Space */}

@@ -1,14 +1,33 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from 'react';
+import { ENABLE_ADS } from "@/lib/ads.config";
 
 export default function TopBannerAd() {
+  useEffect(() => {
+    if (ENABLE_ADS) {
+      try {
+        // @ts-ignore
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (err) {
+        console.error("AdSense error", err);
+      }
+    }
+  }, []);
+
+  if (!ENABLE_ADS) {
+    return null;
+  }
+
   return (
-    <div className="w-full h-[90px] mb-8 bg-gray-100 dark:bg-gray-900 border-2 border-dashed border-gray-200 dark:border-gray-800 rounded-xl flex items-center justify-center relative overflow-hidden group flex-shrink-0 hidden md:flex">
-      <span className="text-gray-400 dark:text-gray-500 font-medium text-sm transition-transform group-hover:scale-105">
-        Advertisement (728x90)
-      </span>
-      <div className="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider text-gray-400 bg-white dark:bg-gray-800 px-2 py-0.5 rounded shadow-sm">
-        Ad
-      </div>
+    <div className="w-full mb-8 flex justify-center hidden md:flex overflow-hidden">
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-6354997878508931"
+        data-ad-slot="7731492181"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
     </div>
   );
 }
