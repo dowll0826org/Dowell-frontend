@@ -8,6 +8,7 @@ import EditPdf from '@/mainTools/editDoc/EditPdf';
 import OrganizePdf from '@/mainTools/organizeDoc/OrganizePdf';
 import AddWatermark from '@/mainTools/watermarkDoc/addWatermark/AddWatermark';
 import RemoveWatermark from '@/mainTools/watermarkDoc/removeWatermark/RemoveWatermark';
+import ToolSeoContent from '@/components/seo/ToolSeoContent';
 
 interface props {
   params: Promise<{ tool: string }>
@@ -118,10 +119,14 @@ export default async function mainTool({ params }: props) {
 
   const ToolComponent = getComponentForTool(tool);
 
-
   return (
-    <div>
-      {ToolComponent ? <ToolComponent /> : <h1>{tool}</h1>}
+    <div className="flex flex-col min-h-screen">
+      <div className="flex-grow">
+        {ToolComponent ? <ToolComponent /> : <h1>{tool}</h1>}
+      </div>
+
+      {/* Rich SEO Content Section (Hero, How-to, Features, FAQs) */}
+      <ToolSeoContent toolSlug={tool} />
     </div>
   )
 }
