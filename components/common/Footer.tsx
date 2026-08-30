@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { sidebarItems } from "@/lib/tools.data";
+import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
     const flatTools = sidebarItems.filter(item => !item.children);
@@ -25,9 +26,20 @@ export default function Footer() {
                                 priority
                             />
                         </Link>
-                        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed pr-4">
+                        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed pr-4 mb-6">
                             Dowll is your all-in-one document toolkit. Convert, compress, edit, and manage your files securely with fast and simple online tools.
                         </p>
+                        <div className="flex items-center gap-4">
+                            <a href="https://www.linkedin.com/company/dowll" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
+                                <FaLinkedin className="w-5 h-5" />
+                            </a>
+                            <a href="https://www.instagram.com/get_dowll?igsi=cDN1Y3UwdXFjemVl" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-pink-600 transition-colors" aria-label="Instagram">
+                                <FaInstagram className="w-5 h-5" />
+                            </a>
+                            <a href="https://www.facebook.com/share/1D6aiiK5gy" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 transition-colors" aria-label="Facebook">
+                                <FaFacebook className="w-5 h-5" />
+                            </a>
+                        </div>
                     </div>
 
                     {/* Links (Right) */}
