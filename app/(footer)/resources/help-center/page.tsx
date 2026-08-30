@@ -44,7 +44,7 @@ export default function Resources() {
           <div className="grid md:grid-cols-2 gap-4">
 
             {/* Card 1 */}
-            <Link href="/resources/guides/convert-pdf-to-jpg" className="flex items-start gap-4 p-5 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-500 hover:shadow-md transition-all bg-white dark:bg-gray-800 group">
+            <Link href="/pdf-to-jpg" className="flex items-start gap-4 p-5 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-500 hover:shadow-md transition-all bg-white dark:bg-gray-800 group">
               <div className="bg-[#eef2ff] dark:bg-gray-700 p-2.5 rounded-lg text-blue-600 dark:text-blue-400 shrink-0">
                 <ImageIcon size={18} />
               </div>
@@ -57,7 +57,7 @@ export default function Resources() {
             </Link>
 
             {/* Card 2 */}
-            <Link href="/resources/guides/merge-pdf" className="flex items-start gap-4 p-5 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-500 hover:shadow-md transition-all bg-white dark:bg-gray-800 group">
+            <Link href="/merge-pdf" className="flex items-start gap-4 p-5 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-500 hover:shadow-md transition-all bg-white dark:bg-gray-800 group">
               <div className="bg-[#eef2ff] dark:bg-gray-700 p-2.5 rounded-lg text-blue-600 dark:text-blue-400 shrink-0">
                 <Layers size={18} />
               </div>
@@ -70,7 +70,7 @@ export default function Resources() {
             </Link>
 
             {/* Card 3 */}
-            <Link href="/resources/guides/compress-pdf-files" className="flex items-start gap-4 p-5 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-500 hover:shadow-md transition-all bg-white dark:bg-gray-800 group">
+            <Link href="/compress-pdf" className="flex items-start gap-4 p-5 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-500 hover:shadow-md transition-all bg-white dark:bg-gray-800 group">
               <div className="bg-[#eef2ff] dark:bg-gray-700 p-2.5 rounded-lg text-blue-600 dark:text-blue-400 shrink-0">
                 <Minimize2 size={18} />
               </div>
