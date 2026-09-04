@@ -1,0 +1,1725 @@
+{
+  "common": {
+    "startProcessing": "Iniciar processamento",
+    "learnMore": "Saiba mais",
+    "contactSupport": "Contatar suporte",
+    "readPrivacyPolicy": "Ler nossa política de privacidade",
+    "copyright": "© 2026 dowll. Todos os direitos reservados.",
+    "builtWith": "Construído com precisão para processamento profissional de documentos.",
+    "moreFormats": "+ 50 formatos adicionais suportados",
+    "tryItNow": "Experimente agora",
+    "getStartedFree": "Começar gratuitamente",
+    "readGuide": "Ler guia",
+    "visitHelpCenter": "Visitar a central de ajuda",
+    "sendMessage": "Enviar mensagem",
+    "sending": "Enviando...",
+    "savePreferences": "Salvar preferências",
+    "convertsTo": "CONVERTE PARA:",
+    "availableConversions": "CONVERSÕES DISPONÍVEIS:",
+    "legalInformation": "Informações legais",
+    "lastUpdated": "Última atualização:",
+    "questionsAboutTerms": "Perguntas sobre estes termos?",
+    "contactSupportLink": "Contatar suporte",
+    "email": "E-mail",
+    "startProcessingSecurely": "Iniciar processamento com segurança",
+    "learnMoreAboutPrivacy": "Saiba mais sobre nossa política de privacidade",
+    "poweredByWebAssembly": "Alimentado por WebAssembly",
+    "page": "Página",
+    "loadingPreview": "Carregando visualização..."
+  },
+  "nav": {
+    "compress": "COMPRIMIR",
+    "convertPdf": "CONVERTER PDF",
+    "allPdfTools": "TODAS AS FERRAMENTAS PDF",
+    "pdfAndImages": "PDF E IMAGENS",
+    "officeAndMedia": "OFFICE E MÍDIA",
+    "convertToPdf": "CONVERTER PARA PDF",
+    "convertFromPdf": "CONVERTER DE PDF"
+  },
+  "footer": {
+    "description": "Dowll é o seu kit de ferramentas de documentos tudo-em-um. Converta, comprima, edite e gerencie seus arquivos com segurança com ferramentas online rápidas e simples.",
+    "sections": {
+      "resources": "Recursos",
+      "product": "Produto",
+      "legal": "Legal",
+      "company": "Empresa"
+    },
+    "links": {
+      "helpCenter": "Central de ajuda",
+      "faq": "Perguntas frequentes",
+      "guides": "Guias",
+      "features": "Recursos",
+      "security": "Segurança",
+      "privacyPolicy": "Política de privacidade",
+      "termsOfService": "Termos de serviço",
+      "aboutUs": "Sobre nós",
+      "contact": "Contato"
+    },
+    "language": "Idioma"
+  },
+  "hero": {
+    "badge": "Processamento com Privacidade em Primeiro Lugar",
+    "headline1": "Uma plataforma.",
+    "headline2": "Todas as ferramentas de documentos.",
+    "description": "Processamento de documentos sem conta e com privacidade em primeiro lugar. Edite, converta e comprima arquivos instantaneamente no seu navegador sem nunca enviar dados para nossos servidores."
+  },
+  "workflow": {
+    "title": "Fluxo de trabalho fluido e seguro",
+    "subtitle": "Projetado para privacidade. Seus arquivos são processados instantaneamente e excluídos automaticamente.",
+    "steps": {
+      "upload": {
+        "title": "1. Enviar",
+        "description": "Selecione arquivos com segurança via conexão criptografada."
+      },
+      "process": {
+        "title": "2. Processar",
+        "description": "Processamento extremamente rápido alimentado por recursos locais."
+      },
+      "download": {
+        "title": "3. Baixar",
+        "description": "Recupere seus documentos processados instantaneamente."
+      },
+      "autoDelete": {
+        "title": "4. Auto-exclusão",
+        "description": "Os arquivos são apagados da memória imediatamente após o processamento."
+      }
+    }
+  },
+  "privacy": {
+    "badge": "Arquitetura com Privacidade em Primeiro Lugar",
+    "title": "Seus arquivos nunca saem do seu dispositivo.",
+    "description": "Ao contrário dos processadores de nuvem tradicionais, o dowll usa WebAssembly para processar seus documentos localmente no seu navegador. Sem uploads, sem servidores, sem rastros.",
+    "features": {
+      "zeroKnowledge": "Processamento de conhecimento zero",
+      "noRegistration": "Sem registro necessário",
+      "instantExecution": "Execução instantânea"
+    }
+  },
+  "formats": {
+    "title": "Formatos de arquivo suportados",
+    "subtitle": "Converta e gerencie arquivos em vários formatos, incluindo documentos, imagens, planilhas e apresentações."
+  },
+  "helpCenter": {
+    "title": "Como podemos ajudar?",
+    "subtitle": "Encontre respostas, tutoriais e documentação técnica para aproveitar ao máximo o dowll.",
+    "searchPlaceholder": "Pesquisar ferramentas...",
+    "popularTopics": "Tópicos populares",
+    "topics": {
+      "pdfToJpg": {
+        "title": "Como converter PDF em JPG",
+        "description": "Aprenda as etapas para extrair imagens de alta qualidade de seus documentos PDF sem problemas."
+      },
+      "mergePdf": {
+        "title": "Como mesclar arquivos PDF",
+        "description": "Combine vários PDFs em um único documento organizado em segundos."
+      },
+      "compressPdf": {
+        "title": "Como comprimir documentos",
+        "description": "Reduza o tamanho do arquivo para compartilhamento mais fácil sem comprometer a qualidade visual."
+      },
+      "formats": {
+        "title": "Formatos de arquivo suportados",
+        "description": "Veja a lista abrangente de tipos de documentos que você pode processar com o dowll."
+      }
+    },
+    "needHelp": {
+      "title": "Ainda precisa de ajuda?",
+      "description": "Nossa equipe de suporte está pronta para ajudá-lo com quaisquer problemas técnicos ou consultas de conta."
+    }
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "selectLanguage": "Selecionar idioma"
+  },
+  "about": {
+    "headline": "Redefinindo a inteligência de documentos",
+    "subtitle": "Acreditamos que seus documentos pertencem a você. O dowll combina ferramentas de processamento poderosas com privacidade absoluta, garantindo que seus dados nunca saiam do seu dispositivo a menos que você escolha.",
+    "mission": {
+      "title": "Nossa missão",
+      "text": "Fornecer processamento de documentos sem atrito e sem servidor que respeite a privacidade do usuário e ofereça velocidade incomparável."
+    },
+    "story": {
+      "title": "A história do dowll",
+      "text": "Nascido da frustração de depender de ferramentas vulneráveis à nuvem para papelada sensível, o dowll foi criado para mudar o paradigma para tecnologia local em primeiro lugar."
+    },
+    "values": {
+      "title": "Nossos valores",
+      "privacyFirst": {
+        "title": "Privacidade em Primeiro Lugar",
+        "desc": "Arquitetura de conhecimento zero. Seus arquivos permanecem no seu dispositivo."
+      },
+      "security": {
+        "title": "Segurança",
+        "desc": "Proteção de nível empresarial para cada interação, construída nativamente."
+      },
+      "performance": {
+        "title": "Desempenho",
+        "desc": "Processamento instantâneo sem esperar uploads de servidor."
+      },
+      "transparency": {
+        "title": "Transparência",
+        "desc": "Processos claros, sem coleta de dados ocultos, controle total do usuário."
+      }
+    }
+  },
+  "contact": {
+    "title": "Entre em contato",
+    "subtitle": "Tem perguntas sobre nosso processamento de documentos com privacidade em primeiro lugar? Nossa equipe está aqui para ajudá-lo a integrar, solucionar problemas e otimizar seu fluxo de trabalho.",
+    "form": {
+      "name": "Nome",
+      "workEmail": "E-mail de trabalho",
+      "subject": "Assunto",
+      "selectTopic": "Selecionar um tópico...",
+      "generalSupport": "Suporte geral",
+      "salesEnterprise": "Vendas e empresarial",
+      "pressMedia": "Imprensa e mídia",
+      "other": "Outro",
+      "pleaseSpecify": "Por favor, especifique",
+      "brieflyDescribe": "Descreva brevemente seu tópico",
+      "message": "Mensagem",
+      "howCanWeHelp": "Como podemos ajudá-lo?",
+      "required": "*"
+    },
+    "sidebar": {
+      "directContacts": "Contatos diretos",
+      "support": "Suporte",
+      "pressMedia": "Imprensa e mídia",
+      "quickAnswers": "Procurando respostas rápidas?",
+      "quickAnswersDesc": "Confira nossa Central de Ajuda abrangente para guias de configuração e solução de problemas.",
+      "visitHelpCenter": "Visitar a central de ajuda"
+    },
+    "toast": {
+      "fillRequired": "Por favor, preencha todos os campos obrigatórios.",
+      "specifySubject": "Por favor, especifique o assunto.",
+      "success": "Sua mensagem foi enviada com sucesso!",
+      "error": "Falha ao enviar a mensagem. Por favor, tente novamente mais tarde."
+    }
+  },
+  "legal": {
+    "privacy": {
+      "intro": "No dowll, sua privacidade não é apenas um recurso — é a arquitetura fundamental de nossa plataforma.",
+      "s1": {
+        "title": "1. Coleta de informações",
+        "c1": "Acreditamos que a melhor forma de proteger seus dados é não coletá-los. Ao usar o Dowll, coletamos apenas as informações mínimas necessárias:",
+        "l1": {
+          "label": "Informações da conta",
+          "text": "Se você criar uma conta, coletamos seu endereço de e-mail e informações básicas de perfil."
+        },
+        "l2": {
+          "label": "Telemetria técnica",
+          "text": "Estatísticas de uso anônimas para ajudar a melhorar a estabilidade da plataforma."
+        }
+      },
+      "s2": {
+        "title": "2. Processamento de dados (Local-First)",
+        "banner": {
+          "title": "Arquitetura sem upload",
+          "content": "O processamento principal dos seus documentos ocorre inteiramente no seu navegador. Seus arquivos sensíveis nunca são enviados para nossos servidores."
+        },
+        "c1": "Como o processamento é local, não temos acesso ao conteúdo dos seus documentos."
+      },
+      "s3": {
+        "title": "3. Segurança dos dados",
+        "c1": "Embora seus documentos nunca saiam do seu dispositivo, empregamos segurança de nível empresarial para os dados limitados que tratamos:",
+        "l1": {
+          "text": "Todos os dados em trânsito são criptografados usando TLS 1.3."
+        },
+        "l2": {
+          "text": "Dados em repouso (informações da conta) são criptografados usando AES-256."
+        },
+        "l3": {
+          "text": "Auditorias de segurança regulares de terceiros e testes de penetração."
+        }
+      },
+      "s4": {
+        "title": "4. Seus direitos",
+        "c1": "Dependendo da sua localização (ex: GDPR, CCPA), você tem direitos específicos em relação aos seus dados pessoais:",
+        "l1": {
+          "label": "Acesso e Portabilidade",
+          "text": "Solicite uma cópia dos dados pessoais que mantemos sobre você."
+        },
+        "l2": {
+          "label": "Exclusão",
+          "text": "Solicite a exclusão da sua conta e dados associados."
+        },
+        "l3": {
+          "label": "Correção",
+          "text": "Atualize informações imprecisas ou incompletas."
+        },
+        "p1": "Para exercer esses direitos, entre em contato conosco usando as informações abaixo."
+      },
+      "s5": {
+        "title": "5. Informações de contato",
+        "c1": "Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato com nosso Encarregado de Proteção de Dados:"
+      }
+    },
+    "terms": {
+      "label": "Informações legais",
+      "title": "Termos de serviço",
+      "lastUpdated": "Última atualização: 24 de outubro de 2024",
+      "s1": {
+        "title": "1. Aceitação dos termos",
+        "c1": "Ao acessar ou usar a plataforma Dowll, você concorda em estar vinculado a estes Termos de Serviço.",
+        "c2": "Estes termos se aplicam a todos os usuários, visitantes e outros que acessam o serviço."
+      },
+      "s2": {
+        "title": "2. Descrição do serviço",
+        "c1": "O Dowll fornece um conjunto de ferramentas de processamento de documentos online, incluindo:",
+        "l1": "Mesclar e dividir documentos PDF.",
+        "l2": "Compactar tamanhos de arquivo para fácil compartilhamento.",
+        "l3": "Recursos básicos de edição e anotação.",
+        "p1": "Reservamos o direito de modificar ou descontinuar o serviço com ou sem aviso."
+      },
+      "s3": {
+        "title": "3. Obrigações do usuário",
+        "c1": "Como usuário do Dowll, você concorda em:",
+        "o1": "Fornecer informações precisas e atuais durante o cadastro.",
+        "o2": "Manter a segurança das credenciais da sua conta.",
+        "o3": "Usar o serviço apenas para fins legais.",
+        "o4": "Não enviar arquivos maliciosos ou tentar violar a segurança do sistema."
+      },
+      "s4": {
+        "title": "4. Propriedade intelectual",
+        "c1": "O serviço e seu conteúdo, recursos e funcionalidade originais são e permanecerão propriedade exclusiva do Dowll.",
+        "c2": "Você retém todos os direitos sobre os documentos que enviar. Os arquivos são excluídos automaticamente de acordo com nossa Política de Privacidade."
+      },
+      "s5": {
+        "title": "5. Lei aplicável",
+        "c1": "Estes Termos serão regidos pelas leis do Estado de Delaware, Estados Unidos."
+      }
+    },
+    "cookie": {
+      "managePreferences": "Gerenciar preferências",
+      "managePreferencesDesc": "Você pode alterar suas preferências de cookies a qualquer momento. Ajustar essas configurações pode afetar sua experiência em nossa plataforma.",
+      "essentialCookies": "Cookies essenciais",
+      "alwaysActive": "Sempre ativo",
+      "analyticalCookies": "Cookies analíticos",
+      "helpUsImprove": "Ajude-nos a melhorar",
+      "savePreferences": "Salvar preferências",
+      "needHelp": "Precisa de ajuda?",
+      "needHelpDesc": "Se você tiver dúvidas sobre nosso uso de cookies, entre em contato conosco em privacy@dowll.com",
+      "cookieDetails": "Detalhes de cookies",
+      "tableHeaders": {
+        "cookieName": "Nome do cookie",
+        "type": "Tipo",
+        "duration": "Duração",
+        "purpose": "Finalidade"
+      }
+    }
+  },
+  "features": {
+    "title": "Tudo o que você precisa para seus documentos",
+    "subtitle": "Uma plataforma abrangente com privacidade em primeiro lugar, projetada para lidar com cada tarefa de documento com precisão e velocidade.",
+    "sectionLabel": "CAPACIDADES PODEROSAS",
+    "sectionTitle": "Ferramentas de documentos principais",
+    "sectionSubtitle": "Simplifique suas tarefas diárias de documentos com nossas utilidades intuitivas baseadas em navegador. Alto desempenho, zero uploads."
+  },
+  "security": {
+    "badge": "Privacidade de nível empresarial",
+    "title": "Sua segurança é nossa prioridade",
+    "subtitle": "Experimente o processamento de documentos de conhecimento zero. Construímos o dowll com base no princípio de que seus dados pertencem a você, processando-os localmente para que nunca saiam do seu dispositivo.",
+    "startProcessingSecurely": "Iniciar processamento com segurança",
+    "learnMorePrivacy": "Saiba mais sobre nossa política de privacidade",
+    "heading": "Sua segurança é nossa prioridade",
+    "button": {
+      "start": "Começar a processar com segurança",
+      "privacy": "Saiba mais sobre nossa Política de Privacidade"
+    },
+    "cards": {
+      "local": {
+        "title": "Processamento local",
+        "desc": "Aproveitando o WebAssembly avançado, todas as operações de documentos ocorrem diretamente no seu navegador. Nenhum arquivo é enviado para nossos servidores."
+      },
+      "zeroTracking": {
+        "title": "Zero rastreamento",
+        "desc": "Não registramos suas teclas, não salvamos seu conteúdo nem rastreamos suas ações específicas. Você opera em completo anonimato."
+      },
+      "instantDeletion": {
+        "title": "Exclusão instantânea",
+        "desc": "Para recursos que requerem processamento temporário no servidor, os dados são apagados instantaneamente da RAM após a conclusão. Sem persistência."
+      }
+    }
+  },
+  "faq": {
+    "badge": "Central de suporte",
+    "title": "Perguntas frequentes",
+    "subtitle": "Tudo o que você precisa saber sobre o produto e faturamento. Não consegue encontrar a resposta que procura? Converse com nossa equipe amigável.",
+    "stillHaveQuestions": "Ainda tem perguntas?",
+    "stillHaveQuestionsDesc": "Nossa equipe de suporte está pronta para ajudá-lo com quaisquer dúvidas específicas.",
+    "contactSupport": "Contatar suporte"
+  },
+  "guides": {
+    "title": "Kit de ferramentas de documentos tudo-em-um",
+    "subtitle": "Descubra o poder das ferramentas de processamento de alta utilidade do dowll. Converta, comprima, mescle e edite com segurança e precisão de nível empresarial.",
+    "tutorialsLabel": "TUTORIAIS",
+    "documentGuides": "Guias de documentos",
+    "documentGuidesSubtitle": "Tutoriais detalhados e guias passo a passo para aproveitar ao máximo nossas ferramentas.",
+    "supportedFormats": "Formatos de arquivo suportados",
+    "supportedFormatsSubtitle": "Suportamos uma ampla gama de formatos de arquivo para todas as suas necessidades de processamento de documentos.",
+    "conversionCapabilities": "Capacidades de conversão",
+    "conversionCapabilitiesSubtitle": "Descubra o que você pode converter e criar com nosso poderoso kit de ferramentas.",
+    "convertsTo": "CONVERTE PARA:",
+    "availableConversions": "CONVERSÕES DISPONÍVEIS:",
+    "descriptions": {
+      "desc-merge": "Combine vários arquivos em um único documento de forma fácil e segura.",
+      "desc-split": "Extraia páginas ou separe um arquivo em vários documentos.",
+      "desc-compress": "Reduza o tamanho do arquivo sem perder qualidade para facilitar o compartilhamento.",
+      "desc-to-pdf": "Converta seus arquivos em PDFs de alta qualidade preservando o layout.",
+      "desc-from-pdf": "Converta PDFs em formatos editáveis ou imagens com precisão.",
+      "desc-edit": "Modifique texto, imagens e páginas diretamente no seu navegador.",
+      "desc-organize": "Reorganize, exclua ou gire páginas sem esforço.",
+      "desc-add-watermark": "Carimbe seus documentos com uma marca d agua de texto ou imagem personalizada.",
+      "desc-remove-watermark": "Remova marcas d agua existentes de seus documentos."
+    },
+    "support": {
+      "pdf-input": "Suporte de Entrada PDF",
+      "image-input": "Suporte de Entrada de Imagem",
+      "doc-input": "Suporte de Entrada de Documentos",
+      "doc-formats": "Formatos de Documento",
+      "spreadsheet-formats": "Formatos de Planilha",
+      "presentation-formats": "Formatos de Apresentação",
+      "image-formats": "Formatos de Imagem",
+      "image-to-pdf": "Imagem -> PDF",
+      "compress-image": "Comprimir Imagem",
+      "resize-image": "Redimensionar Imagem"
+    },
+    "page": {
+      "resources": "Recursos",
+      "guides": "Guias",
+      "stepByStep": "Guia passo a passo",
+      "readyToStart": "Pronto para começar?",
+      "jumpRightIn": "Vá direto para a ferramenta e processe seus documentos com segurança.",
+      "exploreTools": "Explorar Ferramentas",
+      "howItWorks": "Como funciona",
+      "step": "Passo",
+      "faq": "Perguntas Frequentes",
+      "whyUse": "Por que usar o dowll?",
+      "secureProcessing": "Processamento Seguro",
+      "secureProcessingDesc": "O dowll processa arquivos com segurança e protege seus documentos.",
+      "relatedTools": "Ferramentas Relacionadas",
+      "step1": "Carregue seu arquivo.",
+      "step2": "Ajuste as configurações se necessário.",
+      "step3": "Processe o arquivo.",
+      "step4": "Baixe o resultado.",
+      "benefit1": "Processamento rápido e seguro",
+      "benefit2": "Nenhuma instalação necessária",
+      "benefit3": "Funciona em qualquer dispositivo"
+    }
+  },
+  "dashboard": {
+    "services": "Serviços",
+    "searchPlaceholder": "Pesquisar ferramentas...",
+    "categoryTitles": {
+      "to_pdf": "CONVERTER PARA PDF",
+      "from_pdf": "CONVERTER DE PDF",
+      "pdf_image": "PDF E IMAGENS",
+      "office_media": "OFFICE E MÍDIA"
+    }
+  },
+  "tools": {
+    "merge-pdf": "Juntar PDF",
+    "split-pdf": "Dividir PDF",
+    "compress-pdf": "Comprimir PDF",
+    "compress-jpeg": "Comprimir JPEG",
+    "compress-png": "Comprimir PNG",
+    "compress-webp": "Comprimir WEBP",
+    "compress-svg": "Comprimir SVG",
+    "compress-gif": "Comprimir GIF",
+    "word-to-pdf": "Word para PDF",
+    "excel-to-pdf": "Excel para PDF",
+    "powerpoint-to-pdf": "PowerPoint para PDF",
+    "jpg-to-pdf": "JPG para PDF",
+    "png-to-pdf": "PNG para PDF",
+    "rtf-to-pdf": "RTF para PDF",
+    "html-to-pdf": "HTML para PDF",
+    "markdown-to-pdf": "Markdown para PDF",
+    "epub-to-pdf": "EPUB para PDF",
+    "epub-to-mobi": "EPUB para MOBI",
+    "mobi-to-epub": "MOBI para EPUB",
+    "pdf-to-word": "PDF para Word",
+    "pdf-to-excel": "PDF para Excel",
+    "pdf-to-powerpoint": "PDF para PowerPoint",
+    "pdf-to-jpg": "PDF para JPG",
+    "pdf-to-png": "PDF para PNG",
+    "pdf-to-rtf": "PDF para RTF",
+    "pdf-to-html": "PDF para HTML",
+    "pdf-to-markdown": "PDF para Markdown",
+    "pdf-to-epub": "PDF para EPUB",
+    "edit-pdf": "Editar PDF",
+    "organize-pdf": "Organizar PDF",
+    "add-watermark-pdf": "Adicionar Marca",
+    "remove-watermark-pdf": "Remover Marca",
+    "compress-documents": "Comprimir Documentos",
+    "convert-to-pdf": "Converter para PDF",
+    "convert-from-pdf": "Converter de PDF",
+    "pdf-images": "PDF e Imagens",
+    "office-media": "Escritório e Mídia",
+    "services": "Serviços",
+    "search-tools": "Pesquisar...",
+    "watermark": "Marca d'Água",
+    "convert-documents": "Converter Documentos",
+    "merge-documents": "Juntar Documentos",
+    "split-documents": "Dividir Documentos",
+    "edit-documents": "Editar Documentos",
+    "organize-documents": "Organizar Documentos",
+    "compress-jpg": "Comprimir JPG",
+    "compress-images": "Comprimir Imagens",
+    "compress-word": "Comprimir Documento Word",
+    "compress-excel": "Comprimir Arquivos Excel",
+    "compress-powerpoint": "Comprimir PowerPoint",
+    "compress-zip": "Comprimir Arquivos ZIP",
+    "compress-rar": "Comprimir Arquivos RAR",
+    "compress-video": "Comprimir Vídeo",
+    "compress-audio": "Comprimir Áudio",
+    "jpeg-to-pdf": "JPEG para PDF",
+    "pdf-to-jpeg": "PDF para JPEG",
+    "pdf-to-pdfa": "PDF para PDF/A",
+    "protect-pdf": "Proteger Documentos",
+    "unlock-pdf": "Desbloquear Documentos",
+    "ocr-pdf": "Documentos OCR",
+    "extract-pages": "Extrair Páginas",
+    "rearrange-pages": "Reorganizar Páginas",
+    "rotate-pages": "Rotar Páginas",
+    "add-page-numbers": "Adicionar Números de Página",
+    "sign-pdf": "Assinar Documentos"
+  },
+  "upload": {
+    "selectFile": "Selecione um arquivo",
+    "selectSpecificFile": "Selecionar arquivo {type}",
+    "dragAndDrop": "Arraste e solte seu arquivo aqui ou clique para procurar em seu dispositivo",
+    "dragAndDropSimple": "ou arraste e solte seu arquivo aqui",
+    "clickToSelect": "ou clique para selecionar arquivos do seu computador",
+    "chooseFile": "Escolher arquivo",
+    "converting": "Convertendo seu documento...",
+    "compressing": "Comprimindo seu documento...",
+    "merging": "Mesclando seus documentos...",
+    "processing": "Processando...",
+    "pleaseWait": "Aguarde enquanto processamos seu arquivo com segurança.",
+    "clickOrDrag": "Clique ou arraste para enviar",
+    "pdfOnlyMax": "Apenas arquivos PDF (máx. 10MB)",
+    "processFiles": "Processar {{count}} arquivos"
+  },
+  "seo": {
+    "common": {
+      "whyUseDowll": "Por que usar o Dowll?",
+      "faq": "Perguntas Frequentes"
+    },
+    "compress-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta de compressão?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que é compressão de PDF?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "Como comprimir um PDF?",
+          "answer": "Basta fazer upload do seu arquivo PDF para o Dowll e nossa ferramenta o comprimirá automaticamente."
+        },
+        "1": {
+          "question": "A compressão reduz a qualidade?",
+          "answer": "O Dowll usa algoritmos de otimização avançados para reduzir o tamanho do arquivo mantendo uma excelente qualidade."
+        },
+        "2": {
+          "question": "Meu PDF é seguro?",
+          "answer": "Sim, seus arquivos são processados com segurança e completamente removidos de nossos servidores após o processamento."
+        },
+        "3": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "4": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "5": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Comprimir PDF grátis",
+      "heroSubtitle": "Reduza o tamanho do PDF mantendo a qualidade."
+    },
+    "merge-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta de junção?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "Por que juntar arquivos PDF?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "Como posso juntar PDFs gratuitamente?",
+          "answer": "Faça upload dos seus PDFs, arraste-os na ordem correta e clique em juntar."
+        },
+        "1": {
+          "question": "Posso reorganizar a ordem dos arquivos?",
+          "answer": "Sim! Uma vez que você fizer o upload dos seus arquivos, pode arrastar e soltar para organizá-los na ordem exata que desejar."
+        },
+        "2": {
+          "question": "Há um limite de quantos arquivos posso juntar?",
+          "answer": "O Dowll permite que você junte vários arquivos de uma vez."
+        },
+        "3": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "4": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "5": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Juntar PDF grátis",
+      "heroSubtitle": "Combine vários PDFs em um só documento facilmente."
+    },
+    "jpg-to-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta JPG?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "Por que converter imagens para PDF?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "Como converter JPG para PDF?",
+          "answer": "Faça upload das suas imagens JPG, organize-as na ordem que preferir e nossa ferramenta gerará um único PDF."
+        },
+        "1": {
+          "question": "Minhas imagens perderão qualidade?",
+          "answer": "Não, nosso conversor garante que suas imagens mantenham sua resolução e clareza originais."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter JPG para PDF",
+      "heroSubtitle": "Converta imagens JPG em PDF em segundos."
+    },
+    "word-to-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta Word?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "Por que converter Word para PDF?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "Minhas fontes mudarão durante a conversão?",
+          "answer": "Não, nosso conversor de Word para PDF preserva todas as fontes, margens e layouts originais."
+        },
+        "1": {
+          "question": "Posso converter arquivos DOCX?",
+          "answer": "Sim, nossa ferramenta suporta totalmente o formato DOCX mais recente, bem como arquivos DOC mais antigos."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter Word para PDF grátis",
+      "heroSubtitle": "Converta documentos Word em PDF sem perder a formatação."
+    },
+    "pdf-to-word": {
+      "howToUseTitle": "Como usar nossa ferramenta PDF?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "Como funciona a conversão de PDF para Word?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "O documento Word convertido é totalmente editável?",
+          "answer": "Sim! A saída é um arquivo DOCX padrão que você pode abrir e editar no Microsoft Word, Google Docs ou qualquer outro processador de texto."
+        },
+        "1": {
+          "question": "Meus arquivos estão seguros?",
+          "answer": "Com certeza. Os arquivos são processados com segurança e excluídos automaticamente de nossos servidores."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter PDF para Word grátis",
+      "heroSubtitle": "Converta arquivos PDF em documentos Word editáveis com alta precisão."
+    },
+    "split-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta de divisão?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "Quando você deve dividir um PDF?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "Posso extrair apenas uma página de um PDF?",
+          "answer": "Sim, você pode selecionar uma única página, várias páginas específicas ou um intervalo de páginas para extrair."
+        },
+        "1": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "2": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "3": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Dividir PDF grátis",
+      "heroSubtitle": "Extraia páginas específicas de um PDF."
+    },
+    "add-watermark-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta de marca d'água?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "Por que adicionar uma marca d'água a um PDF?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "Posso usar uma imagem como marca d'água?",
+          "answer": "Sim, você pode fazer upload do logotipo da sua empresa ou qualquer outra imagem para usar como marca d'água transparente."
+        },
+        "1": {
+          "question": "A marca d'água cobrirá meu texto?",
+          "answer": "Você pode ajustar a transparência da marca d'água para que fique discreta no fundo."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Adicionar marca d'água ao PDF",
+      "heroSubtitle": "Proteja seus documentos com uma marca d'água."
+    },
+    "compress-jpg": {
+      "howToUseTitle": "Como usar nossa ferramenta Compress JPG?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Compress para JPG a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Compress JPG?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Comprimir JPG grátis",
+      "heroSubtitle": "A maneira mais fácil de comprimir JPG."
+    },
+    "compress-jpeg": {
+      "howToUseTitle": "Como usar nossa ferramenta Compress JPEG?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Compress para JPEG a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Compress JPEG?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Comprimir JPEG grátis",
+      "heroSubtitle": "A maneira mais fácil de comprimir JPEG."
+    },
+    "compress-png": {
+      "howToUseTitle": "Como usar nossa ferramenta Compress PNG?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Compress para PNG a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Compress PNG?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Comprimir PNG grátis",
+      "heroSubtitle": "A maneira mais fácil de comprimir PNG."
+    },
+    "compress-webp": {
+      "howToUseTitle": "Como usar nossa ferramenta Compress WEBP?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Compress para WEBP a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Compress WEBP?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Comprimir WEBP grátis",
+      "heroSubtitle": "A maneira mais fácil de comprimir WEBP."
+    },
+    "compress-images": {
+      "howToUseTitle": "Como usar nossa ferramenta Compress Images?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Compress para Images a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Compress Images?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Comprimir imagens grátis",
+      "heroSubtitle": "A maneira mais fácil de comprimir imagens."
+    },
+    "compress-word": {
+      "howToUseTitle": "Como usar nossa ferramenta Compress Word?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Compress para Word a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Compress Word?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Comprimir Word grátis",
+      "heroSubtitle": "A maneira mais fácil de comprimir Word."
+    },
+    "compress-excel": {
+      "howToUseTitle": "Como usar nossa ferramenta Compress Excel?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Compress para Excel a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Compress Excel?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Comprimir Excel grátis",
+      "heroSubtitle": "A maneira mais fácil de comprimir Excel."
+    },
+    "compress-powerpoint": {
+      "howToUseTitle": "Como usar nossa ferramenta Compress Powerpoint?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Compress para Powerpoint a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Compress Powerpoint?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Comprimir Powerpoint",
+      "heroSubtitle": "A maneira mais fácil de comprimir Powerpoint."
+    },
+    "jpeg-to-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta JPEG To PDF?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de JPEG para PDF a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta JPEG To PDF?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter JPEG para PDF",
+      "heroSubtitle": "A maneira mais fácil de converter JPEG para PDF."
+    },
+    "png-to-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta PNG To PDF?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de PNG para PDF a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta PNG To PDF?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter PNG para PDF",
+      "heroSubtitle": "A maneira mais fácil de converter PNG para PDF."
+    },
+    "powerpoint-to-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta Powerpoint To PDF?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Powerpoint para PDF a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Powerpoint To PDF?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter Powerpoint para PDF",
+      "heroSubtitle": "A maneira mais fácil de converter Powerpoint para PDF."
+    },
+    "excel-to-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta Excel To PDF?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Excel para PDF a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Excel To PDF?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter Excel para PDF grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de converter Excel para PDF."
+    },
+    "pdf-to-jpg": {
+      "howToUseTitle": "Como usar nossa ferramenta PDF To JPG?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de PDF para JPG a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta PDF To JPG?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter PDF para JPG grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de converter PDF para JPG."
+    },
+    "pdf-to-jpeg": {
+      "howToUseTitle": "Como usar nossa ferramenta PDF To JPEG?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de PDF para JPEG a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta PDF To JPEG?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter PDF para JPEG grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de converter PDF para JPEG."
+    },
+    "pdf-to-png": {
+      "howToUseTitle": "Como usar nossa ferramenta PDF To PNG?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de PDF para PNG a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta PDF To PNG?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter PDF para PNG grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de converter PDF para PNG."
+    },
+    "pdf-to-powerpoint": {
+      "howToUseTitle": "Como usar nossa ferramenta PDF To Powerpoint?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de PDF para Powerpoint a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta PDF To Powerpoint?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Converter PDF para Powerpoint grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de converter PDF para Powerpoint."
+    },
+    "edit-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta Edit PDF?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Edit para PDF a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Edit PDF?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Editar PDF online grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de editar um PDF."
+    },
+    "organize-pdf": {
+      "howToUseTitle": "Como usar nossa ferramenta Organize PDF?",
+      "howItWorks": {
+        "0": "Faça upload do seu arquivo arrastando-o ou selecionando-o.",
+        "1": "Aguarde o processo ser concluído.",
+        "2": "Baixe seu arquivo processado instantaneamente."
+      },
+      "features": {
+        "0": "100% gratuito e online",
+        "1": "Nenhum software ou registro necessário",
+        "2": "Processamento rápido e preciso",
+        "3": "Funciona perfeitamente em dispositivos móveis",
+        "4": "Os mais altos padrões de segurança",
+        "5": "Os arquivos são excluídos automaticamente para privacidade"
+      },
+      "explanationTitle": "O que torna nossa ferramenta de Organize para PDF a melhor?",
+      "explanationText": {
+        "0": "Nossa ferramenta oferece velocidade de processamento e precisão líderes do setor sem precisar baixar softwares pesados.",
+        "1": "Seja você um estudante, profissional ou precise lidar com documentos em movimento, esta ferramenta simplifica seu fluxo de trabalho com segurança."
+      },
+      "faq": {
+        "0": {
+          "question": "É seguro usar esta ferramenta Organize PDF?",
+          "answer": "Sim. Todos os uploads de arquivos são criptografados e processados com segurança. Excluímos automaticamente todos os arquivos dos nossos servidores."
+        },
+        "1": {
+          "question": "Preciso instalar algum software?",
+          "answer": "Nenhuma instalação é necessária. Tudo funciona diretamente no seu navegador."
+        },
+        "2": {
+          "question": "Meus dados estão seguros ao usar o Dowll?",
+          "answer": "Sim absolutamente. Todas as transferências de arquivos usam criptografia SSL avançada. Além disso, nunca armazenamos os seus ficheiros — eles são eliminados automática e permanentemente dos nossos servidores logo após o processamento."
+        },
+        "3": {
+          "question": "Posso usar esta ferramenta no meu celular?",
+          "answer": "Sim! O Dowll é totalmente otimizado para dispositivos móveis. Você pode processar seus documentos facilmente em qualquer iPhone, iPad ou dispositivo Android diretamente de seu navegador da web sem instalar um aplicativo."
+        },
+        "4": {
+          "question": "Existem taxas ocultas ou marcas d'água indesejadas?",
+          "answer": "Não. O Dowll fornece este serviço de forma totalmente gratuita, sem taxas de assinatura ocultas, e nunca adicionaremos nossa própria marca d'água aos seus documentos."
+        }
+      },
+      "heroTitle": "Organizar PDF online grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de organizar um PDF."
+    },
+    "pdf-to-excel": {
+      "heroTitle": "Converter PDF para Excel grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de converter PDF para Excel."
+    },
+    "rtf-to-pdf": {
+      "heroTitle": "Converter RTF para PDF grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de converter RTF para PDF."
+    },
+    "html-to-pdf": {
+      "heroTitle": "Converter HTML para PDF grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de converter HTML para PDF."
+    },
+    "markdown-to-pdf": {
+      "heroTitle": "Converter Markdown para PDF grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de converter Markdown para PDF."
+    },
+    "epub-to-pdf": {
+      "heroTitle": "Converter EPUB para PDF grátis",
+      "heroSubtitle": "A maneira mais fácil, rápida e segura de converter EPUB para PDF."
+    },
+    "remove-watermark-pdf": {
+      "heroTitle": "Remover marca d'água do PDF",
+      "heroSubtitle": "Remova marcas d'água dos seus documentos de forma fácil e segura."
+    }
+  },
+  "editpdf": {
+    "textMode": "Texto",
+    "eraseMode": "Apagar",
+    "editMode": "Editar",
+    "propertiesTitle": "Propriedades",
+    "propertiesEmptyLine1": "Selecione um elemento de texto",
+    "propertiesEmptyLine2": "para editar suas propriedades.",
+    "processing": "Processando...",
+    "exportBtn": "Exportar PDF",
+    "successToast": "Documento editado com sucesso!",
+    "errorToast": "Erro ao processar o documento"
+  },
+  "organizepdf": {
+    "choosePdf": "Escolher arquivo PDF",
+    "pagesCount": "Páginas",
+    "emptyState": "Todas as páginas excluídas. Recarregue o documento para recomeçar.",
+    "summary": "Resumo",
+    "originalPages": "Páginas originais:",
+    "finalPages": "Páginas finais:",
+    "processing": "Processando...",
+    "organizeBtn": "Organizar PDF",
+    "noFileToast": "Selecione um arquivo para processar.",
+    "minPageToast": "O documento deve ter pelo menos uma página.",
+    "successToast": "Documento organizado com sucesso!",
+    "errorToast": "Falha ao organizar o documento"
+  },
+  "watermark": {
+    "uploadTitle": "Carregar Documento",
+    "previewTitle": "Visualização do Documento",
+    "optionsTitle": "Opções de Marca D'água",
+    "text": "Texto",
+    "color": "Cor",
+    "opacity": "Opacidade",
+    "size": "Tamanho",
+    "alignment": "Alinhamento",
+    "diagonal": "Diagonal",
+    "horizontal": "Horizontal",
+    "vertical": "Vertical",
+    "button": "Adicionar Marca D'água",
+    "success": "Marca d'água adicionada com sucesso!",
+    "error": "Falha ao adicionar marca d'água.",
+    "loading": "Adicionando marca d'água..."
+  },
+  "compress": {
+    "howItWorks": "Como funciona:",
+    "instruction1": "Use o controle deslizante ao vivo à direita para ajustar visualmente a qualidade da imagem.",
+    "instruction2": "Ou insira um tamanho alvo exato abaixo.",
+    "instruction3": "Clique em Baixar quando estiver satisfeito com a visualização!",
+    "exactTargetSize": "Tamanho Alvo Exato (Opcional)",
+    "overridesQuality": "Substitui o controle deslizante de qualidade. Melhor para imagens.",
+    "livePreview": "Visualização de compressão ao vivo",
+    "qualityPreview": "Visualização de qualidade",
+    "liveQualitySlider": "Controle deslizante de qualidade ao vivo",
+    "smallerFileSize": "Tamanho de arquivo menor",
+    "betterVisualQuality": "Melhor qualidade visual",
+    "original": "Original",
+    "compressed": "Comprimido",
+    "previewNotAvailable": "Visualização não disponível",
+    "visualPreviewsSupported": "Visualizações visuais são suportadas apenas para formatos de imagem.",
+    "liveCompressionActive": "Compressão ao vivo ativa",
+    "previewingRealtime": "Visualizando qualidade em tempo real.",
+    "spaceSaved": "Espaço economizado",
+    "downloadFile": "Baixar arquivo"
+  }
+}

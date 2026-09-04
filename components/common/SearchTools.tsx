@@ -4,8 +4,10 @@ import { useState, useRef, useEffect } from "react";
 import { Search } from "lucide-react";
 import Link from "next/link";
 import { sidebarItems } from "@/lib/tools.data";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function SearchTools() {
+    const { t, locale } = useTranslation();
     const [query, setQuery] = useState("");
     const [isOpen, setIsOpen] = useState(false);
     const [placeholderIndex, setPlaceholderIndex] = useState(0);
@@ -13,7 +15,8 @@ export default function SearchTools() {
     const wrapperRef = useRef<HTMLDivElement>(null);
 
     const allTools = sidebarItems.flatMap(item => item.children ? item.children : [item]);
-    const toolNames = allTools.map(t => t.name);
+    // Use translated names for typing effect
+    const toolNames = allTools.map(tTool => locale === 'en' ? tTool.name : (tTool.slug ? t(`tools.${tTool.slug}`) : t(`tools.${tTool.name.toLowerCase().replace(/ /g, '-')}`) || tTool.name));
 
     useEffect(() => {
         if (toolNames.length === 0) return;
@@ -59,7 +62,8 @@ export default function SearchTools() {
 
     const filteredTools = query ? allTools.filter(tool => {
         const lowerQuery = query.toLowerCase();
-        return tool.name.toLowerCase().includes(lowerQuery) ||
+        const translatedName = locale === 'en' ? tool.name : (tool.slug ? t(`tools.${tool.slug}`, tool.name) : t(`tools.${tool.name.toLowerCase().replace(/ /g, '-')}`, tool.name));
+        return translatedName.toLowerCase().includes(lowerQuery) ||
             tool.category?.toLowerCase().includes(lowerQuery) ||
             tool.metadata?.keywords?.some(k => k.toLowerCase().includes(lowerQuery));
     }) : [];
@@ -79,8 +83,9 @@ export default function SearchTools() {
             <div className="relative min-w-0 w-full">
                 <Search className="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4 md:w-5 md:h-5" />
                 <input
+                    suppressHydrationWarning
                     type="text"
-                    placeholder={`Search ${placeholderSentence || 'PDF Tools'}`}
+                    placeholder={`${t('dashboard.searchPlaceholder', 'Search tools...').replace('...', '')} ${placeholderSentence || ''}`}
                     className="w-full min-w-0 pl-10 md:pl-12 pr-4 py-2.5 md:py-3 border border-blue-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#005ee6] focus:border-transparent dark:bg-gray-800 dark:text-white shadow-sm transition-all text-xs md:text-sm"
                     value={query}
                     onChange={(e) => {
@@ -108,14 +113,14 @@ export default function SearchTools() {
                                             }}
                                         >
                                             {Icon && <Icon className={`w-5 h-5 ${iconColorClass}`} />}
-                                            {tool.name}
+                                            {locale === 'en' ? tool.name : (tool.slug ? t(`tools.${tool.slug}`, tool.name) : t(`tools.${tool.name.toLowerCase().replace(/ /g, '-')}`, tool.name))}
                                         </Link>
                                     </li>
                                 )
                             })}
                         </ul>
                     ) : (
-                        <div className="p-4 text-sm text-gray-500 text-center">No tools found matching "{query}"</div>
+                        <div className="p-4 text-sm text-gray-500 text-center">{t('common.noResults', 'No tools found matching')} "{query}"</div>
                     )}
                 </div>
             )}

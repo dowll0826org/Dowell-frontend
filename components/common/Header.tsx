@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { sidebarItems } from "@/lib/tools.data";
+import LanguageSwitcher from "@/components/common/LanguageSwitcher";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const allTools = sidebarItems.flatMap(item => item.children ? item.children : [item]);
 const convertToPdfTools = sidebarItems.find(item => item.name === "Convert Documents")?.children?.filter(child => child.category === "to_pdf") || [];
@@ -15,6 +17,7 @@ const compressOfficeMediaTools = sidebarItems.find(item => item.name === "Compre
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [mobileOpenSection, setMobileOpenSection] = useState<string | null>(null);
+    const { t } = useTranslation();
 
     // Prevent body scroll when mobile menu is open
     useEffect(() => {
@@ -68,13 +71,13 @@ export default function Header() {
                     {/* Compress Document Dropdown */}
                     <div className="relative group">
                         <button className="flex items-center gap-1 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#005ee6] dark:hover:text-[#005ee6] transition-colors uppercase tracking-wide py-8">
-                            COMPRESS
+                            {t("nav.compress")}
                             <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
                         </button>
                         {/* Dropdown Menu */}
                         <div className="absolute top-[80px] left-1/2 -translate-x-1/2 hidden group-hover:flex w-max min-w-[520px] bg-white dark:bg-gray-900 rounded-xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] dark:shadow-none border border-gray-100 dark:border-gray-800 p-6 flex-row gap-8 transition-all before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white dark:before:border-b-gray-800">
                             <div className="flex-1">
-                                <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-4 uppercase tracking-wider">PDF & IMAGES</h3>
+                                <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-4 uppercase tracking-wider">{t("nav.pdfAndImages")}</h3>
                                 <ul className="space-y-3">
                                     {compressPdfImageTools.map((tool, index) => {
                                         const Icon = tool.icon;
@@ -82,7 +85,7 @@ export default function Header() {
                                             <li key={tool.path || index}>
                                                 <Link href={tool.path || "#"} className="flex items-center gap-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 -ml-2 rounded-lg transition-colors">
                                                     {Icon && <Icon className={`w-5 h-5 ${tool.color || "text-gray-500"}`} />}
-                                                    {tool.name}
+                                                    {t(`tools.${tool.slug}`, tool.name)}
                                                 </Link>
                                             </li>
                                         );
@@ -91,7 +94,7 @@ export default function Header() {
                             </div>
                             <div className="w-[1px] bg-gray-100 dark:bg-gray-800 my-2"></div>
                             <div className="flex-1">
-                                <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-4 uppercase tracking-wider">OFFICE & MEDIA</h3>
+                                <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-4 uppercase tracking-wider">{t("nav.officeAndMedia")}</h3>
                                 <ul className="space-y-3">
                                     {compressOfficeMediaTools.map((tool, index) => {
                                         const Icon = tool.icon;
@@ -99,7 +102,7 @@ export default function Header() {
                                             <li key={tool.path || index}>
                                                 <Link href={tool.path || "#"} className="flex items-center gap-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 -ml-2 rounded-lg transition-colors">
                                                     {Icon && <Icon className={`w-5 h-5 ${tool.color || "text-gray-500"}`} />}
-                                                    {tool.name}
+                                                    {t(`tools.${tool.slug}`, tool.name)}
                                                 </Link>
                                             </li>
                                         );
@@ -112,13 +115,13 @@ export default function Header() {
                     {/* Convert Document Dropdown */}
                     <div className="relative group">
                         <button className="flex items-center gap-1 text-sm font-bold text-[#005ee6] dark:text-[#005ee6] transition-colors uppercase tracking-wide py-8">
-                            CONVERT PDF
+                            {t("nav.convertPdf")}
                             <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
                         </button>
                         {/* Dropdown Menu */}
                         <div className="absolute top-[80px] left-1/2 -translate-x-1/2 hidden group-hover:flex w-max min-w-[520px] bg-white dark:bg-gray-900 rounded-xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] dark:shadow-none border border-gray-100 dark:border-gray-800 p-6 flex-row gap-8 transition-all before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white dark:before:border-b-gray-800">
                             <div className="flex-1">
-                                <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-4 uppercase tracking-wider">CONVERT TO PDF</h3>
+                                <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-4 uppercase tracking-wider">{t("nav.convertToPdf")}</h3>
                                 <ul className="space-y-3">
                                     {convertToPdfTools.map((tool, index) => {
                                         const Icon = tool.icon;
@@ -126,7 +129,7 @@ export default function Header() {
                                             <li key={tool.path || index}>
                                                 <Link href={tool.path || "#"} className="flex items-center gap-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 -ml-2 rounded-lg transition-colors">
                                                     {Icon && <Icon className={`w-5 h-5 ${tool.color || "text-gray-500"}`} />}
-                                                    {tool.name}
+                                                    {t(`tools.${tool.slug}`, tool.name)}
                                                 </Link>
                                             </li>
                                         );
@@ -135,7 +138,7 @@ export default function Header() {
                             </div>
                             <div className="w-[1px] bg-gray-100 dark:bg-gray-800 my-2"></div>
                             <div className="flex-1">
-                                <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-4 uppercase tracking-wider">CONVERT FROM PDF</h3>
+                                <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-4 uppercase tracking-wider">{t("nav.convertFromPdf")}</h3>
                                 <ul className="space-y-3">
                                     {convertFromPdfTools.map((tool, index) => {
                                         const Icon = tool.icon;
@@ -143,7 +146,7 @@ export default function Header() {
                                             <li key={tool.path || index}>
                                                 <Link href={tool.path || "#"} className="flex items-center gap-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 -ml-2 rounded-lg transition-colors">
                                                     {Icon && <Icon className={`w-5 h-5 ${tool.color || "text-gray-500"}`} />}
-                                                    {tool.name}
+                                                    {t(`tools.${tool.slug}`, tool.name)}
                                                 </Link>
                                             </li>
                                         );
@@ -156,7 +159,7 @@ export default function Header() {
                     {/* All Tools Dropdown */}
                     <div className="relative group">
                         <button className="flex items-center gap-1 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#005ee6] dark:hover:text-[#005ee6] transition-colors uppercase tracking-wide py-8">
-                            ALL PDF TOOLS
+                            {t("nav.allPdfTools")}
                             <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
                         </button>
                         <div className="absolute top-[80px] right-0 hidden group-hover:flex w-max min-w-[700px] max-w-[900px] bg-white dark:bg-gray-900 rounded-xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] dark:shadow-none border border-gray-100 dark:border-gray-800 p-6 transition-all before:absolute before:-top-2 before:right-10 before:border-8 before:border-transparent before:border-b-white dark:before:border-b-gray-800">
@@ -166,13 +169,16 @@ export default function Header() {
                                     return (
                                         <Link key={tool.path || index} href={tool.path || "#"} className="flex items-center gap-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 -ml-2 rounded-lg transition-colors group/item">
                                             {Icon && <Icon className={`w-5 h-5 ${tool.color || "text-gray-500"} group-hover/item:text-[#005ee6] transition-colors`} />}
-                                            <span className="truncate">{tool.name}</span>
+                                            <span className="truncate">{t(`tools.${tool.slug}`, tool.name)}</span>
                                         </Link>
                                     );
                                 })}
                             </div>
                         </div>
                     </div>
+
+                    {/* Language Switcher */}
+                    <LanguageSwitcher variant="compact" />
                 </div>
             </div>
 
@@ -186,30 +192,30 @@ export default function Header() {
                                 className="flex items-center justify-between w-full py-3 text-sm font-bold text-gray-700 dark:text-gray-200 uppercase"
                                 onClick={() => toggleMobileSection('compress')}
                             >
-                                COMPRESS
+                                {t("nav.compress")}
                                 <ChevronDown className={`w-4 h-4 transition-transform ${mobileOpenSection === 'compress' ? 'rotate-180' : ''}`} />
                             </button>
                             {mobileOpenSection === 'compress' && (
                                 <div className="pl-4 pb-2 space-y-4">
                                     <div>
-                                        <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-2 uppercase tracking-wider mt-2">PDF & IMAGES</h3>
+                                        <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-2 uppercase tracking-wider mt-2">{t("nav.pdfAndImages")}</h3>
                                         <ul className="space-y-1">
                                             {compressPdfImageTools.map((tool, index) => (
                                                 <li key={index}>
                                                     <Link href={tool.path || "#"} onClick={toggleMobileMenu} className="block py-2 text-sm font-semibold text-gray-600 dark:text-gray-300">
-                                                        {tool.name}
+                                                        {t(`tools.${tool.slug}`, tool.name)}
                                                     </Link>
                                                 </li>
                                             ))}
                                         </ul>
                                     </div>
                                     <div>
-                                        <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-2 uppercase tracking-wider mt-2">OFFICE & MEDIA</h3>
+                                        <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-2 uppercase tracking-wider mt-2">{t("nav.officeAndMedia")}</h3>
                                         <ul className="space-y-1">
                                             {compressOfficeMediaTools.map((tool, index) => (
                                                 <li key={index}>
                                                     <Link href={tool.path || "#"} onClick={toggleMobileMenu} className="block py-2 text-sm font-semibold text-gray-600 dark:text-gray-300">
-                                                        {tool.name}
+                                                        {t(`tools.${tool.slug}`, tool.name)}
                                                     </Link>
                                                 </li>
                                             ))}
@@ -225,30 +231,30 @@ export default function Header() {
                                 className="flex items-center justify-between w-full py-3 text-sm font-bold text-[#005ee6] dark:text-[#005ee6] uppercase"
                                 onClick={() => toggleMobileSection('convert')}
                             >
-                                CONVERT PDF
+                                {t("nav.convertPdf")}
                                 <ChevronDown className={`w-4 h-4 transition-transform ${mobileOpenSection === 'convert' ? 'rotate-180' : ''}`} />
                             </button>
                             {mobileOpenSection === 'convert' && (
                                 <div className="pl-4 pb-2 space-y-4">
                                     <div>
-                                        <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-2 uppercase tracking-wider mt-2">CONVERT TO PDF</h3>
+                                        <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-2 uppercase tracking-wider mt-2">{t("nav.convertToPdf")}</h3>
                                         <ul className="space-y-1">
                                             {convertToPdfTools.map((tool, index) => (
                                                 <li key={index}>
                                                     <Link href={tool.path || "#"} onClick={toggleMobileMenu} className="block py-2 text-sm font-semibold text-gray-600 dark:text-gray-300">
-                                                        {tool.name}
+                                                        {t(`tools.${tool.slug}`, tool.name)}
                                                     </Link>
                                                 </li>
                                             ))}
                                         </ul>
                                     </div>
                                     <div>
-                                        <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-2 uppercase tracking-wider mt-2">CONVERT FROM PDF</h3>
+                                        <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 mb-2 uppercase tracking-wider mt-2">{t("nav.convertFromPdf")}</h3>
                                         <ul className="space-y-1">
                                             {convertFromPdfTools.map((tool, index) => (
                                                 <li key={index}>
                                                     <Link href={tool.path || "#"} onClick={toggleMobileMenu} className="block py-2 text-sm font-semibold text-gray-600 dark:text-gray-300">
-                                                        {tool.name}
+                                                        {t(`tools.${tool.slug}`, tool.name)}
                                                     </Link>
                                                 </li>
                                             ))}
@@ -259,12 +265,12 @@ export default function Header() {
                         </div>
 
                         {/* Mobile All Tools */}
-                        <div className="pb-2">
+                        <div className="border-b border-gray-100 dark:border-gray-800 pb-2">
                             <button 
                                 className="flex items-center justify-between w-full py-3 text-sm font-bold text-gray-700 dark:text-gray-200 uppercase"
                                 onClick={() => toggleMobileSection('all')}
                             >
-                                ALL PDF TOOLS
+                                {t("nav.allPdfTools")}
                                 <ChevronDown className={`w-4 h-4 transition-transform ${mobileOpenSection === 'all' ? 'rotate-180' : ''}`} />
                             </button>
                             {mobileOpenSection === 'all' && (
@@ -280,6 +286,11 @@ export default function Header() {
                                     </ul>
                                 </div>
                             )}
+                        </div>
+
+                        {/* Mobile Language Switcher */}
+                        <div className="pt-3 pb-2">
+                            <LanguageSwitcher variant="full" />
                         </div>
 
                     </div>

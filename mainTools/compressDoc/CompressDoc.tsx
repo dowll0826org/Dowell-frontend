@@ -11,8 +11,10 @@ import {
 import { compressDocumentApi } from './api.compressDoc';
 import LoadingModal from '@/components/common/LoadingModal';
 import toast from 'react-hot-toast';
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function CompressDoc() {
+    const { t } = useTranslation();
     const params = useParams();
     const tool = params?.tool as string || 'compress-pdf';
 
@@ -178,10 +180,10 @@ export default function CompressDoc() {
                 true // AUTO DOWNLOAD
             );
             setStats(resultStats);
-            toast.success('Document compressed successfully!');
+            toast.success(t('compress.successToast', 'Document compressed successfully!'));
         } catch (error: any) {
             console.error('Error compressing:', error);
-            toast.error(error.message || 'An error occurred while compressing the document.');
+            toast.error(error.message || t('compress.errorToast', 'An error occurred while compressing the document.'));
         } finally {
             setIsProcessing(false);
         }
@@ -213,13 +215,13 @@ export default function CompressDoc() {
                             <CloudUpload className="w-8 h-8" />
                         </div>
                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                            Select file
+                            {t('upload.selectFile', 'Select file')}
                         </h3>
                         <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
-                            or drag & drop your file here
+                            {t('upload.dragAndDropSimple', 'or drag and drop your file here')}
                         </p>
                         <button suppressHydrationWarning className="px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 shadow-sm transition-colors pointer-events-none">
-                            Select file
+                            {t('upload.selectFile', 'Select file')}
                         </button>
                     </div>
                 </div>
@@ -256,18 +258,18 @@ export default function CompressDoc() {
 
                             {/* Advanced Target Size Mode */}
                             <div className="mb-6 pb-6 border-b border-gray-100 dark:border-gray-800">
-                                <h4 className="font-bold text-gray-900 dark:text-white mb-2 text-sm">How it works:</h4>
+                                <h4 className="font-bold text-gray-900 dark:text-white mb-2 text-sm">{t('compress.howItWorks', 'How it works:')}</h4>
                                 <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-2 list-disc pl-4">
-                                    <li>Use the live slider on the right to visually adjust the image quality.</li>
-                                    <li>Or enter an exact target size below.</li>
-                                    <li>Click Download when you are happy with the preview!</li>
+                                    <li>{t('compress.instruction1', 'Use the live slider on the right to visually adjust the image quality.')}</li>
+                                    <li>{t('compress.instruction2', 'Or enter an exact target size below.')}</li>
+                                    <li>{t('compress.instruction3', 'Click Download when you are happy with the preview!')}</li>
                                 </ul>
                             </div>
 
                             {/* Target File Size */}
                             <div className="flex items-center gap-2 font-bold text-gray-700 dark:text-gray-200 text-sm mb-4">
                                 <Target size={18} className="text-[#0f3b90] dark:text-blue-500" />
-                                Exact Target Size (Optional)
+                                {t('compress.exactTargetSize', 'Exact Target Size (Optional)')}
                             </div>
                             <div className="flex gap-2 sm:gap-3 mb-2">
                                 <input
@@ -293,7 +295,7 @@ export default function CompressDoc() {
                                 </div>
                             </div>
                             <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
-                                Overrides quality slider. Best for Images.
+                                {t('compress.overridesQuality', 'Overrides quality slider. Best for Images.')}
                             </p>
 
                             <button
@@ -306,7 +308,7 @@ export default function CompressDoc() {
                                 ) : (
                                     <Settings2 className="w-5 h-5" />
                                 )}
-                                {isProcessing ? 'Processing...' : 'Download File'}
+                                {isProcessing ? t('upload.processing', 'Processing...') : t('compress.downloadFile', 'Download File')}
                             </button>
                         </div>
                     </div>
@@ -317,7 +319,7 @@ export default function CompressDoc() {
                         <div className="flex-1 flex flex-col relative">
                             <div className="flex justify-between items-center p-4 border-b border-gray-100 dark:border-gray-800">
                                 <div className="flex items-center gap-2 font-bold text-sm text-[#0f3b90] dark:text-blue-400">
-                                    <LayoutTemplate size={18} /> {stats && currentConfig.showPreview ? 'Live Compression Preview' : 'Quality Preview'}
+                                    <LayoutTemplate size={18} /> {stats && currentConfig.showPreview ? t('compress.livePreview', 'Live Compression Preview') : t('compress.qualityPreview', 'Quality Preview')}
                                 </div>
                             </div>
 
@@ -325,7 +327,7 @@ export default function CompressDoc() {
                             {currentConfig.showPreview && file && (
                                 <div className="w-full p-4 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 z-20">
                                     <div className="flex justify-between items-center mb-2">
-                                        <span className="text-sm font-bold text-gray-700 dark:text-gray-300">Live Quality Slider</span>
+                                        <span className="text-sm font-bold text-gray-700 dark:text-gray-300">{t('compress.liveQualitySlider', 'Live Quality Slider')}</span>
                                         <span className="text-sm font-black text-[#0f3b90] dark:text-blue-400">{quality}%</span>
                                     </div>
                                     <input
@@ -337,8 +339,8 @@ export default function CompressDoc() {
                                         className="w-full h-2.5 bg-gray-200 rounded-full appearance-none cursor-ew-resize dark:bg-gray-700 accent-[#0f3b90] dark:accent-blue-500 shadow-inner"
                                     />
                                     <div className="flex justify-between text-xs font-bold text-gray-400 dark:text-gray-500 mt-2">
-                                        <span>Smaller File Size</span>
-                                        <span>Better Visual Quality</span>
+                                        <span>{t('compress.smallerFileSize', 'Smaller File Size')}</span>
+                                        <span>{t('compress.betterVisualQuality', 'Better Visual Quality')}</span>
                                     </div>
                                 </div>
                             )}
@@ -376,10 +378,10 @@ export default function CompressDoc() {
                                             {/* Top Overlay Badges */}
                                             <div className="absolute top-4 left-4 right-4 flex justify-between z-10 pointer-events-none">
                                                 <div className="bg-gray-800/80 backdrop-blur text-white px-3 py-1 rounded text-xs font-bold shadow-md">
-                                                    Original
+                                                    {t('compress.original', 'Original')}
                                                 </div>
                                                 <div className="bg-[#1546a0]/90 backdrop-blur text-white px-3 py-1 rounded text-xs font-bold shadow-md">
-                                                    Compressed
+                                                    {t('compress.compressed', 'Compressed')}
                                                 </div>
                                             </div>
 
@@ -399,8 +401,8 @@ export default function CompressDoc() {
                                         <div className="mx-auto mb-4 opacity-20 flex justify-center">
                                             {currentConfig.icon}
                                         </div>
-                                        <p className="font-medium text-lg text-gray-600 dark:text-gray-300">Preview not available</p>
-                                        <p className="text-sm mt-2 max-w-sm mx-auto">Visual previews are only supported for image formats.</p>
+                                        <p className="font-medium text-lg text-gray-600 dark:text-gray-300">{t('compress.previewNotAvailable', 'Preview not available')}</p>
+                                        <p className="text-sm mt-2 max-w-sm mx-auto">{t('compress.visualPreviewsSupported', 'Visual previews are only supported for image formats.')}</p>
                                     </div>
                                 )}
                             </div>
@@ -414,8 +416,8 @@ export default function CompressDoc() {
                                             <TrendingDown size={24} />
                                         </div>
                                         <div>
-                                            <p className="font-bold text-gray-900 dark:text-white">Live Compression Active</p>
-                                            <p className="text-sm text-gray-500 dark:text-gray-400">Previewing real-time quality.</p>
+                                            <p className="font-bold text-gray-900 dark:text-white">{t('compress.liveCompressionActive', 'Live Compression Active')}</p>
+                                            <p className="text-sm text-gray-500 dark:text-gray-400">{t('compress.previewingRealtime', 'Previewing real-time quality.')}</p>
                                         </div>
                                     </div>
                                     <div className="text-left sm:text-right w-full sm:w-auto mt-2 sm:mt-0">
@@ -425,7 +427,7 @@ export default function CompressDoc() {
                                             <span className="font-bold text-green-600 dark:text-green-400">{formatBytes(stats.compressedSize)}</span>
                                         </div>
                                         <p className="text-xs font-bold text-[#0f3b90] dark:text-blue-400">
-                                            {stats.originalSize > 0 ? Math.round((1 - (stats.compressedSize / stats.originalSize)) * 100) : 0}% Space Saved
+                                            {stats.originalSize > 0 ? Math.round((1 - (stats.compressedSize / stats.originalSize)) * 100) : 0}% {t('compress.spaceSaved', 'Space Saved')}
                                         </p>
                                     </div>
                                 </div>
@@ -435,7 +437,7 @@ export default function CompressDoc() {
                 </div>
             )}
 
-            <LoadingModal isOpen={isProcessing} message="Compressing your document..." />
+            <LoadingModal isOpen={isProcessing} message={t('upload.compressing', 'Compressing your document...')} />
         </div>
     );
 }

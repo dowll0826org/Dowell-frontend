@@ -29,6 +29,7 @@ import {
 } from 'lucide-react';
 import { FileItem, TextModification } from './type.editDoc';
 import dynamic from 'next/dynamic';
+import { useTranslation } from "@/hooks/useTranslation";
 
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
@@ -39,6 +40,7 @@ const Page = dynamic(() => import('react-pdf').then(mod => mod.Page), { ssr: fal
 const COLORS = ['#000000', '#EF4444', '#3B82F6', '#10B981', '#F59E0B', '#6366F1'];
 
 export default function EditPdf() {
+  const { t } = useTranslation();
   const [file, setFile] = useState<FileItem | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -458,7 +460,7 @@ export default function EditPdf() {
 
       const url = URL.createObjectURL(resultBlob);
       setFile(f => f ? { ...f, status: 'done', resultUrl: url, progress: 100 } : null);
-      toast.success('Document edited successfully!');
+      toast.success(t('editpdf.successToast', 'Document edited successfully!'));
 
       const a = document.createElement('a');
       a.href = url;
@@ -468,7 +470,7 @@ export default function EditPdf() {
       document.body.removeChild(a);
 
     } catch (error: any) {
-      toast.error(error.message || 'Error processing document');
+      toast.error(error.message || t('editpdf.errorToast', 'Error processing document'));
       setFile(f => f ? { ...f, status: 'error', error: error.message } : null);
     } finally {
       setIsProcessing(false);
@@ -492,7 +494,7 @@ export default function EditPdf() {
               className="py-3 px-6 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 dark:disabled:bg-blue-800 text-white rounded-xl font-semibold text-sm transition-all shadow-md hover:shadow-lg disabled:shadow-none flex items-center justify-center gap-2"
             >
               <Download size={18} />
-              {isProcessing ? 'Processing...' : 'Export Edited PDF'}
+              {isProcessing ? t('editpdf.processing', 'Processing...') : t('editpdf.exportBtn', 'Export Edited PDF')}
             </button>
           )}
         </div>
@@ -517,14 +519,12 @@ export default function EditPdf() {
                 <CloudUpload className="w-10 h-10 text-blue-600 dark:text-blue-400" />
               </div>
               <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-2">
-                Choose a PDF file
+                {t('upload.choosePdf', 'Choose a PDF file')}
               </h3>
               <p className="text-sm text-slate-500 dark:text-gray-400 mb-6">
-                or drag & drop your file here
+                {t('upload.dragAndDrop', 'or drag & drop your file here')}
               </p>
-              <button suppressHydrationWarning className="px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 shadow-sm transition-colors pointer-events-none">
-                Select file
-              </button>
+              <button suppressHydrationWarning className="px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 shadow-sm transition-colors pointer-events-none">{t('upload.selectFile', 'Select file')}</button>
             </div>
           </div>
         </div>
@@ -862,7 +862,7 @@ export default function EditPdf() {
                     <MousePointer2 className="w-6 h-6 text-slate-400 dark:text-gray-400" />
                   </div>
                   <p className="text-sm text-slate-500 dark:text-gray-400">
-                    Select a text or eraser element<br />to edit its properties.
+                    {t('editpdf.propertiesEmptyLine1', 'Select a text or eraser element')}<br />{t('editpdf.propertiesEmptyLine2', 'to edit its properties.')}
                   </p>
                 </div>
               ) : selectedMod.type === 'erase' ? (

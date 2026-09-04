@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "../context/ThemeProvider";
+import { LanguageProvider } from "../context/LanguageContext";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { ENABLE_ADS } from "@/lib/ads.config";
 import { AdSenseInit } from "@/components/common/AdSenseInit";
@@ -9,6 +10,7 @@ import { DisableContextMenu } from "@/components/common/DisableContextMenu";
 import { Toaster } from 'react-hot-toast';
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -83,10 +85,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="google-adsense-account" content="ca-pub-6354997878508931" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6354997878508931" crossOrigin="anonymous"></script>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6354997878508931" crossOrigin="anonymous" strategy="afterInteractive" />
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6PYQ7XRN6"></script>
-        <script
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-N6PYQ7XRN6" strategy="afterInteractive" />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -113,12 +117,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.className} ${inter.variable} h-full antialiased min-h-full flex flex-col bg-slate-50 dark:bg-black dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:from-gray-900 dark:to-black transition-colors duration-200 overflow-x-hidden`}>
         {ENABLE_ADS && <AdSenseInit />}
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <DisableContextMenu />
-          {children}
-          <Toaster position="top-right" />
-          <ThemeToggle />
-          <Analytics />
-          <SpeedInsights />
+          <LanguageProvider>
+            <DisableContextMenu />
+            {children}
+            <Toaster position="top-right" />
+            <ThemeToggle />
+            <Analytics />
+            <SpeedInsights />
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

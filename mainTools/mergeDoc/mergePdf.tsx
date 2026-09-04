@@ -16,10 +16,12 @@ import {
 } from 'lucide-react';
 import { FileItem } from './type.mergeDoc';
 import { MERGE_PDF_CONFIG } from './config.mergeDoc';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export const toolProps = {};
 
 export default function MergePdf() {
+  const { t } = useTranslation();
   const [files, setFiles] = useState<FileItem[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -111,6 +113,7 @@ export default function MergePdf() {
     }
   };
 
+
   const getIconForType = (type: string) => {
     if (type === 'PDF') return FileText;
     if (type === 'IMG') return ImageIcon;
@@ -136,7 +139,7 @@ export default function MergePdf() {
               className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-700 transition-colors"
             >
               <X className="w-4 h-4" />
-              Clear All
+              {t('upload.clearAll', 'Clear All')}
             </button>
           )}
           <button
@@ -149,7 +152,7 @@ export default function MergePdf() {
             ) : (
               <Sparkles className="w-4 h-4" />
             )}
-            {isProcessing ? 'Processing...' : `Process ${files.length} Files`}
+            {isProcessing ? t('upload.processing', 'Processing...') : t('upload.processFiles', { count: files.length }, `Process ${files.length} Files`)}
           </button>
         </div>
       </div>
@@ -167,13 +170,13 @@ export default function MergePdf() {
             <CloudUpload className="w-8 h-8" />
           </div>
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-            Drag & drop files here
+            {t('upload.dragAndDropFiles', 'Drag & drop files here')}
           </h3>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
-            or click to select files from your computer
+            {t('upload.clickToSelect', 'or click to select files from your computer')}
           </p>
           <button className="px-6 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 shadow-sm dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-700 transition-colors pointer-events-none">
-            Browse Files
+            {t('upload.browseFiles', 'Browse Files')}
           </button>
         </div>
       </div>
@@ -183,7 +186,7 @@ export default function MergePdf() {
         <div className="space-y-4 pt-4">
           <div className="flex items-center gap-2">
             <LayoutGrid className="w-5 h-5 text-gray-700 dark:text-gray-300" />
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Preview Gallery</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{t('upload.previewGallery', 'Preview Gallery')}</h3>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -247,7 +250,7 @@ export default function MergePdf() {
       )}
 
       {/* Loading Modal */}
-      <LoadingModal isOpen={isProcessing} message="Merging your documents..." />
+      <LoadingModal isOpen={isProcessing} message={t('upload.merging', 'Merging your documents...')} />
     </div>
   );
 }

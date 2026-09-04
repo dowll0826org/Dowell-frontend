@@ -1,8 +1,12 @@
+"use client";
+
 import React from 'react';
 import { seoData } from '@/lib/seo.data';
 import { CheckCircle2, ChevronDown } from 'lucide-react';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function ToolSeoContent({ toolSlug }: { toolSlug: string }) {
+  const { locale, t } = useTranslation();
   const content = seoData[toolSlug];
 
   if (!content) {
@@ -23,6 +27,8 @@ export default function ToolSeoContent({ toolSlug }: { toolSlug: string }) {
     }))
   };
 
+  const toolName = content.heroTitle.split(' ')[0];
+
   return (
     <div className="w-full max-w-4xl mx-auto mt-24 mb-16 space-y-24 px-4 text-gray-800 dark:text-gray-200">
 
@@ -35,7 +41,7 @@ export default function ToolSeoContent({ toolSlug }: { toolSlug: string }) {
       {/* How it works */}
       <section className="bg-white dark:bg-gray-900 rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 dark:border-gray-800">
         <h2 className="text-2xl font-bold text-center mb-10 text-gray-900 dark:text-white">
-          How to use our {content.heroTitle.split(' ')[0]} tool?
+          {t(`seo.${toolSlug}.howToUseTitle`, `How to use our ${toolName} tool?`)}
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {content.howItWorks.map((step, index) => (
@@ -43,7 +49,9 @@ export default function ToolSeoContent({ toolSlug }: { toolSlug: string }) {
               <div className="w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold text-xl">
                 {index + 1}
               </div>
-              <p className="text-gray-600 dark:text-gray-400">{step}</p>
+              <p className="text-gray-600 dark:text-gray-400">
+                {t(`seo.${toolSlug}.howItWorks.${index}`, step)}
+              </p>
             </div>
           ))}
         </div>
@@ -52,13 +60,15 @@ export default function ToolSeoContent({ toolSlug }: { toolSlug: string }) {
       {/* Features List */}
       <section>
         <h2 className="text-2xl font-bold text-center mb-10 text-gray-900 dark:text-white">
-          Why use Dowll?
+          {t('seo.common.whyUseDowll', 'Why use Dowll?')}
         </h2>
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-6">
           {content.features.map((feature, index) => (
             <div key={index} className="flex items-start space-x-3">
               <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-              <span className="text-gray-700 dark:text-gray-300 font-medium">{feature}</span>
+              <span className="text-gray-700 dark:text-gray-300 font-medium">
+                {t(`seo.${toolSlug}.features.${index}`, feature)}
+              </span>
             </div>
           ))}
         </div>
@@ -66,10 +76,12 @@ export default function ToolSeoContent({ toolSlug }: { toolSlug: string }) {
 
       {/* Explanation Content */}
       <section className="prose prose-blue dark:prose-invert max-w-none bg-gray-50 dark:bg-gray-900/50 rounded-3xl p-8 md:p-12">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">{content.explanationTitle}</h2>
+        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+          {t(`seo.${toolSlug}.explanationTitle`, content.explanationTitle)}
+        </h2>
         <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
           {content.explanationText.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+            <p key={index}>{t(`seo.${toolSlug}.explanationText.${index}`, paragraph)}</p>
           ))}
         </div>
       </section>
@@ -77,17 +89,17 @@ export default function ToolSeoContent({ toolSlug }: { toolSlug: string }) {
       {/* FAQ Section */}
       <section>
         <h2 className="text-2xl font-bold text-center mb-10 text-gray-900 dark:text-white">
-          Frequently Asked Questions
+          {t('seo.common.faq', 'Frequently Asked Questions')}
         </h2>
         <div className="space-y-4">
           {content.faqs.map((faq, index) => (
             <details key={index} className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden cursor-pointer open:ring-2 open:ring-blue-500/20">
               <summary className="flex items-center justify-between p-6 font-semibold text-gray-900 dark:text-white list-none">
-                {faq.question}
+                {t(`seo.${toolSlug}.faq.${index}.question`, faq.question)}
                 <ChevronDown className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" />
               </summary>
               <div className="px-6 pb-6 text-gray-600 dark:text-gray-400">
-                {faq.answer}
+                {t(`seo.${toolSlug}.faq.${index}.answer`, faq.answer)}
               </div>
             </details>
           ))}

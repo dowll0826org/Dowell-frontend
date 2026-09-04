@@ -5,8 +5,11 @@ import { Mail, Megaphone, HelpCircle, Send, ArrowRight, Loader2 } from 'lucide-r
 import Link from 'next/link';
 import toast from 'react-hot-toast';
 import { submitContactFormApi } from '@/app/(footer)/company/contact/api.contact';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function ContactUsPage() {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,14 +30,14 @@ export default function ContactUsPage() {
     e.preventDefault();
     
     if (!formData.name || !formData.email || !formData.message) {
-      toast.error('Please fill in all required fields.');
+      toast.error(t('contact.toast.fillRequired'));
       return;
     }
 
     let finalSubject = formData.subject;
     if (formData.subject === 'other') {
       if (!formData.otherSubject.trim()) {
-        toast.error('Please specify the subject.');
+        toast.error(t('contact.toast.specifySubject'));
         return;
       }
       finalSubject = formData.otherSubject;
@@ -48,7 +51,7 @@ export default function ContactUsPage() {
         subject: finalSubject,
         message: formData.message
       });
-      toast.success('Your message has been sent successfully!');
+      toast.success(t('contact.toast.success'));
       setFormData({
         name: '',
         email: '',
@@ -57,7 +60,7 @@ export default function ContactUsPage() {
         message: ''
       });
     } catch (error: any) {
-      toast.error(error.message || 'Failed to send message. Please try again later.');
+      toast.error(error.message || t('contact.toast.error'));
     } finally {
       setIsSubmitting(false);
     }
@@ -70,10 +73,10 @@ export default function ContactUsPage() {
         {/* Header */}
         <section className="text-center space-y-6 max-w-3xl mx-auto mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white tracking-tight">
-            Get in Touch
+            {t('contact.title')}
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-            Have questions about our privacy-first document processing? Our team is here to help you integrate, troubleshoot, and optimize your workflow.
+            {t('contact.subtitle')}
           </p>
         </section>
 
@@ -85,7 +88,7 @@ export default function ContactUsPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="block text-sm font-semibold text-gray-900 dark:text-gray-200">
-                    Name <span className="text-red-500">*</span>
+                    {t('contact.form.name')} <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
@@ -99,7 +102,7 @@ export default function ContactUsPage() {
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="block text-sm font-semibold text-gray-900 dark:text-gray-200">
-                    Work Email <span className="text-red-500">*</span>
+                    {t('contact.form.workEmail')} <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="email"
@@ -115,7 +118,7 @@ export default function ContactUsPage() {
 
               <div className="space-y-2">
                 <label htmlFor="subject" className="block text-sm font-semibold text-gray-900 dark:text-gray-200">
-                  Subject
+                  {t('contact.form.subject')}
                 </label>
                 <div className="relative">
                   <select
@@ -124,11 +127,11 @@ export default function ContactUsPage() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 appearance-none transition-colors"
                   >
-                    <option value="" disabled>Select a topic...</option>
-                    <option value="support">General Support</option>
-                    <option value="sales">Sales & Enterprise</option>
-                    <option value="press">Press & Media</option>
-                    <option value="other">Other</option>
+                    <option value="" disabled>{t('contact.form.selectTopic')}</option>
+                    <option value="support">{t('contact.form.generalSupport')}</option>
+                    <option value="sales">{t('contact.form.salesEnterprise')}</option>
+                    <option value="press">{t('contact.form.pressMedia')}</option>
+                    <option value="other">{t('contact.form.other')}</option>
                   </select>
                   <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-500">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
@@ -139,7 +142,7 @@ export default function ContactUsPage() {
               {formData.subject === 'other' && (
                 <div className="space-y-2 animate-in fade-in slide-in-from-top-2 duration-300">
                   <label htmlFor="otherSubject" className="block text-sm font-semibold text-gray-900 dark:text-gray-200">
-                    Please specify <span className="text-red-500">*</span>
+                    {t('contact.form.pleaseSpecify')} <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
@@ -155,7 +158,7 @@ export default function ContactUsPage() {
 
               <div className="space-y-2">
                 <label htmlFor="message" className="block text-sm font-semibold text-gray-900 dark:text-gray-200">
-                  Message <span className="text-red-500">*</span>
+                  {t('contact.form.message')} <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="message"
@@ -176,12 +179,12 @@ export default function ContactUsPage() {
                 >
                   {isSubmitting ? (
                     <>
-                      <span>Sending...</span>
+                      <span>{t('common.sending')}</span>
                       <Loader2 size={18} className="animate-spin" />
                     </>
                   ) : (
                     <>
-                      <span>Send Message</span>
+                      <span>{t('common.sendMessage')}</span>
                       <Send size={18} />
                     </>
                   )}
@@ -195,7 +198,7 @@ export default function ContactUsPage() {
 
             {/* Direct Contacts */}
             <div className="bg-[#f8fafc] dark:bg-gray-800/50 rounded-2xl p-8 border border-gray-100 dark:border-gray-700">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Direct Contacts</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">{t('contact.sidebar.directContacts')}</h3>
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -203,7 +206,7 @@ export default function ContactUsPage() {
                     <Mail size={20} />
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-gray-900 dark:text-white">Support</h4>
+                    <h4 className="text-sm font-semibold text-gray-900 dark:text-white">{t('contact.sidebar.support')}</h4>
                     <a href="mailto:support@dowll.com" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                       support@dowll.com
                     </a>
@@ -229,12 +232,12 @@ export default function ContactUsPage() {
               <div className="bg-[#0f54c9] text-white w-10 h-10 rounded-lg flex items-center justify-center mb-4">
                 <HelpCircle size={20} />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Looking for quick answers?</h3>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{t('contact.sidebar.quickAnswers')}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                Check out our comprehensive Help Center for setup guides, and troubleshooting.
+                {t('contact.sidebar.quickAnswersDesc')}
               </p>
               <Link href="/resources/help-center" className="inline-flex items-center space-x-2 text-[#0f54c9] dark:text-blue-400 font-semibold text-sm hover:underline">
-                <span>Visit Help Center</span>
+                <span>{t('contact.sidebar.visitHelpCenter')}</span>
                 <ArrowRight size={16} />
               </Link>
             </div>

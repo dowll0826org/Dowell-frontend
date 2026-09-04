@@ -4,8 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 import { HelpCircle, ChevronDown, MessageSquare } from "lucide-react";
 import { faqData as faq } from "@/lib/data";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function FAQClient() {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -15,14 +17,14 @@ export default function FAQClient() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-1.5 border border-blue-100 dark:border-blue-900/50 bg-white dark:bg-blue-900/20 rounded-full px-3 py-1 mb-8 text-blue-600 dark:text-blue-400 text-[12px] font-semibold tracking-wide shadow-sm">
             <HelpCircle size={14} />
-            Support Center
+            {t('faq.badge')}
           </div>
 
           <h1 className="text-4xl md:text-[54px] font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight leading-[1.1]">
-            Frequently Asked Questions
+            {t('faq.title')}
           </h1>
           <p className="text-[15px] text-slate-500 dark:text-slate-400 mb-8 max-w-[500px] mx-auto leading-relaxed">
-            Everything you need to know about the product and billing. Can&apos;t find the answer you&apos;re looking for? Please chat to our friendly team.
+            {t('faq.subtitle')}
           </p>
         </div>
       </div>
@@ -57,9 +59,9 @@ export default function FAQClient() {
         {/* CTA Card */}
         <div className="bg-[#fafbfc] dark:bg-gray-800 rounded-[20px] p-8 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 dark:border-gray-700">
           <div>
-            <h3 className="font-bold text-slate-900 dark:text-white text-[18px] mb-2">Still have questions?</h3>
+            <h3 className="font-bold text-slate-900 dark:text-white text-[18px] mb-2">{t('faq.stillHaveQuestions')}</h3>
             <p className="text-[14px] text-slate-500 dark:text-slate-400 max-w-[280px] leading-relaxed">
-              Our support team is ready to help you with any specific queries.
+              {t('faq.stillHaveQuestionsDesc')}
             </p>
           </div>
           <Link
@@ -67,7 +69,7 @@ export default function FAQClient() {
             className="shrink-0 inline-flex items-center gap-2.5 bg-[#2563eb] hover:bg-blue-600 text-white font-medium px-5 py-3 rounded-xl transition-all text-sm shadow-md hover:shadow-lg"
           >
             <MessageSquare size={16} />
-            Contact Support
+            {t('faq.contactSupport')}
           </Link>
         </div>
 

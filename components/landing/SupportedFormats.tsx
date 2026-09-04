@@ -1,4 +1,10 @@
+"use client";
+
+import { useTranslation } from "@/hooks/useTranslation";
+
 export default function SupportedFormats() {
+  const { t } = useTranslation();
+
   const formats = [
     {
       name: "PDF",
@@ -76,10 +82,10 @@ export default function SupportedFormats() {
     <section className="py-20 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 overflow-hidden transition-colors duration-200">
       <div className="container mx-auto px-4 sm:px-8 lg:px-16 max-w-7xl mb-12">
         <h2 className="text-center text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
-          Supported File Formats
+          {t("formats.title")}
         </h2>
         <p className="text-center text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Convert and manage files across multiple formats including documents, images, spreadsheets, and presentations.
+          {t("formats.subtitle")}
         </p>
       </div>
 
@@ -108,7 +114,7 @@ export default function SupportedFormats() {
       </div>
 
       <p className="text-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-12 bg-blue-50 dark:bg-blue-900/30 max-w-max mx-auto px-4 py-2 rounded-full cursor-pointer hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors">
-        + 50 more formats supported
+        {t("common.moreFormats")}
       </p>
     </section>
   );

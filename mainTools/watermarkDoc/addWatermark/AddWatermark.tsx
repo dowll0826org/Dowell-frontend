@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react';
 import LoadingModal from '@/components/common/LoadingModal';
 import toast from 'react-hot-toast';
 import { CloudUpload, Settings2, FileText, X, Loader2 } from 'lucide-react';
+import { useTranslation } from '@/hooks/useTranslation';
 import dynamic from 'next/dynamic';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
@@ -15,6 +16,7 @@ const Document = dynamic(() => import('react-pdf').then(mod => mod.Document), { 
 const Page = dynamic(() => import('react-pdf').then(mod => mod.Page), { ssr: false });
 
 export default function AddWatermark() {
+  const { t } = useTranslation();
   const [file, setFile] = useState<File | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -81,10 +83,11 @@ export default function AddWatermark() {
       document.body.appendChild(link);
       link.click();
       link.remove();
-      toast.success('Watermark added successfully!');
+      window.URL.revokeObjectURL(url);
+      toast.success(t('watermark.success', 'Watermark added successfully!'));
     } catch (error: any) {
       console.error(error);
-      toast.error(error.message || 'Failed to add watermark.');
+      toast.error(error.message || t('watermark.error', 'Failed to add watermark.'));
     } finally {
       setIsProcessing(false);
     }
@@ -92,12 +95,12 @@ export default function AddWatermark() {
 
   return (
     <div className="max-w-6xl mx-auto space-y-8">
-      <LoadingModal isOpen={isProcessing} message="Adding watermark..." />
+      <LoadingModal isOpen={isProcessing} message={t('watermark.loading', 'Adding watermark...')} />
 
       <div className="flex flex-col md:flex-row gap-8">
         <div className="flex-1 space-y-6">
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-6">
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Upload Document</h2>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">{t('watermark.uploadTitle', 'Upload Document')}</h2>
             {!file ? (
               <div
                 className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl p-12 text-center cursor-pointer hover:border-blue-500 hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-all group"
@@ -109,9 +112,9 @@ export default function AddWatermark() {
                   <CloudUpload className="w-8 h-8 text-blue-600 dark:text-blue-400" />
                 </div>
                 <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                  Click or drag to upload
+                  {t('upload.clickOrDrag', 'Click or drag to upload')}
                 </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">PDF files only (max {ADD_WATERMARK_CONFIG.maxFileSizeMB}MB)</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{t('upload.pdfOnlyMax', `PDF files only (max ${ADD_WATERMARK_CONFIG.maxFileSizeMB}MB)`)}</p>
               </div>
             ) : (
               <div className="space-y-6">
@@ -132,7 +135,7 @@ export default function AddWatermark() {
 
                 {previewUrl && (
                   <div>
-                    <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">Document Preview</h3>
+                    <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">{t('watermark.previewTitle', 'Document Preview')}</h3>
                     <div className="hidden">
                       <Document file={previewUrl} onLoadSuccess={onDocumentLoadSuccess} />
                     </div>
@@ -170,14 +173,14 @@ export default function AddWatermark() {
                                 </div>
                               </div>
                             </div>
-                            <span className="text-xs font-medium text-gray-500">Page {index + 1}</span>
+                            <span className="text-xs font-medium text-gray-500">{t('common.page', 'Page')} {index + 1}</span>
                           </div>
                         ))}
                       </div>
                     ) : (
                       <div className="flex items-center justify-center p-8 bg-gray-50 dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-700">
                         <Loader2 className="w-6 h-6 animate-spin text-blue-600" />
-                        <span className="ml-2 text-sm text-gray-500">Loading preview...</span>
+                        <span className="ml-2 text-sm text-gray-500">{t('common.loadingPreview', 'Loading preview...')}</span>
                       </div>
                     )}
                   </div>
@@ -192,11 +195,11 @@ export default function AddWatermark() {
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden">
             <div className="p-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 flex items-center gap-2">
               <Settings2 className="w-5 h-5 text-gray-500" />
-              <h3 className="font-semibold text-gray-900 dark:text-white">Watermark Options</h3>
+              <h3 className="font-semibold text-gray-900 dark:text-white">{t('watermark.optionsTitle', 'Watermark Options')}</h3>
             </div>
             <div className="p-4 space-y-6">
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Text</label>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('watermark.text', 'Text')}</label>
                 <input
                   type="text"
                   value={text}
@@ -205,7 +208,7 @@ export default function AddWatermark() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Color</label>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('watermark.color', 'Color')}</label>
                 <input
                   type="color"
                   value={color}
@@ -214,7 +217,7 @@ export default function AddWatermark() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Opacity ({opacity})</label>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('watermark.opacity', 'Opacity')} ({opacity})</label>
                 <input
                   type="range"
                   min="0.1"
@@ -226,7 +229,7 @@ export default function AddWatermark() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Size ({size}px)</label>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('watermark.size', 'Size')} ({size}px)</label>
                 <input
                   type="range"
                   min="10"
@@ -238,15 +241,15 @@ export default function AddWatermark() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Alignment</label>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('watermark.alignment', 'Alignment')}</label>
                 <select
                   value={alignment}
                   onChange={(e) => setAlignment(e.target.value as any)}
                   className="w-full px-3 py-2 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
-                  <option value="diagonal">Diagonal</option>
-                  <option value="horizontal">Horizontal</option>
-                  <option value="vertical">Vertical</option>
+                  <option value="diagonal">{t('watermark.diagonal', 'Diagonal')}</option>
+                  <option value="horizontal">{t('watermark.horizontal', 'Horizontal')}</option>
+                  <option value="vertical">{t('watermark.vertical', 'Vertical')}</option>
                 </select>
               </div>
             </div>
@@ -257,7 +260,7 @@ export default function AddWatermark() {
             disabled={!file || isProcessing}
             className="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 dark:disabled:bg-gray-700 disabled:cursor-not-allowed text-white font-medium rounded-xl shadow-sm transition-colors flex items-center justify-center gap-2"
           >
-            Add Watermark
+            {t('watermark.button', 'Add Watermark')}
           </button>
         </div>
       </div>

@@ -1,0 +1,1727 @@
+{
+  "common": {
+    "startProcessing": "开始处理",
+    "learnMore": "了解更多",
+    "contactSupport": "联系支持",
+    "readPrivacyPolicy": "阅读我们的隐私政策",
+    "copyright": "© 2026 dowll. 版权所有。",
+    "builtWith": "为专业文档处理精心构建。",
+    "moreFormats": "+ 支持50种以上格式",
+    "tryItNow": "立即试用",
+    "getStartedFree": "免费开始",
+    "readGuide": "阅读指南",
+    "visitHelpCenter": "访问帮助中心",
+    "sendMessage": "发送消息",
+    "sending": "发送中...",
+    "savePreferences": "保存偏好设置",
+    "convertsTo": "转换为：",
+    "availableConversions": "可用转换：",
+    "legalInformation": "法律信息",
+    "lastUpdated": "最后更新：",
+    "questionsAboutTerms": "对这些条款有疑问？",
+    "contactSupportLink": "联系支持",
+    "email": "电子邮件",
+    "startProcessingSecurely": "安全开始处理",
+    "learnMoreAboutPrivacy": "了解更多关于我们隐私政策的信息",
+    "poweredByWebAssembly": "由WebAssembly驱动",
+    "page": "页码",
+    "loadingPreview": "加载预览中..."
+  },
+  "nav": {
+    "compress": "压缩",
+    "convertPdf": "转换PDF",
+    "allPdfTools": "所有PDF工具",
+    "pdfAndImages": "PDF和图像",
+    "officeAndMedia": "办公室和媒体",
+    "convertToPdf": "转换为PDF",
+    "convertFromPdf": "从PDF转换"
+  },
+  "footer": {
+    "description": "Dowll是您的多合一文档工具包。使用快速简单的在线工具安全地转换、压缩、编辑和管理您的文件。",
+    "sections": {
+      "resources": "资源",
+      "product": "产品",
+      "legal": "法律",
+      "company": "公司"
+    },
+    "links": {
+      "helpCenter": "帮助中心",
+      "faq": "常见问题",
+      "guides": "指南",
+      "features": "功能",
+      "security": "安全",
+      "privacyPolicy": "隐私政策",
+      "termsOfService": "服务条款",
+      "aboutUs": "关于我们",
+      "contact": "联系我们"
+    },
+    "language": "语言"
+  },
+  "hero": {
+    "badge": "隐私优先处理",
+    "headline1": "一个平台。",
+    "headline2": "所有文档工具。",
+    "description": "隐私优先、无需账户的文档处理。在您的浏览器中即时编辑、转换和压缩文件，无需将任何数据发送到我们的服务器。"
+  },
+  "workflow": {
+    "title": "无缝且安全的工作流程",
+    "subtitle": "为隐私而设计。您的文件即时处理并自动删除。",
+    "steps": {
+      "upload": {
+        "title": "1. 上传",
+        "description": "通过加密连接安全选择文件。"
+      },
+      "process": {
+        "title": "2. 处理",
+        "description": "由本地资源驱动的闪电般快速处理。"
+      },
+      "download": {
+        "title": "3. 下载",
+        "description": "即时获取您处理过的文档。"
+      },
+      "autoDelete": {
+        "title": "4. 自动删除",
+        "description": "处理完成后立即从内存中清除文件。"
+      }
+    }
+  },
+  "privacy": {
+    "badge": "隐私优先架构",
+    "title": "您的文件永远不会离开您的设备。",
+    "description": "与传统云处理器不同，dowll使用WebAssembly在您的浏览器中本地处理您的文档。无上传、无服务器、无痕迹。",
+    "features": {
+      "zeroKnowledge": "零知识处理",
+      "noRegistration": "无需注册",
+      "instantExecution": "即时执行"
+    }
+  },
+  "formats": {
+    "title": "支持的文件格式",
+    "subtitle": "转换和管理多种格式的文件，包括文档、图像、电子表格和演示文稿。"
+  },
+  "helpCenter": {
+    "title": "我们如何为您提供帮助？",
+    "subtitle": "查找答案、教程和技术文档，充分利用dowll。",
+    "searchPlaceholder": "搜索工具...",
+    "popularTopics": "热门话题",
+    "topics": {
+      "pdfToJpg": {
+        "title": "如何将PDF转换为JPG",
+        "description": "学习从PDF文档中无缝提取高质量图像的步骤。"
+      },
+      "mergePdf": {
+        "title": "如何合并PDF文件",
+        "description": "在几秒钟内将多个PDF合并为一个有组织的文档。"
+      },
+      "compressPdf": {
+        "title": "如何压缩文档",
+        "description": "在不影响视觉质量的情况下缩小文件大小以便于分享。"
+      },
+      "formats": {
+        "title": "支持的文件格式",
+        "description": "查看您可以使用dowll处理的文档类型的完整列表。"
+      }
+    },
+    "needHelp": {
+      "title": "仍然需要帮助？",
+      "description": "我们的支持团队随时准备帮助您解决任何技术问题或账户查询。"
+    }
+  },
+  "languageSwitcher": {
+    "label": "语言",
+    "selectLanguage": "选择语言"
+  },
+  "about": {
+    "headline": "重新定义文档智能",
+    "subtitle": "我们相信您的文档属于您。dowll将强大的处理工具与绝对隐私相结合，确保您的数据永远不会离开您的设备，除非您选择这样做。",
+    "mission": {
+      "title": "我们的使命",
+      "text": "提供无摩擦、零服务器的文档处理，尊重用户隐私并提供无与伦比的速度。"
+    },
+    "story": {
+      "title": "dowll的故事",
+      "text": "出于对依赖云易受攻击工具处理敏感文件的沮丧，dowll被创建以将范式转变为本地优先技术。"
+    },
+    "values": {
+      "title": "我们的价值观",
+      "privacyFirst": {
+        "title": "隐私优先",
+        "desc": "零知识架构。您的文件保留在您的设备上。"
+      },
+      "security": {
+        "title": "安全",
+        "desc": "为每次互动提供企业级保护，原生构建。"
+      },
+      "performance": {
+        "title": "性能",
+        "desc": "无需等待服务器上传的即时处理。"
+      },
+      "transparency": {
+        "title": "透明度",
+        "desc": "清晰的流程，无隐藏数据收集，完全用户控制。"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "对我们的隐私优先文档处理有疑问？我们的团队随时为您提供集成、故障排除和优化工作流程的帮助。",
+    "form": {
+      "name": "姓名",
+      "workEmail": "工作电子邮件",
+      "subject": "主题",
+      "selectTopic": "选择话题...",
+      "generalSupport": "一般支持",
+      "salesEnterprise": "销售和企业",
+      "pressMedia": "新闻和媒体",
+      "other": "其他",
+      "pleaseSpecify": "请说明",
+      "brieflyDescribe": "简要描述您的话题",
+      "message": "消息",
+      "howCanWeHelp": "我们如何为您提供帮助？",
+      "required": "*"
+    },
+    "sidebar": {
+      "directContacts": "直接联系",
+      "support": "支持",
+      "pressMedia": "新闻和媒体",
+      "quickAnswers": "寻找快速答案？",
+      "quickAnswersDesc": "查看我们全面的帮助中心，获取设置指南和故障排除。",
+      "visitHelpCenter": "访问帮助中心"
+    },
+    "toast": {
+      "fillRequired": "请填写所有必填字段。",
+      "specifySubject": "请指定主题。",
+      "success": "您的消息已成功发送！",
+      "error": "发送消息失败。请稍后重试。"
+    }
+  },
+  "legal": {
+    "privacy": {
+      "intro": "在dowll，您的隐私不仅仅是一项功能，它是我们平台的基础架构。",
+      "s1": {
+        "title": "1. 信息收集",
+        "c1": "我们相信保护您数据的最佳方式是不收集它。使用 Dowll 时，我们仅收集运营服务所需的最少信息：",
+        "l1": {
+          "label": "账户信息",
+          "text": "如果您选择创建账户，我们会收集您的电子邮件地址和基本个人资料信息。"
+        },
+        "l2": {
+          "label": "技术遥测",
+          "text": "匿名使用统计数据（例如使用的功能、浏览器类型）以帮助我们改善平台稳定性。"
+        }
+      },
+      "s2": {
+        "title": "2. 数据处理（本地优先）",
+        "banner": {
+          "title": "零上传架构",
+          "content": "您文档的核心处理（合并、拆分、压缩、编辑）完全在您的网络浏览器中进行。您的敏感文件永远不会上传到我们的服务器。"
+        },
+        "c1": "由于处理是本地的，我们无法访问您文档的内容。"
+      },
+      "s3": {
+        "title": "3. 数据安全",
+        "c1": "虽然您的文档永远不会离开您的设备，但我们对处理的有限数据采用企业级安全措施：",
+        "l1": {
+          "text": "所有传输中的数据均使用 TLS 1.3 加密。"
+        },
+        "l2": {
+          "text": "静态数据（账户信息）使用 AES-256 加密。"
+        },
+        "l3": {
+          "text": "定期进行第三方安全审计和渗透测试。"
+        }
+      },
+      "s4": {
+        "title": "4. 您的权利",
+        "c1": "根据您的位置（例如 GDPR、CCPA），您对个人数据拥有特定权利：",
+        "l1": {
+          "label": "访问和可携性",
+          "text": "请求我们持有的有关您的个人数据副本。"
+        },
+        "l2": {
+          "label": "删除",
+          "text": "请求删除您的账户和相关数据。"
+        },
+        "l3": {
+          "label": "更正",
+          "text": "更新不准确或不完整的信息。"
+        },
+        "p1": "要行使这些权利，请使用下面的信息联系我们。"
+      },
+      "s5": {
+        "title": "5. 联系信息",
+        "c1": "如果您对本隐私政策有任何疑问，请联系我们的数据保护官："
+      }
+    },
+    "terms": {
+      "label": "法律信息",
+      "title": "服务条款",
+      "lastUpdated": "最后更新：2024年10月24日",
+      "s1": {
+        "title": "1. 条款接受",
+        "c1": "通过访问或使用 Dowll 平台，您同意受本服务条款的约束。",
+        "c2": "这些条款适用于所有用户、访客和其他访问服务的人。"
+      },
+      "s2": {
+        "title": "2. 服务描述",
+        "c1": "Dowll 提供一套在线文档处理工具，包括：",
+        "l1": "合并和拆分 PDF 文档。",
+        "l2": "压缩文件大小以便于分享。",
+        "l3": "基本编辑和注释功能。",
+        "p1": "我们保留在有或没有通知的情况下修改或终止服务的权利。"
+      },
+      "s3": {
+        "title": "3. 用户义务",
+        "c1": "作为 Dowll 用户，您同意：",
+        "o1": "在注册期间提供准确和最新的信息。",
+        "o2": "维护您账户凭据的安全性。",
+        "o3": "仅将服务用于合法目的。",
+        "o4": "不上传恶意文件或尝试破坏系统安全。"
+      },
+      "s4": {
+        "title": "4. 知识产权",
+        "c1": "该服务及其原始内容、功能是 Dowll 及其许可方的专有财产。",
+        "c2": "您保留对上传文档的所有权利。根据我们的隐私政策，文件将被自动删除。"
+      },
+      "s5": {
+        "title": "5. 管辖法律",
+        "c1": "这些条款应受美国特拉华州法律的约束和解释。"
+      }
+    },
+    "cookie": {
+      "managePreferences": "管理偏好设置",
+      "managePreferencesDesc": "您可以随时更改您的Cookie偏好设置。调整这些设置可能会影响您在我们平台上的体验。",
+      "essentialCookies": "必要Cookie",
+      "alwaysActive": "始终活跃",
+      "analyticalCookies": "分析性Cookie",
+      "helpUsImprove": "帮助我们改进",
+      "savePreferences": "保存偏好设置",
+      "needHelp": "需要帮助？",
+      "needHelpDesc": "如果您对我们使用Cookie有疑问，请通过privacy@dowll.com联系我们",
+      "cookieDetails": "Cookie详情",
+      "tableHeaders": {
+        "cookieName": "Cookie名称",
+        "type": "类型",
+        "duration": "持续时间",
+        "purpose": "目的"
+      }
+    }
+  },
+  "features": {
+    "title": "您的文档所需的一切",
+    "subtitle": "一个全面的隐私优先平台，专为以精度和速度处理每项文档任务而设计。",
+    "sectionLabel": "强大功能",
+    "sectionTitle": "核心文档工具",
+    "sectionSubtitle": "使用我们直观的、基于浏览器的工具简化您的日常文档任务。高性能，零上传。"
+  },
+  "security": {
+    "badge": "企业级隐私",
+    "title": "您的安全是我们的首要任务",
+    "subtitle": "体验零知识文档处理。我们以您的数据属于您为原则构建dowll，在本地处理它，使它永远不会离开您的设备。",
+    "startProcessingSecurely": "安全开始处理",
+    "learnMorePrivacy": "了解更多关于我们隐私政策的信息",
+    "heading": "您的安全是我们的首要任务",
+    "button": {
+      "start": "开始安全处理",
+      "privacy": "了解更多关于我们的隐私政策"
+    },
+    "cards": {
+      "local": {
+        "title": "本地处理",
+        "desc": "利用先进的 WebAssembly，所有文档操作直接在您的浏览器中进行。文件永远不会上传到我们的服务器。"
+      },
+      "zeroTracking": {
+        "title": "零追踪",
+        "desc": "我们不记录您的按键，不保存您的内容，也不追踪您的具体操作。您在完全匿名的状态下运作。"
+      },
+      "instantDeletion": {
+        "title": "即时删除",
+        "desc": "对于需要临时服务器处理的功能，数据在完成后立即从内存中清除。没有持久性。"
+      }
+    }
+  },
+  "faq": {
+    "badge": "支持中心",
+    "title": "常见问题",
+    "subtitle": "关于产品和计费，您需要了解的一切。找不到您要找的答案？请与我们友好的团队聊天。",
+    "stillHaveQuestions": "仍然有疑问？",
+    "stillHaveQuestionsDesc": "我们的支持团队随时准备帮助您解答任何具体问题。",
+    "contactSupport": "联系支持"
+  },
+  "guides": {
+    "title": "多合一文档工具包",
+    "subtitle": "发现dowll高实用性处理工具的力量。以企业级安全性和精度进行转换、压缩、合并和编辑。",
+    "tutorialsLabel": "教程",
+    "documentGuides": "文档指南",
+    "documentGuidesSubtitle": "深入教程和分步指南，充分利用我们的工具。",
+    "supportedFormats": "支持的文件格式",
+    "supportedFormatsSubtitle": "我们支持多种文件格式，满足您所有文档处理需求。",
+    "conversionCapabilities": "转换功能",
+    "conversionCapabilitiesSubtitle": "了解您可以使用我们强大的工具包转换和创建什么。",
+    "convertsTo": "转换为：",
+    "availableConversions": "可用转换：",
+    "descriptions": {
+      "desc-merge": "轻松安全地将多个文件合并为一个文档。",
+      "desc-split": "提取页面或将文件拆分为多个文档。",
+      "desc-compress": "缩小文件大小而不损失质量，以便于分享。",
+      "desc-to-pdf": "将文件转换为高质量的 PDF 并保留排版。",
+      "desc-from-pdf": "将 PDF 准确转换为可编辑格式或图像。",
+      "desc-edit": "直接在浏览器中修改文本、图像和页面。",
+      "desc-organize": "轻松重新排列、删除或旋转页面。",
+      "desc-add-watermark": "为您的文档添加自定义文本或图像水印。",
+      "desc-remove-watermark": "去除文档中现有的水印。"
+    },
+    "support": {
+      "pdf-input": "PDF 输入支持",
+      "image-input": "图像输入支持",
+      "doc-input": "文档输入支持",
+      "doc-formats": "文档格式",
+      "spreadsheet-formats": "电子表格格式",
+      "presentation-formats": "演示文稿格式",
+      "image-formats": "图像格式",
+      "image-to-pdf": "图像 -> PDF",
+      "compress-image": "压缩图像",
+      "resize-image": "调整图像大小"
+    },
+    "page": {
+      "resources": "资源",
+      "guides": "指南",
+      "stepByStep": "分步指南",
+      "readyToStart": "准备好开始了吗？",
+      "jumpRightIn": "直接进入工具并安全地处理您的文档。",
+      "exploreTools": "探索工具",
+      "howItWorks": "工作原理",
+      "step": "步骤",
+      "faq": "常见问题解答",
+      "whyUse": "为什么使用 dowll？",
+      "secureProcessing": "安全处理",
+      "secureProcessingDesc": "dowll 安全地处理文件并保护您的文档。",
+      "relatedTools": "相关工具",
+      "step1": "上传您的文件。",
+      "step2": "如有需要，请调整设置。",
+      "step3": "处理文件。",
+      "step4": "下载结果。",
+      "benefit1": "快速安全的处理",
+      "benefit2": "无需安装",
+      "benefit3": "适用于任何设备"
+    }
+  },
+  "dashboard": {
+    "services": "服务",
+    "searchPlaceholder": "搜索工具...",
+    "categoryTitles": {
+      "to_pdf": "转换为PDF",
+      "from_pdf": "从PDF转换",
+      "pdf_image": "PDF和图像",
+      "office_media": "办公室和媒体"
+    }
+  },
+  "tools": {
+    "merge-pdf": "合并 PDF",
+    "split-pdf": "拆分 PDF",
+    "compress-pdf": "压缩 PDF",
+    "compress-jpeg": "压缩 JPEG",
+    "compress-png": "压缩 PNG",
+    "compress-webp": "压缩 WEBP",
+    "compress-svg": "压缩 SVG",
+    "compress-gif": "压缩 GIF",
+    "word-to-pdf": "Word 转 PDF",
+    "excel-to-pdf": "Excel 转 PDF",
+    "powerpoint-to-pdf": "PowerPoint 转 PDF",
+    "jpg-to-pdf": "JPG 转 PDF",
+    "png-to-pdf": "PNG 转 PDF",
+    "rtf-to-pdf": "RTF 转 PDF",
+    "html-to-pdf": "HTML 转 PDF",
+    "markdown-to-pdf": "Markdown 转 PDF",
+    "epub-to-pdf": "EPUB 转 PDF",
+    "epub-to-mobi": "EPUB 转 MOBI",
+    "mobi-to-epub": "MOBI 转 EPUB",
+    "pdf-to-word": "PDF 转 Word",
+    "pdf-to-excel": "PDF 转 Excel",
+    "pdf-to-powerpoint": "PDF 转 PowerPoint",
+    "pdf-to-jpg": "PDF 转 JPG",
+    "pdf-to-png": "PDF 转 PNG",
+    "pdf-to-rtf": "PDF 转 RTF",
+    "pdf-to-html": "PDF 转 HTML",
+    "pdf-to-markdown": "PDF 转 Markdown",
+    "pdf-to-epub": "PDF 转 EPUB",
+    "edit-pdf": "编辑 PDF",
+    "organize-pdf": "整理 PDF",
+    "add-watermark-pdf": "添加水印",
+    "remove-watermark-pdf": "移除水印",
+    "compress-documents": "压缩文档",
+    "convert-to-pdf": "转换为 PDF",
+    "convert-from-pdf": "从 PDF 转换",
+    "pdf-images": "PDF 和图片",
+    "office-media": "办公和媒体",
+    "services": "服务",
+    "search-tools": "搜索...",
+    "watermark": "水印",
+    "convert-documents": "转换文档",
+    "merge-documents": "合并文档",
+    "split-documents": "拆分文档",
+    "edit-documents": "编辑文档",
+    "organize-documents": "整理文档",
+    "compress-jpg": "压缩 JPG",
+    "compress-images": "压缩图片",
+    "compress-word": "压缩 Word 文档",
+    "compress-excel": "压缩 Excel 文件",
+    "compress-powerpoint": "压缩 PowerPoint",
+    "compress-zip": "压缩 ZIP 文件",
+    "compress-rar": "压缩 RAR 文件",
+    "compress-video": "压缩视频",
+    "compress-audio": "压缩音频",
+    "jpeg-to-pdf": "JPEG 转 PDF",
+    "pdf-to-jpeg": "PDF 转 JPEG",
+    "pdf-to-pdfa": "PDF 转 PDF/A",
+    "protect-pdf": "保护文档",
+    "unlock-pdf": "解锁文档",
+    "ocr-pdf": "OCR 文档",
+    "extract-pages": "提取页面",
+    "rearrange-pages": "重新排列页面",
+    "rotate-pages": "旋转页面",
+    "add-page-numbers": "添加页码",
+    "sign-pdf": "签署文档"
+  },
+  "upload": {
+    "selectFile": "选择文件",
+    "selectSpecificFile": "选择 {type} 文件",
+    "dragAndDrop": "将文件拖放到此处，或单击以从您的设备浏览",
+    "dragAndDropSimple": "或将文件拖放到此处",
+    "clickToSelect": "或单击以从您的计算机中选择文件",
+    "chooseFile": "选择文件",
+    "converting": "正在转换您的文档...",
+    "compressing": "正在压缩您的文档...",
+    "merging": "正在合并您的文档...",
+    "processing": "处理中...",
+    "pleaseWait": "请稍候，我们正在安全地处理您的文件。",
+    "clickOrDrag": "点击或拖拽上传",
+    "pdfOnlyMax": "仅限 PDF 文件 (最大 10MB)",
+    "processFiles": "处理 {{count}} 个文件"
+  },
+  "compress": {
+    "howItWorks": "它是如何工作的：",
+    "instruction1": "使用右侧的实时滑块以视觉方式调整图像质量。",
+    "instruction2": "或者在下方输入确切的目标大小。",
+    "instruction3": "当您对预览感到满意时点击下载！",
+    "exactTargetSize": "确切目标大小 (可选)",
+    "overridesQuality": "覆盖质量滑块。最适合图像。",
+    "livePreview": "实时压缩预览",
+    "qualityPreview": "质量预览",
+    "liveQualitySlider": "实时质量滑块",
+    "smallerFileSize": "更小的文件大小",
+    "betterVisualQuality": "更好的视觉质量",
+    "original": "原始",
+    "compressed": "压缩后",
+    "previewNotAvailable": "预览不可用",
+    "visualPreviewsSupported": "视觉预览仅支持图像格式。",
+    "liveCompressionActive": "实时压缩激活",
+    "previewingRealtime": "预览实时质量。",
+    "spaceSaved": "节省的空间",
+    "downloadFile": "下载文件",
+    "successToast": "文档压缩成功！",
+    "errorToast": "压缩文档时出错。"
+  },
+  "seo": {
+    "common": {
+      "whyUseDowll": "为什么使用 Dowll？",
+      "faq": "常见问题解答"
+    },
+    "compress-pdf": {
+      "howToUseTitle": "如何使用我们的压缩工具？",
+      "howItWorks": {
+        "0": "通过拖动或从设备选择来上传您的 PDF 文件。",
+        "1": "我们的系统将立即分析和优化文件。",
+        "2": "安全下载您较小的压缩 PDF 文档。"
+      },
+      "features": {
+        "0": "将 PDF 大小减少多达 90%",
+        "1": "保持文档和图像质量",
+        "2": "适用于所有移动和桌面设备",
+        "3": "无需安装软件",
+        "4": "云端快速处理",
+        "5": "安全文件处理（1小时后自动删除文件）"
+      },
+      "explanationTitle": "什么是 PDF 压缩？",
+      "explanationText": {
+        "0": "PDF 压缩通过优化内部图像、删除不必要的元数据和压缩结构数据来减小 PDF 文档的整体文件大小，而不会明显降低文件质量。",
+        "1": "较小的 PDF 更容易通过电子邮件共享、上传到网络表单、在线存储以及通过存在文件大小限制的消息应用发送。"
+      },
+      "faq": {
+        "0": {
+          "question": "我如何压缩 PDF？",
+          "answer": "只需将您的 PDF 文件上传到 Dowll，我们的工具将自动压缩它。您的优化文件将在几秒钟内准备好下载。"
+        },
+        "1": {
+          "question": "压缩会降低质量吗？",
+          "answer": "Dowll 使用先进的优化算法，在保持出色文档和图像质量的同时尽可能减小文件大小。"
+        },
+        "2": {
+          "question": "我的 PDF 安全吗？",
+          "answer": "是的，您的文件通过加密连接安全处理，处理后完全从我们的服务器中删除。"
+        },
+        "3": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "4": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "5": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线压缩 PDF",
+      "heroSubtitle": "在保持完美文档质量的同时显着减小 PDF 文件大小。"
+    },
+    "merge-pdf": {
+      "howToUseTitle": "如何使用我们的合并工具？",
+      "howItWorks": {
+        "0": "选择并上传您要合并的多个 PDF 文件。",
+        "1": "拖放文件以按您想要的顺序重新排列。",
+        "2": "点击合并并立即下载您的合并 PDF。"
+      },
+      "features": {
+        "0": "合并无限 PDF 文件",
+        "1": "轻松拖放重新排序",
+        "2": "保留原始格式和书签",
+        "3": "100% 免费在线",
+        "4": "无需注册",
+        "5": "文件被删除以保护隐私"
+      },
+      "explanationTitle": "为什么要合并 PDF 文件？",
+      "explanationText": {
+        "0": "合并 PDF 文件是将两个或多个独立的 PDF 文档合并成一个单一、统一文件的过程。",
+        "1": "在编制月度报告、提交多个附件的工作申请或将数字文档整理成整洁的单一文件时，这非常有用。"
+      },
+      "faq": {
+        "0": {
+          "question": "我如何免费合并 PDF？",
+          "answer": "将您的 PDF 上传到我们的合并工具，拖动它们到正确顺序，然后点击合并。完全免费使用。"
+        },
+        "1": {
+          "question": "我可以重新排列文件顺序吗？",
+          "answer": "是的！上传文件后，您可以拖放它们以按您想要的确切顺序排列。"
+        },
+        "2": {
+          "question": "我可以合并的文件数量有限制吗？",
+          "answer": "Dowll 允许您一次合并多个文件，非常适合大型报告和文档汇编。"
+        },
+        "3": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "4": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "5": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线合并 PDF 文件",
+      "heroSubtitle": "轻松安全地将多个 PDF 合并为一个统一的文档。"
+    },
+    "jpg-to-pdf": {
+      "howToUseTitle": "如何使用我们的 JPG 工具？",
+      "howItWorks": {
+        "0": "上传一张或多张 JPG 图像。",
+        "1": "根据需要调整方向和边距。",
+        "2": "下载您新创建的 PDF 文档。"
+      },
+      "features": {
+        "0": "一次转换多张 JPG",
+        "1": "保留原始图像分辨率",
+        "2": "快速在线转换",
+        "3": "将图像合并成一个 PDF",
+        "4": "安全私密处理",
+        "5": "适用于所有设备"
+      },
+      "explanationTitle": "为什么将图像转换为 PDF？",
+      "explanationText": {
+        "0": "将 JPG 转换为 PDF 可让您将多张图片打包成一个易于共享的文档。",
+        "1": "PDF 受到普遍支持，这意味着您的图像在任何设备上看起来都完全相同。"
+      },
+      "faq": {
+        "0": {
+          "question": "我如何将 JPG 转换为 PDF？",
+          "answer": "上传您的 JPG 图像，按您喜欢的顺序排列，我们的工具将生成包含所有图像的单个 PDF。"
+        },
+        "1": {
+          "question": "我的图像会失去质量吗？",
+          "answer": "不会，我们的转换器确保您的图像在放入 PDF 时保持原始分辨率和清晰度。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费 JPG 转 PDF 转换器",
+      "heroSubtitle": "在几秒钟内将 JPG 和 JPEG 图像转换为单个 PDF 文档。"
+    },
+    "word-to-pdf": {
+      "howToUseTitle": "如何使用我们的 Word 工具？",
+      "howItWorks": {
+        "0": "上传您的 DOC 或 DOCX 文件。",
+        "1": "等待几秒钟让转换引擎处理文件。",
+        "2": "下载您的新 PDF 文档。"
+      },
+      "features": {
+        "0": "保留精确的文档格式",
+        "1": "完美保留字体和图像",
+        "2": "快速云端转换",
+        "3": "安全文档处理",
+        "4": "不需要 Microsoft Office",
+        "5": "完全免费使用"
+      },
+      "explanationTitle": "为什么将 Word 转换为 PDF？",
+      "explanationText": {
+        "0": "Microsoft Word 文档根据收件人使用的设备或软件版本可能看起来不同。",
+        "1": "通过将 Word 文档转换为 PDF，您'锁定'了格式，文档在智能手机、Mac 或 PC 上看起来完全相同。"
+      },
+      "faq": {
+        "0": {
+          "question": "转换过程中我的字体会改变吗？",
+          "answer": "不会，我们的 Word 转 PDF 转换器保留所有原始字体、边距和布局，与原始文档中显示的完全相同。"
+        },
+        "1": {
+          "question": "我可以转换 DOCX 文件吗？",
+          "answer": "是的，我们的工具完全支持较新的 DOCX 格式以及较旧的 DOC 文件。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线 Word 转 PDF",
+      "heroSubtitle": "将 Word 文档无缝转换为 PDF，而不会丢失格式。"
+    },
+    "pdf-to-word": {
+      "howToUseTitle": "如何使用我们的 PDF 工具？",
+      "howItWorks": {
+        "0": "上传您想要编辑的 PDF。",
+        "1": "我们的 OCR 和提取引擎将其转换为 Word 格式。",
+        "2": "下载您可编辑的 DOCX 文件。"
+      },
+      "features": {
+        "0": "高精度文本提取",
+        "1": "保留表格和列表",
+        "2": "维持页面布局",
+        "3": "快速安全",
+        "4": "立即编辑您的文档",
+        "5": "免费在线转换器"
+      },
+      "explanationTitle": "PDF 转 Word 转换如何工作？",
+      "explanationText": {
+        "0": "与设计为静态文档的 PDF 不同，Word 文档是为编辑而构建的。",
+        "1": "我们的转换引擎扫描 PDF，识别文本块、表格和图像，并将它们重建为流畅、可编辑的 Microsoft Word 文件。"
+      },
+      "faq": {
+        "0": {
+          "question": "转换后的 Word 文档是否完全可编辑？",
+          "answer": "是的！输出是标准的 DOCX 文件，您可以在 Microsoft Word、Google Docs 或任何其他文字处理器中打开和编辑。"
+        },
+        "1": {
+          "question": "我的文件安全吗？",
+          "answer": "绝对安全。文件经过安全处理，并自动从我们的服务器中删除以确保您的隐私。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线 PDF 转 Word",
+      "heroSubtitle": "高精度地将 PDF 文件转换为可编辑的 Word 文档。"
+    },
+    "split-pdf": {
+      "howToUseTitle": "如何使用我们的拆分工具？",
+      "howItWorks": {
+        "0": "上传您的 PDF 文件。",
+        "1": "选择您想要提取的特定页面或页面范围。",
+        "2": "下载您新拆分的 PDF 文件。"
+      },
+      "features": {
+        "0": "轻松提取单个页面",
+        "1": "按页面范围拆分（例如 1-5）",
+        "2": "快速准确的拆分",
+        "3": "无质量损失",
+        "4": "安全文件删除",
+        "5": "100% 免费在线工具"
+      },
+      "explanationTitle": "什么时候应该拆分 PDF？",
+      "explanationText": {
+        "0": "拆分 PDF 是从较大文档中提取特定页面的过程。",
+        "1": "当您需要只向同事发送合同的某些部分时，这是理想的选择。"
+      },
+      "faq": {
+        "0": {
+          "question": "我可以从 PDF 中只提取一页吗？",
+          "answer": "是的，您可以选择单页、多个特定页面或页面范围提取到新文档中。"
+        },
+        "1": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "2": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "3": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线拆分 PDF 页面",
+      "heroSubtitle": "从 PDF 中提取特定页面或将其立即拆分为多个文档。"
+    },
+    "add-watermark-pdf": {
+      "howToUseTitle": "如何使用我们的水印工具？",
+      "howItWorks": {
+        "0": "上传您的 PDF 文档。",
+        "1": "自定义您的水印文本或图像并调整位置。",
+        "2": "下载带有水印的受保护 PDF。"
+      },
+      "features": {
+        "0": "添加文本或图像水印",
+        "1": "调整透明度和大小",
+        "2": "应用于多页",
+        "3": "对角线或水平放置",
+        "4": "专业外观效果",
+        "5": "100% 安全免费"
+      },
+      "explanationTitle": "为什么在 PDF 中添加水印？",
+      "explanationText": {
+        "0": "水印通过自定义文本或图像标记来保护您的文档。",
+        "1": "它们表明文档的来源、所有权或状态（如'机密'或'草稿'）。"
+      },
+      "faq": {
+        "0": {
+          "question": "我可以使用图像作为水印吗？",
+          "answer": "是的，您可以上传公司徽标或任何其他图像，用作 PDF 页面上的透明水印。"
+        },
+        "1": {
+          "question": "水印会覆盖我的文本吗？",
+          "answer": "您可以调整水印的透明度（不透明度），使其在背景中微妙地显示，而不会使文档难以阅读。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "在线为 PDF 添加水印",
+      "heroSubtitle": "通过用自定义文本或图像水印标记它们来保护您的文档。"
+    },
+    "compress-jpg": {
+      "howToUseTitle": "如何使用我们的 Compress JPG 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Compress 转 JPG 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Compress JPG 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密并安全处理。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。一切都直接在您的网络浏览器中运行。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线压缩 JPG",
+      "heroSubtitle": "压缩 JPG 的最简单、最快和最安全的方法。"
+    },
+    "compress-jpeg": {
+      "howToUseTitle": "如何使用我们的 Compress JPEG 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Compress 转 JPEG 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Compress JPEG 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线压缩 JPEG",
+      "heroSubtitle": "压缩 JPEG 的最简单、最快和最安全的方法。"
+    },
+    "compress-png": {
+      "howToUseTitle": "如何使用我们的 Compress PNG 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Compress 转 PNG 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Compress PNG 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线压缩 PNG",
+      "heroSubtitle": "压缩 PNG 的最简单、最快和最安全的方法。"
+    },
+    "compress-webp": {
+      "howToUseTitle": "如何使用我们的 Compress WEBP 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Compress 转 WEBP 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Compress WEBP 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线压缩 WEBP",
+      "heroSubtitle": "压缩 WEBP 的最简单、最快和最安全的方法。"
+    },
+    "compress-images": {
+      "howToUseTitle": "如何使用我们的 Compress Images 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Compress 转 Images 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Compress Images 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线压缩图像",
+      "heroSubtitle": "压缩图像的最简单、最快和最安全的方法。"
+    },
+    "compress-word": {
+      "howToUseTitle": "如何使用我们的 Compress Word 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Compress 转 Word 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Compress Word 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线压缩 Word",
+      "heroSubtitle": "压缩 Word 的最简单、最快和最安全的方法。"
+    },
+    "compress-excel": {
+      "howToUseTitle": "如何使用我们的 Compress Excel 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Compress 转 Excel 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Compress Excel 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线压缩 Excel",
+      "heroSubtitle": "压缩 Excel 的最简单、最快和最安全的方法。"
+    },
+    "compress-powerpoint": {
+      "howToUseTitle": "如何使用我们的 Compress Powerpoint 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Compress 转 Powerpoint 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Compress Powerpoint 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线压缩 Powerpoint",
+      "heroSubtitle": "压缩 Powerpoint 的最简单、最快和最安全的方法。"
+    },
+    "jpeg-to-pdf": {
+      "howToUseTitle": "如何使用我们的 JPEG To PDF 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 JPEG 转 PDF 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 JPEG To PDF 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线 JPEG 转 PDF",
+      "heroSubtitle": "将 JPEG 转换为 PDF 的最简单、最快的方法。"
+    },
+    "png-to-pdf": {
+      "howToUseTitle": "如何使用我们的 PNG To PDF 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 PNG 转 PDF 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 PNG To PDF 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线 PNG 转 PDF",
+      "heroSubtitle": "将 PNG 转换为 PDF 的最简单、最快的方法。"
+    },
+    "powerpoint-to-pdf": {
+      "howToUseTitle": "如何使用我们的 Powerpoint To PDF 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Powerpoint 转 PDF 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Powerpoint To PDF 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线 Powerpoint 转 PDF",
+      "heroSubtitle": "将 Powerpoint 转换为 PDF 的最简单、最快的方法。"
+    },
+    "excel-to-pdf": {
+      "howToUseTitle": "如何使用我们的 Excel To PDF 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Excel 转 PDF 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Excel To PDF 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密并安全处理。我们会在完成后不久自动从服务器删除所有文件。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。一切都直接在您的网络浏览器中运行。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线 Excel 转 PDF",
+      "heroSubtitle": "将 Excel 转换为 PDF 的最简单、最快和最安全的方法。"
+    },
+    "pdf-to-jpg": {
+      "howToUseTitle": "如何使用我们的 PDF To JPG 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 PDF 转 JPG 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 PDF To JPG 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线 PDF 转 JPG",
+      "heroSubtitle": "将 PDF 转换为 JPG 的最简单、最快和最安全的方法。"
+    },
+    "pdf-to-jpeg": {
+      "howToUseTitle": "如何使用我们的 PDF To JPEG 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 PDF 转 JPEG 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 PDF To JPEG 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线 PDF 转 JPEG",
+      "heroSubtitle": "将 PDF 转换为 JPEG 的最简单、最快和最安全的方法。"
+    },
+    "pdf-to-png": {
+      "howToUseTitle": "如何使用我们的 PDF To PNG 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 PDF 转 PNG 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 PDF To PNG 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线 PDF 转 PNG",
+      "heroSubtitle": "将 PDF 转换为 PNG 的最简单、最快和最安全的方法。"
+    },
+    "pdf-to-powerpoint": {
+      "howToUseTitle": "如何使用我们的 PDF To Powerpoint 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 PDF 转 Powerpoint 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 PDF To Powerpoint 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线 PDF 转 Powerpoint",
+      "heroSubtitle": "将 PDF 转换为 Powerpoint 的最简单、最快和最安全的方法。"
+    },
+    "edit-pdf": {
+      "howToUseTitle": "如何使用我们的 Edit PDF 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Edit 转 PDF 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Edit PDF 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密并安全处理。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。一切都直接在您的网络浏览器中运行。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线编辑 PDF",
+      "heroSubtitle": "编辑 PDF 的最简单、最快和最安全的方法。"
+    },
+    "organize-pdf": {
+      "howToUseTitle": "如何使用我们的 Organize PDF 工具？",
+      "howItWorks": {
+        "0": "通过拖放或选择文件上传您的文件。",
+        "1": "等待处理完成。",
+        "2": "立即下载您处理好的文件。"
+      },
+      "features": {
+        "0": "100% 免费在线",
+        "1": "无需软件或注册",
+        "2": "快速准确的处理",
+        "3": "完美适配移动设备",
+        "4": "最高安全标准",
+        "5": "文件自动删除以保护隐私"
+      },
+      "explanationTitle": "是什么让我们的 Organize 转 PDF 工具成为最佳选择？",
+      "explanationText": {
+        "0": "我们的工具提供行业领先的处理速度和准确性，无需下载繁重的软件。",
+        "1": "无论您是学生、专业人士，还是只需要随时处理文档，此工具都能安全地简化您的工作流程。"
+      },
+      "faq": {
+        "0": {
+          "question": "使用此 Organize PDF 工具安全吗？",
+          "answer": "是的。所有文件上传均已加密并安全处理。"
+        },
+        "1": {
+          "question": "我需要安装任何软件吗？",
+          "answer": "无需安装。一切都直接在您的网络浏览器中运行。"
+        },
+        "2": {
+          "question": "使用 Dowll 时我的数据安全吗？",
+          "answer": "是的，绝对安全。所有文件传输都使用高级 SSL 加密。此外，我们从不存储您的文件——它们在处理后不久就会从我们的服务器中自动永久删除。"
+        },
+        "3": {
+          "question": "我可以在手机上使用这个工具吗？",
+          "answer": "是的！Dowll 已针对移动设备进行了全面优化。您可以直接在网络浏览器中轻松处理任何 iPhone、iPad 或 Android 设备上的文档，而无需安装应用程序。"
+        },
+        "4": {
+          "question": "有任何隐藏费用或不需要的水印吗？",
+          "answer": "没有。Dowll 完全免费提供此服务，没有隐藏的订阅费，我们永远不会在您的文档中添加我们自己的水印。"
+        }
+      },
+      "heroTitle": "免费在线整理 PDF",
+      "heroSubtitle": "整理 PDF 的最简单、最快和最安全的方法。"
+    },
+    "pdf-to-excel": {
+      "heroTitle": "免费在线 PDF 转 Excel",
+      "heroSubtitle": "将 PDF 转换为 Excel 的最简单、最快和最安全的方法。"
+    },
+    "rtf-to-pdf": {
+      "heroTitle": "免费在线 RTF 转 PDF",
+      "heroSubtitle": "将 RTF 转换为 PDF 的最简单、最快和最安全的方法。"
+    },
+    "html-to-pdf": {
+      "heroTitle": "免费在线 HTML 转 PDF",
+      "heroSubtitle": "将 HTML 转换为 PDF 的最简单、最快和最安全的方法。"
+    },
+    "markdown-to-pdf": {
+      "heroTitle": "免费在线 Markdown 转 PDF",
+      "heroSubtitle": "将 Markdown 转换为 PDF 的最简单、最快和最安全的方法。"
+    },
+    "epub-to-pdf": {
+      "heroTitle": "免费在线 EPUB 转 PDF",
+      "heroSubtitle": "将 EPUB 转换为 PDF 的最简单、最快和最安全的方法。"
+    },
+    "remove-watermark-pdf": {
+      "heroTitle": "从 PDF 中删除水印",
+      "heroSubtitle": "轻松安全地从您的文档中删除水印。"
+    }
+  },
+  "editpdf": {
+    "textMode": "文本",
+    "eraseMode": "擦除",
+    "editMode": "编辑",
+    "propertiesTitle": "属性",
+    "propertiesEmptyLine1": "选择一个文本或擦除元素",
+    "propertiesEmptyLine2": "以编辑其属性。",
+    "processing": "处理中...",
+    "exportBtn": "导出编辑后的 PDF",
+    "successToast": "文档编辑成功！",
+    "errorToast": "处理文档时出错"
+  },
+  "organizepdf": {
+    "choosePdf": "选择 PDF 文件",
+    "pagesCount": "页",
+    "emptyState": "所有页面已删除。重新加载文档以重新开始。",
+    "summary": "摘要",
+    "originalPages": "原始页数:",
+    "finalPages": "最终页数:",
+    "processing": "处理中...",
+    "organizeBtn": "组织 PDF",
+    "noFileToast": "请选择要处理的文件。",
+    "minPageToast": "文档必须至少有一页。",
+    "successToast": "文档组织成功！",
+    "errorToast": "组织文档失败"
+  },
+  "watermark": {
+    "uploadTitle": "上传文件",
+    "previewTitle": "文档预览",
+    "optionsTitle": "水印选项",
+    "text": "文本",
+    "color": "颜色",
+    "opacity": "不透明度",
+    "size": "尺寸",
+    "alignment": "对齐方式",
+    "diagonal": "对角线",
+    "horizontal": "水平",
+    "vertical": "垂直",
+    "button": "添加水印",
+    "success": "水印添加成功！",
+    "error": "添加水印失败。",
+    "loading": "正在添加水印..."
+  }
+}

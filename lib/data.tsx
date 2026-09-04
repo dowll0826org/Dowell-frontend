@@ -1,4 +1,5 @@
 import { FileText, FileSpreadsheet, Lock, Cpu, EyeOff, Trash, Presentation, Image as ImageIcon, Archive, BookOpen, Database, Code, Layers, Scissors, Minimize2, Repeat, FileEdit, ArrowRight, CheckCircle2, Info, ListOrdered, Shield, Scale, XCircle, Book, User, Mail, Cookie, Triangle, Table } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 import { sidebarItems, SidebarItem } from "./tools.data";
 
@@ -254,11 +255,14 @@ export const faqData = [
   }
 ];
 
-export const securityCardsData = [
-  { id: 1, title: 'Local Processing', description: 'Leveraging advanced WebAssembly, all document operations occur directly within your browser. No files are ever uploaded to our servers.', icon: Cpu, iconColor: 'bg-[#0f54c9] text-white' },
-  { id: 2, title: 'Zero Tracking', description: 'We don\'t log your keystrokes, save your content, or track your specific actions. You operate in complete anonymity.', icon: EyeOff, iconColor: 'bg-[#dae5f9] dark:bg-blue-900/40 flex items-center justify-center text-[#1c4794] dark:text-blue-400 mb-6' },
-  { id: 3, title: 'Instant Deletion', description: 'For features requiring temporary server processing, data is wiped instantly from RAM upon completion. No persistence.', icon: Trash, iconColor: 'bg-[#b64f1c] text-white' },
-]
+export const useSecurityCardsData = () => {
+  const { t } = useTranslation();
+  return [
+    { id: 1, title: t('security.cards.local.title', 'Local Processing'), description: t('security.cards.local.desc', 'Leveraging advanced WebAssembly, all document operations occur directly within your browser. No files are ever uploaded to our servers.'), icon: Cpu, iconColor: 'bg-[#0f54c9] text-white' },
+    { id: 2, title: t('security.cards.zeroTracking.title', 'Zero Tracking'), description: t('security.cards.zeroTracking.desc', 'We don\'t log your keystrokes, save your content, or track your specific actions. You operate in complete anonymity.'), icon: EyeOff, iconColor: 'bg-[#dae5f9] dark:bg-blue-900/40 flex items-center justify-center text-[#1c4794] dark:text-blue-400 mb-6' },
+    { id: 3, title: t('security.cards.instantDeletion.title', 'Instant Deletion'), description: t('security.cards.instantDeletion.desc', 'For features requiring temporary server processing, data is wiped instantly from RAM upon completion. No persistence.'), icon: Trash, iconColor: 'bg-[#b64f1c] text-white' },
+  ];
+};
 
 export const featuresCardsData = [
   {
@@ -368,130 +372,136 @@ export const cookiePolicyData = {
   ]
 };
 
-export const termsOfServiceData = [
-  {
-    id: 1,
-    title: "1. Acceptance of Terms",
-    icon: CheckCircle2,
-    content: [
-      "By accessing or using the dowll platform, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions, you must not access the service.",
-      "These terms apply to all users, visitors, and others who access the service."
-    ]
-  },
-  {
-    id: 2,
-    title: "2. Description of Service",
-    icon: Info,
-    content: [
-      "dowll provides a suite of online document processing tools including, but not limited to:"
-    ],
-    list: [
-      "Merging and splitting PDF documents.",
-      "Compressing file sizes for easier sharing.",
-      "Basic editing and annotation features."
-    ],
-    postListContent: [
-      "We reserve the right to modify or discontinue, temporarily or permanently, the service with or without notice."
-    ]
-  },
-  {
-    id: 3,
-    title: "3. User Obligations",
-    icon: ListOrdered,
-    content: [
-      "As a user of dowll, you agree to:"
-    ],
-    obligations: [
-      { text: "Provide accurate and current information during registration.", icon: CheckCircle2, iconColor: "text-green-500" },
-      { text: "Maintain the security of your account credentials.", icon: CheckCircle2, iconColor: "text-green-500" },
-      { text: "Use the service only for lawful purposes.", icon: CheckCircle2, iconColor: "text-green-500" },
-      { text: "Not upload malicious files or attempt to breach system security.", icon: XCircle, iconColor: "text-red-500" }
-    ]
-  },
-  {
-    id: 4,
-    title: "4. Intellectual Property",
-    icon: Shield,
-    content: [
-      "The service and its original content, features, and functionality are and will remain the exclusive property of dowll and its licensors.",
-      "You retain all rights to the documents you upload. dowll claims no ownership over your processed files. Files are temporarily stored for processing and automatically deleted according to our Privacy Policy."
-    ]
-  },
-  {
-    id: 5,
-    title: "5. Governing Law",
-    icon: Scale,
-    content: [
-      "These Terms shall be governed and construed in accordance with the laws of the State of Delaware, United States, without regard to its conflict of law provisions."
-    ]
-  }
-];
-
-export const privacyPolicyData = [
-  {
-    id: 1,
-    title: "1. Information Collection",
-    icon: Book,
-    content: [
-      "We believe the best way to protect your data is not to collect it in the first place. When you use dowll, we collect only the absolute minimum information required to operate our service:"
-    ],
-    list: [
-      { label: "Account Information", text: "If you choose to create an account, we collect your email address and basic profile information." },
-      { label: "Technical Telemetry", text: "Anonymized usage statistics (e.g., features used, browser type) to help us improve platform stability. This data cannot be traced back to individual users." },
-      // { label: "Billing Information", text: "Processed securely by our third-party payment providers (Stripe). We do not store your credit card details." }
-    ]
-  },
-  {
-    id: 2,
-    title: "2. Data Processing (Local-First)",
-    icon: Cpu,
-    specialBanner: {
-      title: "Zero-Upload Architecture",
-      content: "The core processing of your documents (Merge, Split, Compress, Edit) happens entirely within your web browser. Your sensitive files are never uploaded to our servers. They remain on your device, ensuring complete confidentiality."
+export const useTermsOfServiceData = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      id: 1,
+      title: t('legal.terms.s1.title', "1. Acceptance of Terms"),
+      icon: CheckCircle2,
+      content: [
+        t('legal.terms.s1.c1', "By accessing or using the dowll platform, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions, you must not access the service."),
+        t('legal.terms.s1.c2', "These terms apply to all users, visitors, and others who access the service.")
+      ]
     },
-    content: [
-      "Because processing is local, we do not have access to the contents of your documents, metadata, or the results of your processing actions."
-    ]
-  },
-  {
-    id: 3,
-    title: "3. Data Security",
-    icon: Shield,
-    content: [
-      "While your documents never leave your device, we employ enterprise-grade security for the limited data we do handle (like account credentials):"
-    ],
-    list: [
-      { text: "All data in transit is encrypted using industry-standard TLS 1.3." },
-      { text: "Data at rest (account info) is encrypted using AES-256." },
-      { text: "Regular third-party security audits and penetration testing." }
-    ]
-  },
-  {
-    id: 4,
-    title: "4. Your Rights",
-    icon: User,
-    content: [
-      "Depending on your location (e.g., GDPR, CCPA), you have specific rights regarding your personal data:"
-    ],
-    list: [
-      { label: "Access & Portability", text: "Request a copy of the personal data we hold about you." },
-      { label: "Deletion", text: "Request that we delete your account and associated data." },
-      { label: "Correction", text: "Update inaccurate or incomplete information." }
-    ],
-    postListContent: [
-      "To exercise these rights, please contact us using the information below."
-    ]
-  },
-  {
-    id: 5,
-    title: "5. Contact Information",
-    icon: Mail,
-    content: [
-      "If you have any questions or concerns about this Privacy Policy or our data practices, please contact our Data Protection Officer:"
-    ],
-    contactBox: {
-      email: "privacy@dowll.com",
-      // address: "123 Privacy Way, Suite 400, Tech District, CA 94107"
+    {
+      id: 2,
+      title: t('legal.terms.s2.title', "2. Description of Service"),
+      icon: Info,
+      content: [
+        t('legal.terms.s2.c1', "dowll provides a suite of online document processing tools including, but not limited to:")
+      ],
+      list: [
+        t('legal.terms.s2.l1', "Merging and splitting PDF documents."),
+        t('legal.terms.s2.l2', "Compressing file sizes for easier sharing."),
+        t('legal.terms.s2.l3', "Basic editing and annotation features.")
+      ],
+      postListContent: [
+        t('legal.terms.s2.p1', "We reserve the right to modify or discontinue, temporarily or permanently, the service with or without notice.")
+      ]
+    },
+    {
+      id: 3,
+      title: t('legal.terms.s3.title', "3. User Obligations"),
+      icon: ListOrdered,
+      content: [
+        t('legal.terms.s3.c1', "As a user of dowll, you agree to:")
+      ],
+      obligations: [
+        { text: t('legal.terms.s3.o1', "Provide accurate and current information during registration."), icon: CheckCircle2, iconColor: "text-green-500" },
+        { text: t('legal.terms.s3.o2', "Maintain the security of your account credentials."), icon: CheckCircle2, iconColor: "text-green-500" },
+        { text: t('legal.terms.s3.o3', "Use the service only for lawful purposes."), icon: CheckCircle2, iconColor: "text-green-500" },
+        { text: t('legal.terms.s3.o4', "Not upload malicious files or attempt to breach system security."), icon: XCircle, iconColor: "text-red-500" }
+      ]
+    },
+    {
+      id: 4,
+      title: t('legal.terms.s4.title', "4. Intellectual Property"),
+      icon: Shield,
+      content: [
+        t('legal.terms.s4.c1', "The service and its original content, features, and functionality are and will remain the exclusive property of dowll and its licensors."),
+        t('legal.terms.s4.c2', "You retain all rights to the documents you upload. dowll claims no ownership over your processed files. Files are temporarily stored for processing and automatically deleted according to our Privacy Policy.")
+      ]
+    },
+    {
+      id: 5,
+      title: t('legal.terms.s5.title', "5. Governing Law"),
+      icon: Scale,
+      content: [
+        t('legal.terms.s5.c1', "These Terms shall be governed and construed in accordance with the laws of the State of Delaware, United States, without regard to its conflict of law provisions.")
+      ]
     }
-  }
-];
+  ];
+};
+
+export const usePrivacyPolicyData = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      id: 1,
+      title: t('legal.privacy.s1.title', "1. Information Collection"),
+      icon: Book,
+      content: [
+        t('legal.privacy.s1.c1', "We believe the best way to protect your data is not to collect it in the first place. When you use dowll, we collect only the absolute minimum information required to operate our service:")
+      ],
+      list: [
+        { label: t('legal.privacy.s1.l1.label', "Account Information"), text: t('legal.privacy.s1.l1.text', "If you choose to create an account, we collect your email address and basic profile information.") },
+        { label: t('legal.privacy.s1.l2.label', "Technical Telemetry"), text: t('legal.privacy.s1.l2.text', "Anonymized usage statistics (e.g., features used, browser type) to help us improve platform stability. This data cannot be traced back to individual users.") },
+        // { label: "Billing Information", text: "Processed securely by our third-party payment providers (Stripe). We do not store your credit card details." }
+      ]
+    },
+    {
+      id: 2,
+      title: t('legal.privacy.s2.title', "2. Data Processing (Local-First)"),
+      icon: Cpu,
+      specialBanner: {
+        title: t('legal.privacy.s2.banner.title', "Zero-Upload Architecture"),
+        content: t('legal.privacy.s2.banner.content', "The core processing of your documents (Merge, Split, Compress, Edit) happens entirely within your web browser. Your sensitive files are never uploaded to our servers. They remain on your device, ensuring complete confidentiality.")
+      },
+      content: [
+        t('legal.privacy.s2.c1', "Because processing is local, we do not have access to the contents of your documents, metadata, or the results of your processing actions.")
+      ]
+    },
+    {
+      id: 3,
+      title: t('legal.privacy.s3.title', "3. Data Security"),
+      icon: Shield,
+      content: [
+        t('legal.privacy.s3.c1', "While your documents never leave your device, we employ enterprise-grade security for the limited data we do handle (like account credentials):")
+      ],
+      list: [
+        { text: t('legal.privacy.s3.l1.text', "All data in transit is encrypted using industry-standard TLS 1.3.") },
+        { text: t('legal.privacy.s3.l2.text', "Data at rest (account info) is encrypted using AES-256.") },
+        { text: t('legal.privacy.s3.l3.text', "Regular third-party security audits and penetration testing.") }
+      ]
+    },
+    {
+      id: 4,
+      title: t('legal.privacy.s4.title', "4. Your Rights"),
+      icon: User,
+      content: [
+        t('legal.privacy.s4.c1', "Depending on your location (e.g., GDPR, CCPA), you have specific rights regarding your personal data:")
+      ],
+      list: [
+        { label: t('legal.privacy.s4.l1.label', "Access & Portability"), text: t('legal.privacy.s4.l1.text', "Request a copy of the personal data we hold about you.") },
+        { label: t('legal.privacy.s4.l2.label', "Deletion"), text: t('legal.privacy.s4.l2.text', "Request that we delete your account and associated data.") },
+        { label: t('legal.privacy.s4.l3.label', "Correction"), text: t('legal.privacy.s4.l3.text', "Update inaccurate or incomplete information.") }
+      ],
+      postListContent: [
+        t('legal.privacy.s4.p1', "To exercise these rights, please contact us using the information below.")
+      ]
+    },
+    {
+      id: 5,
+      title: t('legal.privacy.s5.title', "5. Contact Information"),
+      icon: Mail,
+      content: [
+        t('legal.privacy.s5.c1', "If you have any questions or concerns about this Privacy Policy or our data practices, please contact our Data Protection Officer:")
+      ],
+      contactBox: {
+        email: "privacy@dowll.com",
+        // address: "123 Privacy Way, Suite 400, Tech District, CA 94107"
+      }
+    }
+  ];
+};

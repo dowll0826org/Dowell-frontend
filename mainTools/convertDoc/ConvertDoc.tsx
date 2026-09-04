@@ -7,8 +7,10 @@ import {
 } from 'lucide-react';
 import { convertToPdfApi, convertFromPdfApi } from './api.convertDoc';
 import toast from 'react-hot-toast';
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function ConvertDoc() {
+    const { t } = useTranslation();
     const params = useParams();
     const tool = params?.tool as string || 'jpg-to-pdf';
 
@@ -147,14 +149,14 @@ export default function ConvertDoc() {
                             {currentConfig.icon}
                         </div>
                         <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-3">
-                            Select {currentConfig.title.split(' ')[0]} File
+                            {t('upload.selectSpecificFile', 'Select {type} File').replace('{type}', currentConfig.title.split(' ')[0])}
                         </h2>
                         <p className="text-gray-500 dark:text-gray-400 mb-8 max-w-sm">
-                            Drag and drop your file here or click to browse from your device
+                            {t('upload.dragAndDrop', 'Drag and drop your file here or click to browse from your device')}
                         </p>
                         <button className="bg-[#1b4ba1] hover:bg-[#143a7e] text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-blue-500/30 transition-all flex items-center gap-3">
                             <CloudUpload size={20} />
-                            Choose File
+                            {t('upload.chooseFile', 'Choose File')}
                         </button>
                         <input
                             type="file"
@@ -174,10 +176,10 @@ export default function ConvertDoc() {
                             </div>
                         </div>
                         <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-3">
-                            Converting your document...
+                            {t('upload.converting', 'Converting your document...')}
                         </h2>
                         <p className="text-sm font-medium text-gray-500 dark:text-gray-400 max-w-sm mb-12 leading-relaxed">
-                            Please wait while we process your file securely.
+                            {t('upload.pleaseWait', 'Please wait while we process your file securely.')}
                             This might take a few moments depending on file size.
                         </p>
                     </div>

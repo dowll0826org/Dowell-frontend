@@ -12,11 +12,13 @@ import MobileAd from '@/components/ads/MobileAd';
 import { ENABLE_ADS } from '@/lib/ads.config';
 import { sidebarItems } from '@/lib/tools.data';
 import SearchTools from '@/components/common/SearchTools';
+import { useTranslation } from '@/hooks/useTranslation';
 
 
 
 // Sidebar navigation component
 function Sidebar() {
+  const { t, language } = useTranslation();
   const [hoveredItem, setHoveredItem] = React.useState<string | null>(null);
 
   // Try to use pathname for active state if running on client, otherwise safely fallback
@@ -31,7 +33,7 @@ function Sidebar() {
   return (
     <aside className="w-64 flex-shrink-0 border-r border-gray-200 dark:border-gray-800 bg-[#fbfcfd] dark:bg-gray-900 overflow-y-visible hidden md:block sticky top-16 h-[calc(100vh-4rem)] z-[100]">
       <div className="p-6 h-full overflow-y-visible">
-        <h3 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-6">Services</h3>
+        <h3 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-6">{t('dashboard.services')}</h3>
         <nav className="space-y-1">
           {sidebarItems.map((item) => {
             const hasChildren = item.children && item.children.length > 0;
@@ -55,7 +57,7 @@ function Sidebar() {
                   >
                     <div className="flex items-center space-x-3 pointer-events-none">
                       <item.icon size={18} className={isActive ? "text-[#005ee6] dark:text-blue-400" : "text-gray-500 dark:text-gray-400"} />
-                      <span>{item.name}</span>
+                      <span>{language === 'en' ? item.name : (item.slug ? t(`tools.${item.slug}`, item.name) : t(`tools.${item.name.toLowerCase().replace(/ /g, '-')}`, item.name))}</span>
                     </div>
                     <svg
                       className={`w-4 h-4 text-gray-400 -rotate-90 transition-colors ${hoveredItem === item.name ? 'text-[#005ee6]' : ''}`}
@@ -74,10 +76,10 @@ function Sidebar() {
                       <div className="flex gap-8">
                         {Array.from(new Set(item.children!.map((c: any) => c.category).filter(Boolean))).map((category: any, index, arr) => {
                           const categoryTitles: Record<string, string> = {
-                            to_pdf: 'CONVERT TO PDF',
-                            from_pdf: 'CONVERT FROM PDF',
-                            pdf_image: 'PDF & IMAGES',
-                            office_media: 'OFFICE & MEDIA',
+                            to_pdf: t('dashboard.categoryTitles.to_pdf'),
+                            from_pdf: t('dashboard.categoryTitles.from_pdf'),
+                            pdf_image: t('dashboard.categoryTitles.pdf_image'),
+                            office_media: t('dashboard.categoryTitles.office_media'),
                           };
 
                           return (
@@ -109,7 +111,7 @@ function Sidebar() {
                                             }`}
                                         >
                                           <child.icon size={20} className={pathname === child.path ? "text-[#005ee6] dark:text-blue-400" : iconColor} />
-                                          <span>{child.name}</span>
+                                          <span>{language === 'en' ? child.name : t(`tools.${child.slug}`)}</span>
                                         </Link>
                                       </li>
                                     )
@@ -127,7 +129,9 @@ function Sidebar() {
                       </div>
                     ) : (
                       <div className="flex flex-col space-y-1">
-                        <h4 className="px-3 py-2 text-xs font-bold text-gray-400 uppercase tracking-wider">{item.name} Services</h4>
+                        <h4 className="px-3 py-2 text-xs font-bold text-gray-400 uppercase tracking-wider">
+                          {language === 'en' ? item.name : (item.slug ? t(`tools.${item.slug}`, item.name) : t(`tools.${item.name.toLowerCase().replace(/ /g, '-')}`, item.name))} {t('dashboard.services')}
+                        </h4>
                         {item.children!.map((child: any) => {
                           const isChildActive = pathname === child.path;
                           return (
@@ -141,7 +145,7 @@ function Sidebar() {
                                 }`}
                             >
                               <child.icon size={16} className={isChildActive ? "text-[#005ee6] dark:text-blue-400" : (child.color || "text-gray-400 dark:text-gray-500")} />
-                              <span>{child.name}</span>
+                              <span>{language === 'en' ? child.name : t(`tools.${child.slug}`)}</span>
                             </Link>
                           );
                         })}
@@ -162,7 +166,7 @@ function Sidebar() {
                   }`}
               >
                 <item.icon size={18} className={isActive ? "text-[#005ee6] dark:text-blue-400" : "text-gray-500 dark:text-gray-400"} />
-                <span>{item.name}</span>
+                <span>{language === 'en' ? item.name : (item.slug ? t(`tools.${item.slug}`, item.name) : t(`tools.${item.name.toLowerCase().replace(/ /g, '-')}`, item.name))}</span>
               </Link>
             );
           })}

@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { organizeDocumentApi } from './api.organizeDoc';
 import LoadingModal from '@/components/common/LoadingModal';
 import toast from 'react-hot-toast';
+import { useTranslation } from "@/hooks/useTranslation";
 import {
   CloudUpload,
   Settings2,
@@ -23,15 +24,14 @@ const Document = dynamic(() => import('react-pdf').then(mod => mod.Document), { 
 const Page = dynamic(() => import('react-pdf').then(mod => mod.Page), { ssr: false });
 
 export default function OrganizePdf() {
-  const [file, setFile] = useState<FileItem | null>(null);
-  const [isProcessing, setIsProcessing] = useState(false);
-  const fileInputRef = useRef<HTMLInputElement>(null);
-
-  const [numPages, setNumPages] = useState<number | null>(null);
-  const [pageOrder, setPageOrder] = useState<PageConfig[]>([]);
-
   // Drag and Drop state
   const [draggedIdx, setDraggedIdx] = useState<number | null>(null);
+  const [documentFile, setDocumentFile] = useState<FileItem | null>(null);
+  const [numPages, setNumPages] = useState<number | null>(null);
+  const [pageOrder, setPageOrder] = useState<PageConfig[]>([]);
+  const [isProcessing, setIsProcessing] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     import('react-pdf').then(({ pdfjs }) => {
@@ -74,14 +74,14 @@ export default function OrganizePdf() {
       progress: 0
     };
 
-    setFile(newItem);
+    setDocumentFile(newItem);
     setNumPages(null);
     setPageOrder([]);
   };
 
   const removeFile = () => {
-    if (file?.previewUrl) URL.revokeObjectURL(file.previewUrl);
-    setFile(null);
+    if (documentFile?.previewUrl) URL.revokeObjectURL(documentFile.previewUrl);
+    setDocumentFile(null);
     setNumPages(null);
     setPageOrder([]);
   };
@@ -146,32 +146,32 @@ export default function OrganizePdf() {
 
   // --- Process ---
   const handleOrganize = async () => {
-    if (!file) {
-      toast.error('Please select a file to process.');
+    if (!documentFile) {
+      toast.error(t('organizepdf.noFileToast', 'Please select a file to process.'));
       return;
     }
     if (pageOrder.length === 0) {
-      toast.error('The document must have at least one page.');
+      toast.error(t('organizepdf.minPageToast', 'The document must have at least one page.'));
       return;
     }
 
     try {
       setIsProcessing(true);
 
-      const blob = await organizeDocumentApi(file, pageOrder);
+      const blob = await organizeDocumentApi(documentFile, pageOrder);
 
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `organized_${file.file.name}`;
+      a.download = `organized_${documentFile.file.name}`;
       document.body.appendChild(a);
       a.click();
       window.URL.revokeObjectURL(url);
       document.body.removeChild(a);
 
-      toast.success('Document organized successfully!');
+      toast.success(t('organizepdf.successToast', 'Document organized successfully!'));
     } catch (error: any) {
-      toast.error(error.message || 'Failed to organize document');
+      toast.error(error.message || t('organizepdf.errorToast', 'Failed to organize document'));
     } finally {
       setIsProcessing(false);
     }
@@ -184,7 +184,7 @@ export default function OrganizePdf() {
         {/* Header Section Removed */}
 
         {/* Upload Area */}
-        {!file && (
+        {!documentFile && (
           <div
             onDragOver={handleDragOver}
             onDrop={handleDrop}
@@ -195,10 +195,10 @@ export default function OrganizePdf() {
               <CloudUpload className="w-8 h-8 text-blue-600 dark:text-blue-400" />
             </div>
             <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1">
-              Choose PDF file
+              {t('organizepdf.choosePdf', 'Choose PDF file')}
             </h3>
             <p className="text-sm text-slate-500 dark:text-gray-400 mb-4">
-              or drag and drop it here
+              {t('upload.dragAndDropSimple', 'or drag and drop your file here')}
             </p>
             <input
               type="file"
@@ -211,7 +211,7 @@ export default function OrganizePdf() {
         )}
 
         {/* Workspace */}
-        {file && (
+        {documentFile && (
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
 
             {/* Main Area: Page Grid */}
@@ -223,10 +223,10 @@ export default function OrganizePdf() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 dark:text-white truncate max-w-[200px] md:max-w-md">
-                      {file.file.name}
+                      {documentFile.file.name}
                     </h3>
                     <p className="text-sm text-slate-500 dark:text-gray-400">
-                      {pageOrder.length} Pages • {(file.file.size / 1024 / 1024).toFixed(2)} MB
+                      {pageOrder.length} {t('organizepdf.pagesCount', 'Pages')} • {(documentFile.file.size / 1024 / 1024).toFixed(2)} MB
                     </p>
                   </div>
                 </div>
@@ -241,7 +241,7 @@ export default function OrganizePdf() {
               {/* PDF Loader - Invisible but used to render thumbnails */}
               <div className="hidden">
                 <Document
-                  file={file.previewUrl}
+                  file={documentFile.previewUrl}
                   onLoadSuccess={onDocumentLoadSuccess}
                 />
               </div>
@@ -273,7 +273,7 @@ export default function OrganizePdf() {
                             transition: 'transform 0.3s ease'
                           }}
                         >
-                          <Document file={file.previewUrl}>
+                          <Document file={documentFile.previewUrl}>
                             <Page
                               pageNumber={page.originalIndex + 1}
                               width={120}
@@ -316,7 +316,7 @@ export default function OrganizePdf() {
 
                   {pageOrder.length === 0 && (
                     <div className="col-span-full h-full flex items-center justify-center text-slate-400">
-                      All pages deleted. Reload document to start over.
+                      {t('organizepdf.emptyState', 'All pages deleted. Reload document to start over.')}
                     </div>
                   )}
                 </div>
@@ -328,16 +328,16 @@ export default function OrganizePdf() {
               <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 md:p-6 shadow-sm border border-slate-200 dark:border-gray-700">
                 <div className="flex items-center gap-2 mb-4 pb-4 border-b border-slate-100 dark:border-gray-700">
                   <Settings2 className="text-blue-600 dark:text-blue-400" />
-                  <h3 className="font-semibold text-slate-900 dark:text-white">Summary</h3>
+                  <h3 className="font-semibold text-slate-900 dark:text-white">{t('organizepdf.summary', 'Summary')}</h3>
                 </div>
 
                 <div className="space-y-4">
                   <div className="flex justify-between text-sm">
-                    <span className="text-slate-500 dark:text-gray-400">Original Pages:</span>
+                    <span className="text-slate-500 dark:text-gray-400">{t('organizepdf.originalPages', 'Original Pages:')}</span>
                     <span className="font-medium text-slate-900 dark:text-white">{numPages || 0}</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-slate-500 dark:text-gray-400">Final Pages:</span>
+                    <span className="text-slate-500 dark:text-gray-400">{t('organizepdf.finalPages', 'Final Pages:')}</span>
                     <span className="font-medium text-slate-900 dark:text-white">{pageOrder.length}</span>
                   </div>
                 </div>
@@ -351,12 +351,12 @@ export default function OrganizePdf() {
                     {isProcessing ? (
                       <>
                         <Loader2 className="animate-spin" size={18} />
-                        Processing...
+                        {t('organizepdf.processing', 'Processing...')}
                       </>
                     ) : (
                       <>
                         {/* <FileText size={18} /> */}
-                        Organize PDF
+                        {t('organizepdf.organizeBtn', 'Organize PDF')}
                       </>
                     )}
                   </button>

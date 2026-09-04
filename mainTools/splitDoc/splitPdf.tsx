@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react';
 import { splitDocumentApi } from './api.splitDoc';
 import LoadingModal from '@/components/common/LoadingModal';
 import toast from 'react-hot-toast';
+import { useTranslation } from "@/hooks/useTranslation";
 import { 
   CloudUpload, 
   Settings2,
@@ -23,10 +24,11 @@ const Document = dynamic(() => import('react-pdf').then(mod => mod.Document), { 
 const Page = dynamic(() => import('react-pdf').then(mod => mod.Page), { ssr: false });
 
 export default function SplitPdf() {
+  const [numPages, setNumPages] = useState<number | null>(null);
   const [file, setFile] = useState<FileItem | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const [numPages, setNumPages] = useState<number | null>(null);
+  const { t } = useTranslation();
 
   React.useEffect(() => {
     import('react-pdf').then(({ pdfjs }) => {
@@ -220,15 +222,11 @@ export default function SplitPdf() {
             <div className="w-16 h-16 mb-4 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400">
               <CloudUpload className="w-8 h-8" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-              Select PDF file
-            </h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{t('upload.selectSpecificFile', 'Select PDF file').replace('{type}', 'PDF')}</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
               or drag & drop your PDF here
             </p>
-            <button className="px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 shadow-sm transition-colors pointer-events-none">
-              Select PDF file
-            </button>
+            <button className="px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 shadow-sm transition-colors pointer-events-none">{t('upload.selectSpecificFile', 'Select PDF file').replace('{type}', 'PDF')}</button>
           </div>
         </div>
       ) : (
@@ -479,7 +477,7 @@ export default function SplitPdf() {
       )}
 
       {/* Loading Modal */}
-      <LoadingModal isOpen={isProcessing} message="Processing your document..." />
+      <LoadingModal isOpen={isProcessing} message="{t('upload.processing', 'Processing your document...')}" />
     </div>
   );
 }

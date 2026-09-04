@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function PrivacySection() {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-[#16171b] dark:bg-black py-12 lg:py-16 transition-colors duration-200">
       <div className="container mx-auto px-4 sm:px-8 lg:px-16 max-w-7xl">
@@ -15,17 +20,17 @@ export default function PrivacySection() {
               <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
-              Privacy First Architecture
+              {t("privacy.badge")}
             </div>
 
             {/* Heading */}
             <h2 className="text-4xl lg:text-[2.75rem] font-extrabold text-white leading-tight mb-8">
-              Your Files Never Leave Your Device.
+              {t("privacy.title")}
             </h2>
 
             {/* Description */}
             <p className="text-lg text-gray-400 leading-relaxed mb-10">
-              Unlike traditional cloud processors, dowll utilizes WebAssembly to process your documents locally in your browser. No uploads, no servers, no traces.
+              {t("privacy.description")}
             </p>
 
             {/* List */}
@@ -34,25 +39,25 @@ export default function PrivacySection() {
                 <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                Zero-Knowledge Processing
+                {t("privacy.features.zeroKnowledge")}
               </li>
               <li className="flex items-center gap-3 text-gray-200 font-medium">
                 <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                No Registration Required
+                {t("privacy.features.noRegistration")}
               </li>
               <li className="flex items-center gap-3 text-gray-200 font-medium">
                 <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                Instant Execution
+                {t("privacy.features.instantExecution")}
               </li>
             </ul>
 
             {/* Button */}
             <Link href="/legal/privacy" className="inline-flex items-center justify-center bg-white text-gray-900 px-7 py-3.5 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-sm">
-              Read our Privacy Policy
+              {t("common.readPrivacyPolicy")}
             </Link>
 
           </div>
