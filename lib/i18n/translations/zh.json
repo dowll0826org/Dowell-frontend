@@ -1728,5 +1728,43 @@
     "success": "水印添加成功！",
     "error": "添加水印失败。",
     "loading": "正在添加水印..."
+  },
+  "splitPdf": {
+    "errorInvalidPdf": "请上传有效的 PDF 文件。",
+    "errorFileTooLarge": "文件太大。最大限制为 {limit}MB",
+    "successSplit": "文档拆分成功！",
+    "errorSplit": "拆分文档时发生错误。",
+    "pageLabel": "第 {num} 页",
+    "mergedPages": "合并的页面",
+    "rangeLabel": "范围 {num}",
+    "page": "页",
+    "pages": "页",
+    "noPagesSelected": "当前配置未选择任何页面。",
+    "loadingDocument": "正在加载文档...",
+    "range": "范围",
+    "extract": "提取",
+    "rangeMode": "范围模式：",
+    "custom": "自定义",
+    "fixed": "固定",
+    "customRanges": "自定义范围：",
+    "customRangesPlaceholder": "例如：1-5, 8-10",
+    "splitIntoRanges": "拆分为页面范围，每个范围：",
+    "extractMode": "提取模式：",
+    "extractAll": "提取全部",
+    "selectPages": "选择页面",
+    "extractAllDesc": "每一页都将转换为单独的 PDF 文件。它将作为一个 ZIP 文件下载。",
+    "pagesToExtract": "要提取的页面：",
+    "extractPlaceholder": "示例：1,5-8",
+    "mergeExtracted": "将提取的页面合并为一个 PDF 文件。",
+    "processing": "处理中...",
+    "splitPdf": "拆分 PDF"
+  },
+  "convertDoc": {
+    "readyToConvert": "准备转换为 {type}",
+    "cancel": "取消",
+    "convertNow": "立即转换",
+    "conversionSuccess": "转换成功！",
+    "conversionError": "转换过程中发生错误。",
+    "mightTakeTime": "根据文件大小，这可能需要一些时间。"
   }
 }

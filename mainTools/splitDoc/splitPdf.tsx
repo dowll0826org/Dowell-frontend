@@ -5,8 +5,8 @@ import { splitDocumentApi } from './api.splitDoc';
 import LoadingModal from '@/components/common/LoadingModal';
 import toast from 'react-hot-toast';
 import { useTranslation } from "@/hooks/useTranslation";
-import { 
-  CloudUpload, 
+import {
+  CloudUpload,
   Settings2,
   FileText,
   X,
@@ -139,12 +139,12 @@ export default function SplitPdf() {
 
   const processSelectedFile = (selectedFile: File) => {
     if (selectedFile.type !== 'application/pdf') {
-      toast.error('Please upload a valid PDF file.');
+      toast.error(t('splitPdf.errorInvalidPdf', 'Please upload a valid PDF file.'));
       return;
     }
 
     if (selectedFile.size > SPLIT_PDF_CONFIG.maxFileSizeMB * 1024 * 1024) {
-      toast.error(`File is too large. Max limit is ${SPLIT_PDF_CONFIG.maxFileSizeMB}MB`);
+      toast.error(t('splitPdf.errorFileTooLarge', 'File is too large. Max limit is {limit}MB').replace('{limit}', SPLIT_PDF_CONFIG.maxFileSizeMB.toString()));
       return;
     }
 
@@ -188,10 +188,10 @@ export default function SplitPdf() {
     setIsProcessing(true);
     try {
       await splitDocumentApi(file, options);
-      toast.success('Document split successfully!');
+      toast.success(t('splitPdf.successSplit', 'Document split successfully!'));
     } catch (error: any) {
       console.error('Error splitting:', error);
-      toast.error(error.message || 'An error occurred while splitting the document.');
+      toast.error(error.message || t('splitPdf.errorSplit', 'An error occurred while splitting the document.'));
     } finally {
       setIsProcessing(false);
     }
@@ -224,7 +224,7 @@ export default function SplitPdf() {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{t('upload.selectSpecificFile', 'Select PDF file').replace('{type}', 'PDF')}</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
-              or drag & drop your PDF here
+              {t('upload.dragAndDrop', 'or drag & drop your PDF here')}
             </p>
             <button className="px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 shadow-sm transition-colors pointer-events-none">{t('upload.selectSpecificFile', 'Select PDF file').replace('{type}', 'PDF')}</button>
           </div>
@@ -232,142 +232,138 @@ export default function SplitPdf() {
       ) : (
         /* Workspace Area (File selected) */
         <div className="flex flex-col lg:flex-row gap-6">
-          
+
           {/* Main Document Preview (Left side) */}
           <div className="flex-1 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 flex flex-col items-center justify-center relative min-h-[400px]">
-             {/* File Header */}
-             <div className="absolute top-4 left-4 right-4 flex justify-between items-center bg-gray-50 dark:bg-gray-900/50 p-3 rounded-lg border border-gray-100 dark:border-gray-700 z-10">
-                <div className="flex items-center gap-3 truncate">
-                  <div className="w-8 h-8 rounded bg-red-100 text-red-500 flex items-center justify-center shrink-0">
-                    <FileText className="w-4 h-4" />
-                  </div>
-                  <div className="truncate">
-                    <p className="text-sm font-medium text-gray-900 dark:text-white truncate">{file.file.name}</p>
-                    <p className="text-xs text-gray-500">{file.size} {numPages ? `• ${numPages} pages` : ''}</p>
-                  </div>
+            {/* File Header */}
+            <div className="absolute top-4 left-4 right-4 flex justify-between items-center bg-gray-50 dark:bg-gray-900/50 p-3 rounded-lg border border-gray-100 dark:border-gray-700 z-10">
+              <div className="flex items-center gap-3 truncate">
+                <div className="w-8 h-8 rounded bg-red-100 text-red-500 flex items-center justify-center shrink-0">
+                  <FileText className="w-4 h-4" />
                 </div>
-                <button
-                  onClick={removeFile}
-                  className="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg transition-colors"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-             </div>
+                <div className="truncate">
+                  <p className="text-sm font-medium text-gray-900 dark:text-white truncate">{file.file.name}</p>
+                  <p className="text-xs text-gray-500">{file.size} {numPages ? `• ${numPages} pages` : ''}</p>
+                </div>
+              </div>
+              <button
+                onClick={removeFile}
+                className="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
 
-             {/* Document Rendering */}
-             <div className="w-full h-full mt-16 overflow-y-auto overflow-x-hidden flex flex-col">
-                {/* Hidden Document to parse pages */}
-                <div className="hidden">
-                  <Document file={file.preview} onLoadSuccess={onDocumentLoadSuccess} />
-                </div>
-                
-                {numPages ? (
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 p-4 w-full">
-                    {computedFiles.map((resultFile, index) => (
-                      <div key={index} className="flex flex-col items-center gap-2">
-                        <span className="text-sm font-medium text-gray-600 dark:text-gray-300">{resultFile.label}</span>
-                        <div className="w-full aspect-[1/1.4] bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-600 overflow-hidden flex items-center justify-center shadow-sm relative">
-                           <Document file={file.preview} loading={<Loader2 className="w-6 h-6 animate-spin text-gray-400" />}>
-                             <Page 
-                               pageNumber={resultFile.pages[0]} 
-                               renderTextLayer={false} 
-                               renderAnnotationLayer={false} 
-                               className="w-full flex justify-center [&>.react-pdf__Page__canvas]:max-w-full [&>.react-pdf__Page__canvas]:h-auto"
-                               width={150}
-                             />
-                           </Document>
-                        </div>
-                        <div className="text-xs text-gray-400 bg-gray-50 dark:bg-gray-900 px-2 py-1 rounded-md border border-gray-100 dark:border-gray-700">
-                          {resultFile.pages.length} {resultFile.pages.length === 1 ? 'page' : 'pages'}
-                        </div>
+            {/* Document Rendering */}
+            <div className="w-full h-full mt-16 overflow-y-auto overflow-x-hidden flex flex-col">
+              {/* Hidden Document to parse pages */}
+              <div className="hidden">
+                <Document file={file.preview} onLoadSuccess={onDocumentLoadSuccess} />
+              </div>
+
+              {numPages ? (
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 p-4 w-full">
+                  {computedFiles.map((resultFile, index) => (
+                    <div key={index} className="flex flex-col items-center gap-2">
+                      <span className="text-sm font-medium text-gray-600 dark:text-gray-300">{resultFile.label}</span>
+                      <div className="w-full aspect-[1/1.4] bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-600 overflow-hidden flex items-center justify-center shadow-sm relative">
+                        <Document file={file.preview} loading={<Loader2 className="w-6 h-6 animate-spin text-gray-400" />}>
+                          <Page
+                            pageNumber={resultFile.pages[0]}
+                            renderTextLayer={false}
+                            renderAnnotationLayer={false}
+                            className="w-full flex justify-center [&>.react-pdf__Page__canvas]:max-w-full [&>.react-pdf__Page__canvas]:h-auto"
+                            width={150}
+                          />
+                        </Document>
                       </div>
-                    ))}
-                    {computedFiles.length === 0 && (
-                      <div className="col-span-full py-10 text-center text-gray-500">
-                         No pages selected for the current configuration.
+                      <div className="text-xs text-gray-400 bg-gray-50 dark:bg-gray-900 px-2 py-1 rounded-md border border-gray-100 dark:border-gray-700">
+                        {resultFile.pages.length} {resultFile.pages.length === 1 ? t('splitPdf.page', 'page') : t('splitPdf.pages', 'pages')}
                       </div>
-                    )}
-                  </div>
-                ) : (
-                  <div className="flex-1 flex items-center justify-center">
-                    <div className="flex flex-col items-center gap-3">
-                      <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
-                      <p className="text-sm text-gray-500">Loading document...</p>
                     </div>
+                  ))}
+                  {computedFiles.length === 0 && (
+                    <div className="col-span-full py-10 text-center text-gray-500">
+                      {t('splitPdf.noPagesSelected', 'No pages selected for the current configuration.')}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div className="flex-1 flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-3">
+                    <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
+                    <p className="text-sm text-gray-500">{t('splitPdf.loadingDocument', 'Loading document...')}</p>
                   </div>
-                )}
-             </div>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Settings Sidebar (Right side) */}
           <div className="w-full lg:w-80 shrink-0 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 flex flex-col overflow-hidden">
-            
+
             {/* Tab Navigation */}
             <div className="flex border-b border-gray-200 dark:border-gray-700">
               <button
                 onClick={() => setOptions({ ...options, splitMode: 'range' })}
-                className={`flex-1 py-4 flex flex-col items-center gap-2 transition-colors ${
-                  options.splitMode === 'range' 
-                    ? 'border-b-2 border-blue-600 text-blue-600 bg-blue-50/50 dark:bg-blue-900/10' 
+                className={`flex-1 py-4 flex flex-col items-center gap-2 transition-colors ${options.splitMode === 'range'
+                    ? 'border-b-2 border-blue-600 text-blue-600 bg-blue-50/50 dark:bg-blue-900/10'
                     : 'text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700/50'
-                }`}
+                  }`}
               >
                 <Scissors className="w-5 h-5" />
-                <span className="text-xs font-semibold uppercase tracking-wider">Range</span>
+                <span className="text-xs font-semibold uppercase tracking-wider">{t('splitPdf.range', 'Range')}</span>
               </button>
               <button
                 onClick={() => setOptions({ ...options, splitMode: 'extract' })}
-                className={`flex-1 py-4 flex flex-col items-center gap-2 transition-colors ${
-                  options.splitMode === 'extract' 
-                    ? 'border-b-2 border-blue-600 text-blue-600 bg-blue-50/50 dark:bg-blue-900/10' 
+                className={`flex-1 py-4 flex flex-col items-center gap-2 transition-colors ${options.splitMode === 'extract'
+                    ? 'border-b-2 border-blue-600 text-blue-600 bg-blue-50/50 dark:bg-blue-900/10'
                     : 'text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700/50'
-                }`}
+                  }`}
               >
                 <Files className="w-5 h-5" />
-                <span className="text-xs font-semibold uppercase tracking-wider">Extract</span>
+                <span className="text-xs font-semibold uppercase tracking-wider">{t('splitPdf.extract', 'Extract')}</span>
               </button>
             </div>
 
             {/* Tab Content */}
             <div className="p-5 flex-1 overflow-y-auto">
-              
+
               {/* Range Mode Options */}
               {options.splitMode === 'range' && (
                 <div className="space-y-6">
                   <div>
-                    <label className="text-sm font-semibold text-gray-900 dark:text-white mb-3 block">Range mode:</label>
+                    <label className="text-sm font-semibold text-gray-900 dark:text-white mb-3 block">{t('splitPdf.rangeMode', 'Range mode:')}</label>
                     <div className="flex gap-2">
                       <button
                         onClick={() => setOptions({ ...options, rangeMode: 'custom' })}
-                        className={`flex-1 py-2 text-sm font-medium rounded-lg border transition-colors ${
-                          options.rangeMode === 'custom'
+                        className={`flex-1 py-2 text-sm font-medium rounded-lg border transition-colors ${options.rangeMode === 'custom'
                             ? 'border-blue-600 text-blue-600 bg-blue-50 dark:bg-blue-900/20'
                             : 'border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-50'
-                        }`}
+                          }`}
                       >
-                        Custom
+                        {t('splitPdf.custom', 'Custom')}
                       </button>
                       <button
                         onClick={() => setOptions({ ...options, rangeMode: 'fixed' })}
-                        className={`flex-1 py-2 text-sm font-medium rounded-lg border transition-colors ${
-                          options.rangeMode === 'fixed'
+                        className={`flex-1 py-2 text-sm font-medium rounded-lg border transition-colors ${options.rangeMode === 'fixed'
                             ? 'border-blue-600 text-blue-600 bg-blue-50 dark:bg-blue-900/20'
                             : 'border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-50'
-                        }`}
+                          }`}
                       >
-                        Fixed
+                        {t('splitPdf.fixed', 'Fixed')}
                       </button>
                     </div>
                   </div>
 
                   {options.rangeMode === 'custom' && (
                     <div className="space-y-3">
-                      <label className="text-sm text-gray-700 dark:text-gray-300">Custom Ranges:</label>
+                      <label className="text-sm text-gray-700 dark:text-gray-300">{t('splitPdf.customRanges', 'Custom Ranges:')}</label>
                       <input
                         type="text"
                         value={options.customRanges}
                         onChange={(e) => setOptions({ ...options, customRanges: e.target.value })}
-                        placeholder="e.g. 1-5, 8-10"
+                        placeholder={t('splitPdf.customRangesPlaceholder', 'e.g. 1-5, 8-10')}
                         className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-sm focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
@@ -375,7 +371,7 @@ export default function SplitPdf() {
 
                   {options.rangeMode === 'fixed' && (
                     <div className="space-y-3">
-                      <label className="text-sm text-gray-700 dark:text-gray-300">Split into page ranges of:</label>
+                      <label className="text-sm text-gray-700 dark:text-gray-300">{t('splitPdf.splitIntoRanges', 'Split into page ranges of:')}</label>
                       <input
                         type="number"
                         min="1"
@@ -392,27 +388,25 @@ export default function SplitPdf() {
               {options.splitMode === 'extract' && (
                 <div className="space-y-6">
                   <div>
-                    <label className="text-sm font-semibold text-gray-900 dark:text-white mb-3 block">Extract mode:</label>
+                    <label className="text-sm font-semibold text-gray-900 dark:text-white mb-3 block">{t('splitPdf.extractMode', 'Extract mode:')}</label>
                     <div className="flex gap-2">
                       <button
                         onClick={() => setOptions({ ...options, extractMode: 'all' })}
-                        className={`flex-1 py-2 text-sm font-medium rounded-lg border transition-colors ${
-                          options.extractMode === 'all'
+                        className={`flex-1 py-2 text-sm font-medium rounded-lg border transition-colors ${options.extractMode === 'all'
                             ? 'border-blue-600 text-blue-600 bg-blue-50 dark:bg-blue-900/20'
                             : 'border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-50'
-                        }`}
+                          }`}
                       >
-                        Extract all
+                        {t('splitPdf.extractAll', 'Extract all')}
                       </button>
                       <button
                         onClick={() => setOptions({ ...options, extractMode: 'select' })}
-                        className={`flex-1 py-2 text-sm font-medium rounded-lg border transition-colors ${
-                          options.extractMode === 'select'
+                        className={`flex-1 py-2 text-sm font-medium rounded-lg border transition-colors ${options.extractMode === 'select'
                             ? 'border-blue-600 text-blue-600 bg-blue-50 dark:bg-blue-900/20'
                             : 'border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-50'
-                        }`}
+                          }`}
                       >
-                        Select pages
+                        {t('splitPdf.selectPages', 'Select pages')}
                       </button>
                     </div>
                   </div>
@@ -420,23 +414,23 @@ export default function SplitPdf() {
                   {options.extractMode === 'all' && (
                     <div className="bg-blue-50 dark:bg-blue-900/20 p-3 rounded-lg flex items-start gap-2 text-sm text-blue-700 dark:text-blue-300">
                       <div className="mt-0.5">ℹ️</div>
-                      <p>Every page will be converted into a separate PDF file. It will be downloaded as a ZIP.</p>
+                      <p>{t('splitPdf.extractAllDesc', 'Every page will be converted into a separate PDF file. It will be downloaded as a ZIP.')}</p>
                     </div>
                   )}
 
                   {options.extractMode === 'select' && (
                     <div className="space-y-4">
                       <div>
-                        <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-1">Pages to extract:</label>
+                        <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-1">{t('splitPdf.pagesToExtract', 'Pages to extract:')}</label>
                         <input
                           type="text"
                           value={options.selectedPages}
                           onChange={(e) => setOptions({ ...options, selectedPages: e.target.value })}
-                          placeholder="example: 1,5-8"
+                          placeholder={t('splitPdf.extractPlaceholder', 'example: 1,5-8')}
                           className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-sm focus:ring-2 focus:ring-blue-500"
                         />
                       </div>
-                      
+
                       <label className="flex items-start gap-3 cursor-pointer">
                         <div className="flex items-center h-5">
                           <input
@@ -447,7 +441,7 @@ export default function SplitPdf() {
                           />
                         </div>
                         <div className="text-sm text-gray-700 dark:text-gray-300">
-                          Merge extracted pages into one PDF file.
+                          {t('splitPdf.mergeExtracted', 'Merge extracted pages into one PDF file.')}
                         </div>
                       </label>
                     </div>
@@ -468,7 +462,7 @@ export default function SplitPdf() {
                 ) : (
                   <Settings2 className="w-5 h-5" />
                 )}
-                {isProcessing ? 'Processing...' : 'Split PDF'}
+                {isProcessing ? t('splitPdf.processing', 'Processing...') : t('splitPdf.splitPdf', 'Split PDF')}
               </button>
             </div>
           </div>
@@ -477,7 +471,7 @@ export default function SplitPdf() {
       )}
 
       {/* Loading Modal */}
-      <LoadingModal isOpen={isProcessing} message="{t('upload.processing', 'Processing your document...')}" />
+      <LoadingModal isOpen={isProcessing} message={t('upload.processing', 'Processing your document...')} />
     </div>
   );
 }

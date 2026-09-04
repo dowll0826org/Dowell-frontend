@@ -1728,5 +1728,43 @@
     "downloadFile": "Télécharger le fichier",
     "successToast": "Document compressed successfully!",
     "errorToast": "An error occurred while compressing the document."
+  },
+  "splitPdf": {
+    "errorInvalidPdf": "Veuillez télécharger un fichier PDF valide.",
+    "errorFileTooLarge": "Le fichier est trop volumineux. La limite est de {limit} Mo.",
+    "successSplit": "Document divisé avec succès !",
+    "errorSplit": "Une erreur est survenue lors de la division du document.",
+    "pageLabel": "Page {num}",
+    "mergedPages": "Pages fusionnées",
+    "rangeLabel": "Plage {num}",
+    "page": "page",
+    "pages": "pages",
+    "noPagesSelected": "Aucune page sélectionnée pour la configuration actuelle.",
+    "loadingDocument": "Chargement du document...",
+    "range": "Plage",
+    "extract": "Extraire",
+    "rangeMode": "Mode de plage :",
+    "custom": "Personnalisé",
+    "fixed": "Fixe",
+    "customRanges": "Plages personnalisées :",
+    "customRangesPlaceholder": "ex: 1-5, 8-10",
+    "splitIntoRanges": "Diviser en plages de pages de :",
+    "extractMode": "Mode d'extraction :",
+    "extractAll": "Tout extraire",
+    "selectPages": "Sélectionner des pages",
+    "extractAllDesc": "Chaque page sera convertie en un fichier PDF séparé. Il sera téléchargé sous forme de ZIP.",
+    "pagesToExtract": "Pages à extraire :",
+    "extractPlaceholder": "exemple: 1,5-8",
+    "mergeExtracted": "Fusionner les pages extraites dans un seul fichier PDF.",
+    "processing": "Traitement en cours...",
+    "splitPdf": "Diviser le PDF"
+  },
+  "convertDoc": {
+    "readyToConvert": "Prêt à convertir en {type}",
+    "cancel": "Annuler",
+    "convertNow": "Convertir maintenant",
+    "conversionSuccess": "Conversion réussie !",
+    "conversionError": "Une erreur s'est produite lors de la conversion.",
+    "mightTakeTime": "Cela peut prendre quelques instants selon la taille du fichier."
   }
 }

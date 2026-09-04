@@ -120,10 +120,10 @@ export default function ConvertDoc() {
             link.remove();
             setTimeout(() => window.URL.revokeObjectURL(url), 100);
 
-            toast.success('Conversion successful!');
+            toast.success(t('convertDoc.conversionSuccess', 'Conversion successful!'));
             setFile(null);
         } catch (error: any) {
-            toast.error(error.message || 'An error occurred during conversion.');
+            toast.error(error.message || t('convertDoc.conversionError', 'An error occurred during conversion.'));
         } finally {
             setIsProcessing(false);
         }
@@ -180,7 +180,7 @@ export default function ConvertDoc() {
                         </h2>
                         <p className="text-sm font-medium text-gray-500 dark:text-gray-400 max-w-sm mb-12 leading-relaxed">
                             {t('upload.pleaseWait', 'Please wait while we process your file securely.')}
-                            This might take a few moments depending on file size.
+                            {t('convertDoc.mightTakeTime', 'This might take a few moments depending on file size.')}
                         </p>
                     </div>
                 ) : (
@@ -193,7 +193,7 @@ export default function ConvertDoc() {
                                 <div className="text-left flex-1 min-w-0">
                                     <h3 className="font-bold text-gray-900 dark:text-white text-base md:text-lg truncate">{file.name}</h3>
                                     <p className="text-xs md:text-sm text-gray-500 truncate">
-                                        Ready to convert to {currentConfig.direction === 'to-pdf' ? 'PDF' : currentConfig.type.toUpperCase()}
+                                        {t('convertDoc.readyToConvert', 'Ready to convert to {type}').replace('{type}', currentConfig.direction === 'to-pdf' ? 'PDF' : currentConfig.type.toUpperCase())}
                                     </p>
                                 </div>
                             </div>
@@ -210,13 +210,13 @@ export default function ConvertDoc() {
                                 onClick={() => setFile(null)}
                                 className="w-full sm:w-auto px-6 py-3 sm:py-2.5 rounded-xl sm:rounded-lg border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                             >
-                                Cancel
+                                {t('convertDoc.cancel', 'Cancel')}
                             </button>
                             <button
                                 onClick={handleConvert}
                                 className="w-full sm:w-auto bg-[#1b4ba1] hover:bg-[#143a7e] text-white px-8 py-3 sm:py-2.5 rounded-xl sm:rounded-lg font-semibold shadow-md transition-colors flex items-center justify-center gap-2"
                             >
-                                <RefreshCw size={18} /> Convert Now
+                                <RefreshCw size={18} /> {t('convertDoc.convertNow', 'Convert Now')}
                             </button>
                         </div>
                     </div>

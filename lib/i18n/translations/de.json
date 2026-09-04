@@ -1728,5 +1728,43 @@
     "downloadFile": "Datei herunterladen",
     "successToast": "Document compressed successfully!",
     "errorToast": "An error occurred while compressing the document."
+  },
+  "splitPdf": {
+    "errorInvalidPdf": "Bitte laden Sie eine gültige PDF-Datei hoch.",
+    "errorFileTooLarge": "Datei ist zu groß. Das Limit beträgt {limit}MB.",
+    "successSplit": "Dokument erfolgreich geteilt!",
+    "errorSplit": "Ein Fehler ist beim Teilen des Dokuments aufgetreten.",
+    "pageLabel": "Seite {num}",
+    "mergedPages": "Zusammengeführte Seiten",
+    "rangeLabel": "Bereich {num}",
+    "page": "Seite",
+    "pages": "Seiten",
+    "noPagesSelected": "Keine Seiten für die aktuelle Konfiguration ausgewählt.",
+    "loadingDocument": "Dokument wird geladen...",
+    "range": "Bereich",
+    "extract": "Extrahieren",
+    "rangeMode": "Bereichsmodus:",
+    "custom": "Benutzerdefiniert",
+    "fixed": "Fest",
+    "customRanges": "Benutzerdefinierte Bereiche:",
+    "customRangesPlaceholder": "z.B. 1-5, 8-10",
+    "splitIntoRanges": "Aufteilen in Seitenbereiche von:",
+    "extractMode": "Extraktionsmodus:",
+    "extractAll": "Alle extrahieren",
+    "selectPages": "Seiten auswählen",
+    "extractAllDesc": "Jede Seite wird in eine separate PDF-Datei umgewandelt. Der Download erfolgt als ZIP-Datei.",
+    "pagesToExtract": "Zu extrahierende Seiten:",
+    "extractPlaceholder": "Beispiel: 1,5-8",
+    "mergeExtracted": "Extrahierte Seiten in einer PDF-Datei zusammenführen.",
+    "processing": "Verarbeitung...",
+    "splitPdf": "PDF teilen"
+  },
+  "convertDoc": {
+    "readyToConvert": "Bereit zum Konvertieren in {type}",
+    "cancel": "Abbrechen",
+    "convertNow": "Jetzt konvertieren",
+    "conversionSuccess": "Konvertierung erfolgreich!",
+    "conversionError": "Ein Fehler ist während der Konvertierung aufgetreten.",
+    "mightTakeTime": "Dies kann je nach Dateigröße einige Momente dauern."
   }
 }

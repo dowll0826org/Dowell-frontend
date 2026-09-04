@@ -1728,5 +1728,43 @@
     "minPageToast": "दस्तावेज़ में कम से कम एक पृष्ठ होना चाहिए।",
     "successToast": "दस्तावेज़ सफलतापूर्वक व्यवस्थित किया गया!",
     "errorToast": "दस्तावेज़ व्यवस्थित करने में विफल"
+  },
+  "splitPdf": {
+    "errorInvalidPdf": "कृपया एक वैध पीडीएफ फाइल अपलोड करें।",
+    "errorFileTooLarge": "फाइल बहुत बड़ी है। अधिकतम सीमा {limit}MB है",
+    "successSplit": "दस्तावेज़ सफलतापूर्वक विभाजित हो गया!",
+    "errorSplit": "दस्तावेज़ विभाजित करते समय एक त्रुटि हुई।",
+    "pageLabel": "पृष्ठ {num}",
+    "mergedPages": "मर्ज किए गए पृष्ठ",
+    "rangeLabel": "रेंज {num}",
+    "page": "पृष्ठ",
+    "pages": "पृष्ठ",
+    "noPagesSelected": "वर्तमान कॉन्फ़िगरेशन के लिए कोई पृष्ठ नहीं चुना गया।",
+    "loadingDocument": "दस्तावेज़ लोड हो रहा है...",
+    "range": "रेंज",
+    "extract": "निकालें",
+    "rangeMode": "रेंज मोड:",
+    "custom": "कस्टम",
+    "fixed": "निश्चित",
+    "customRanges": "कस्टम रेंज:",
+    "customRangesPlaceholder": "उदा. 1-5, 8-10",
+    "splitIntoRanges": "पृष्ठ श्रेणियों में विभाजित करें:",
+    "extractMode": "निकालने का मोड:",
+    "extractAll": "सभी निकालें",
+    "selectPages": "पृष्ठ चुनें",
+    "extractAllDesc": "प्रत्येक पृष्ठ को एक अलग पीडीएफ फाइल में बदल दिया जाएगा। इसे एक ज़िप के रूप में डाउनलोड किया जाएगा।",
+    "pagesToExtract": "निकालने के लिए पृष्ठ:",
+    "extractPlaceholder": "उदाहरण: 1,5-8",
+    "mergeExtracted": "निकाले गए पृष्ठों को एक पीडीएफ फाइल में मर्ज करें।",
+    "processing": "प्रसंस्करण...",
+    "splitPdf": "पीडीएफ विभाजित करें"
+  },
+  "convertDoc": {
+    "readyToConvert": "{type} में बदलने के लिए तैयार",
+    "cancel": "रद्द करें",
+    "convertNow": "अभी बदलें",
+    "conversionSuccess": "रूपांतरण सफल रहा!",
+    "conversionError": "रूपांतरण के दौरान एक त्रुटि हुई।",
+    "mightTakeTime": "फ़ाइल के आकार के आधार पर इसमें कुछ क्षण लग सकते हैं।"
   }
 }
