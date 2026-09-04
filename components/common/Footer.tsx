@@ -8,7 +8,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 import LanguageSwitcher from "@/components/common/LanguageSwitcher";
 
 export default function Footer() {
-    const { t, language } = useTranslation();
+    const { t, locale: language } = useTranslation();
     const flatTools = sidebarItems.filter(item => !item.children);
     const groupedTools = sidebarItems.filter(item => item.children);
 

@@ -497,7 +497,12 @@
     "pleaseWait": "Bitte warten Sie, während wir Ihre Datei sicher verarbeiten.",
     "clickOrDrag": "Klicken oder ziehen zum Hochladen",
     "pdfOnlyMax": "Nur PDF-Dateien (max. 10MB)",
-    "processFiles": "Verarbeite {{count}} Dateien"
+    "processFiles": "Verarbeite {{count}} Dateien",
+    "choosePdf": "Wählen Sie eine PDF-Datei aus",
+    "clearAll": "Alle löschen",
+    "dragAndDropFiles": "Ziehen Sie Dateien hierher",
+    "browseFiles": "Dateien durchsuchen",
+    "previewGallery": "Vorschau-Galerie"
   },
   "seo": {
     "common": {
@@ -1720,6 +1725,8 @@
     "liveCompressionActive": "Live-Komprimierung aktiv",
     "previewingRealtime": "Vorschau der Echtzeitqualität.",
     "spaceSaved": "Speicherplatz gespart",
-    "downloadFile": "Datei herunterladen"
+    "downloadFile": "Datei herunterladen",
+    "successToast": "Document compressed successfully!",
+    "errorToast": "An error occurred while compressing the document."
   }
 }

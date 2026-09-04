@@ -18,7 +18,7 @@ import { useTranslation } from '@/hooks/useTranslation';
 
 // Sidebar navigation component
 function Sidebar() {
-  const { t, language } = useTranslation();
+  const { t, locale: language } = useTranslation();
   const [hoveredItem, setHoveredItem] = React.useState<string | null>(null);
 
   // Try to use pathname for active state if running on client, otherwise safely fallback

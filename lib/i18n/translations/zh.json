@@ -497,7 +497,12 @@
     "pleaseWait": "请稍候，我们正在安全地处理您的文件。",
     "clickOrDrag": "点击或拖拽上传",
     "pdfOnlyMax": "仅限 PDF 文件 (最大 10MB)",
-    "processFiles": "处理 {{count}} 个文件"
+    "processFiles": "处理 {{count}} 个文件",
+    "choosePdf": "选择 PDF 文件",
+    "clearAll": "全部清除",
+    "dragAndDropFiles": "在此处拖放文件",
+    "browseFiles": "浏览文件",
+    "previewGallery": "预览图库"
   },
   "compress": {
     "howItWorks": "它是如何工作的：",
