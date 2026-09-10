@@ -6,7 +6,6 @@ import { LanguageProvider } from "../context/LanguageContext";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { ENABLE_ADS } from "@/lib/ads.config";
 import { AdSenseInit } from "@/components/common/AdSenseInit";
-import { DisableContextMenu } from "@/components/common/DisableContextMenu";
 import { Toaster } from 'react-hot-toast';
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -118,7 +117,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {ENABLE_ADS && <AdSenseInit />}
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <LanguageProvider>
-            <DisableContextMenu />
             {children}
             <Toaster position="top-right" />
             <ThemeToggle />

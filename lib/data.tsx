@@ -493,14 +493,23 @@ export const usePrivacyPolicyData = () => {
     },
     {
       id: 5,
-      title: t('legal.privacy.s5.title', "5. Contact Information"),
+      title: t('legal.privacy.s5.title', "5. Third-Party Advertising & Cookies (Google AdSense)"),
+      icon: Cookie,
+      content: [
+        t('legal.privacy.s5.c1', "We use third-party advertising companies, including Google AdSense, to serve ads when you visit our website."),
+        t('legal.privacy.s5.c2', "These companies may use cookies, web beacons, and similar technologies to collect non-personally identifiable information about your visits to this and other websites in order to provide advertisements about goods and services of interest to you."),
+        t('legal.privacy.s5.c3', "Google's use of advertising cookies enables it and its partners to serve ads to users based on their visit to our site and/or other sites on the Internet. Users may opt out of personalized advertising by visiting Google Ad Settings (https://adssettings.google.com) or www.aboutads.info.")
+      ]
+    },
+    {
+      id: 6,
+      title: t('legal.privacy.s6.title', "6. Contact Information"),
       icon: Mail,
       content: [
-        t('legal.privacy.s5.c1', "If you have any questions or concerns about this Privacy Policy or our data practices, please contact our Data Protection Officer:")
+        t('legal.privacy.s6.c1', "If you have any questions or concerns about this Privacy Policy or our data practices, please contact our Data Protection Officer:")
       ],
       contactBox: {
         email: "privacy@dowll.com",
-        // address: "123 Privacy Way, Suite 400, Tech District, CA 94107"
       }
     }
   ];
